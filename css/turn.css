@@ -1,0 +1,37 @@
+.space {
+	height: 1000px;
+	width: 100%;
+	background: black;
+}
+
+
+.form {
+	height: 300px;
+	width: 100px;
+	/*background: white;*/
+	border: 1px solid chartreuse;
+	position: absolute;
+	margin-left: 50%;
+	left: -50px;
+	top: 30%;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.content {
+	overflow: hidden;
+	/*opacity: 0.1;*/
+	height: 300px;
+	width: 100px;
+	border: 1px solid chartreuse;
+	position: absolute;
+	margin-left: 50%;
+	left: -50px;
+	top: 30%;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}

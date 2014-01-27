@@ -1,1 +1,76 @@
 index
+<!DOCTYPE html>
+<html>
+    <head>
+
+    	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+
+    	<link rel="stylesheet" type="text/css" href="css/turn.css">
+
+    </head>
+<body>
+
+<div class="space">
+	
+<div class="form"></div>
+<div class="content">
+<img src="img/super.jpg" width="111" height="300"></img></div>
+
+
+
+</div>
+
+<script>
+
+
+var degree = 0;
+
+setInterval(function () {
+    
+    degree = ++degree % 360 + 1; // SET { 1-360 }
+    
+    document.querySelector(".form").style.setProperty("-webkit-transform","rotate("+ (degree) +"deg)", null);
+
+}, 1000);
+
+
+
+
+
+
+
+
+// var deg = 0;
+
+//  var timer=setInterval(function(){
+
+//  	var degr = deg + 90;
+//  	console.log("turned" + deg);
+//     document.querySelector(".form").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+//     console.log("turned" + deg);
+
+//  },1000);
+
+
+// var degrees = 360;
+// var incrementer = 1;
+// setInterval(function() {
+//   var deg = "rotate(" + (degrees * incrementer) + "deg)";
+//   var obj = document.querySelector(".form");
+//   if (typeof(obj.style.transform) !== "undefined") {
+//     obj.style.transform = deg;
+//   } else if (typeof(obj.style.MozTransform) !== "undefined") {
+//     obj.style.MozTransform= deg;
+//   } else if (typeof(obj.style.WebkitTransform) !== "undefined") {
+//    obj.style.WebkitTransform = deg;
+//   }
+//   incrementer = incrementer + 1;
+// }, 900);
+
+
+
+</script>
+
+
+</body>
+</html>
