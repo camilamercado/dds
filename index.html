@@ -1,4 +1,3 @@
-index
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,6 +23,28 @@ index
 <script>
 
 
+setInterval(function (turn) {
+    
+    var today = new Date();
+	var dd = today.getDate();
+    var ss = today.getSeconds();
+    console.log(ss);
+
+    
+    var degr = ss * 6;
+    console.log(degr);
+
+     document.querySelector(".content").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+
+
+}, 1000);
+
+
+
+
+
+
+
 var degree = 0;
 
 setInterval(function () {
@@ -33,11 +54,6 @@ setInterval(function () {
     document.querySelector(".form").style.setProperty("-webkit-transform","rotate("+ (degree) +"deg)", null);
 
 }, 1000);
-
-
-
-
-
 
 
 
