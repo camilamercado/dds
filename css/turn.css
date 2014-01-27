@@ -45,8 +45,4 @@
 	margin-left: 50%;
 	left: -50px;
 	top: 30%;
-	-webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
 }
