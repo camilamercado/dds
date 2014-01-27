@@ -13,6 +13,7 @@ index
 <div class="space">
 	
 <div class="form"></div>
+<div class="speed"></div>
 <div class="content">
 <img src="img/super.jpg" width="111" height="300"></img></div>
 
@@ -52,20 +53,20 @@ setInterval(function () {
 //  },1000);
 
 
-// var degrees = 360;
-// var incrementer = 1;
-// setInterval(function() {
-//   var deg = "rotate(" + (degrees * incrementer) + "deg)";
-//   var obj = document.querySelector(".form");
-//   if (typeof(obj.style.transform) !== "undefined") {
-//     obj.style.transform = deg;
-//   } else if (typeof(obj.style.MozTransform) !== "undefined") {
-//     obj.style.MozTransform= deg;
-//   } else if (typeof(obj.style.WebkitTransform) !== "undefined") {
-//    obj.style.WebkitTransform = deg;
-//   }
-//   incrementer = incrementer + 1;
-// }, 900);
+var degrees = 360;
+var incrementer = 1;
+setInterval(function() {
+  var deg = "rotate(" + (degrees * incrementer) + "deg)";
+  var obj = document.querySelector(".speed");
+  if (typeof(obj.style.transform) !== "undefined") {
+    obj.style.transform = deg;
+  } else if (typeof(obj.style.MozTransform) !== "undefined") {
+    obj.style.MozTransform= deg;
+  } else if (typeof(obj.style.WebkitTransform) !== "undefined") {
+   obj.style.WebkitTransform = deg;
+  }
+  incrementer = incrementer + 1;
+}, 900);
 
 
 
