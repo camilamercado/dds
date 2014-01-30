@@ -8,8 +8,9 @@
 .form {
 	height: 3000px;
 	width: 1300px;
-	background: transparent;
-	border: 1px solid chartreuse;
+	background: yellow;
+	opacity: 0.2;
+/*	border: 1px solid chartreuse;*/
 	position: absolute;
 	margin-left: 50%;
 	left: -50px;
@@ -23,8 +24,9 @@
 .speed {
 	height: 3000px;
 	width: 1300px;
-	background: transparent;
-	border: 1px solid chartreuse;
+	background: cornflowerblue;
+	opacity: 0.2;
+/*	border: 1px solid chartreuse ;*/
 	position: absolute;
 	margin-left: 50%;
 	left: -50px;
