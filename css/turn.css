@@ -7,9 +7,9 @@
 
 .form {
 	height: 3000px;
-	width: 1680px;
-	background: white;
-	/*border: 1px solid chartreuse;*/
+	width: 1300px;
+	/*background: white;*/
+	border: 1px solid chartreuse;
 	position: absolute;
 	margin-left: 50%;
 	left: -50px;
@@ -22,8 +22,8 @@
 
 .speed {
 	height: 3000px;
-	width: 1680px;
-	background: black;
+	width: 1300px;
+	/*background: black;*/
 	border: 1px solid chartreuse;
 	position: absolute;
 	margin-left: 50%;
@@ -52,7 +52,7 @@
 	height: 600px;
 	width: 600px;
 	position: absolute;
-	margin-left: 55%;
+	margin-left: 70%;
 	left: -50px;
 	top: 35%;
 }
