@@ -6,8 +6,8 @@
 
 
 .form {
-	height: 300px;
-	width: 168px;
+	height: 3000px;
+	width: 1680px;
 	/*background: white;*/
 	border: 1px solid chartreuse;
 	position: absolute;
@@ -21,8 +21,8 @@
 }
 
 .speed {
-	height: 300px;
-	width: 168px;
+	height: 3000px;
+	width: 1680px;
 	/*background: white;*/
 	border: 1px solid chartreuse;
 	position: absolute;
@@ -38,13 +38,13 @@
 .content {
 	overflow: hidden;
 	/*opacity: 0.1;*/
-	height: 300px;
-	width: 168px;
+	height: 250px;
+	width: 250px;
 	/*border: 1px solid chartreuse;*/
 	position: absolute;
-	margin-left: 50%;
+	margin-left: 10%;
 	left: -50px;
-	top: 30%;
+	top: 5%;
 }
 
 .sculpture {
