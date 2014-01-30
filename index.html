@@ -14,9 +14,8 @@
 <div class="form"></div>
 <div class="speed"></div>
 <div class="content">
-<img src="img/super.jpg" width="111" height="300"></img></div>
-
-
+<img src="img/sputnik.jpg" width="168" height="300"></img></div>
+<div class="sculpture"></div>
 
 </div>
 
@@ -26,7 +25,7 @@
 setInterval(function (turn) {
     
     var today = new Date();
-	var dd = today.getDate();
+	  var dd = today.getDate();
     var ss = today.getSeconds();
     console.log(ss);
 
@@ -34,7 +33,12 @@ setInterval(function (turn) {
     var degr = ss * 6;
     console.log(degr);
 
-     document.querySelector(".content").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+      document.querySelector(".content").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+
+    
+    var daphne = "url(img/daphne/" + ss + ".png)";
+
+    document.querySelector('.sculpture').style.backgroundImage=daphne;
 
 
 }, 1000);
@@ -83,6 +87,19 @@ setInterval(function() {
   }
   incrementer = incrementer + 1;
 }, 900);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
