@@ -1,6 +1,6 @@
 .space {
-	height: 3000px;
-	width: 3000;
+	height: 2000px;
+	width: 3000px;
 	background: black;
 }
 
@@ -52,9 +52,8 @@
 	height: 600px;
 	width: 600px;
 	position: absolute;
-	margin-left: 70%;
-	left: -50px;
-	top: 35%;
+	margin-left: 1100px;
+	top: 45%;
 }
 
 
