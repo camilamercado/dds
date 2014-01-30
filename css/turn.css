@@ -1,6 +1,6 @@
 .space {
 	height: 2000px;
-	width: 3000px;
+	width: 100%;
 	background: black;
 }
 
@@ -8,7 +8,7 @@
 .form {
 	height: 3000px;
 	width: 1300px;
-	/*background: white;*/
+	background: transparent;
 	border: 1px solid chartreuse;
 	position: absolute;
 	margin-left: 50%;
@@ -23,7 +23,7 @@
 .speed {
 	height: 3000px;
 	width: 1300px;
-	/*background: black;*/
+	background: transparent;
 	border: 1px solid chartreuse;
 	position: absolute;
 	margin-left: 50%;
@@ -52,8 +52,8 @@
 	height: 600px;
 	width: 600px;
 	position: absolute;
-	margin-left: 1100px;
-	top: 45%;
+	margin-left: 1500px;
+	top: 35%;
 }
 
 
