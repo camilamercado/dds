@@ -15,7 +15,7 @@
 <img src="img/ExS.jpg" width="5940" height="2010"></img>
 <!-- <img src="img/space2.jpeg" width="2000" height="1125"></img> -->
 
-
+<div class="sculpture"></div>
 	
 <div class="form"></div>
 <div class="speed"></div>
@@ -28,11 +28,11 @@
 <img src="img/sputnik2.jpg" width="320" height="240"></img>
 </div>
  -->
-<div class="content">
-<img src="img/sputnik1.png" width="250" height="250"></img>
+<div class="sputnik">
+<img src="img/sputnik-1.png" width="900" height="3500"></img>
 </div>
 
-<div class="sculpture"></div>
+
 
 </div>
 
@@ -50,12 +50,26 @@ setInterval(function (turn) {
     var degr = ss * 6;
     console.log(degr);
 
-      document.querySelector(".content").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+      document.querySelector(".sputnik").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
 
     
-    var daphne = "url(img/daphne/" + ss + ".png)";
 
-    document.querySelector('.sculpture').style.backgroundImage=daphne;
+    if (ss > 39) {
+      
+      daph = ss - 30;
+
+      var daphne = "url(img/daphne/" + daph + ".png)";
+
+      document.querySelector('.sculpture').style.backgroundImage=daphne;
+    }
+    
+    else {
+
+      var daphne = "url(img/daphne/" + ss + ".png)";
+
+      document.querySelector('.sculpture').style.backgroundImage=daphne;
+
+    }
 
 
 }, 1000);
