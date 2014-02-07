@@ -12,12 +12,16 @@
 
 
 .form {
-	background: yellow;
-	opacity: 0.2;
-	-webkit-transition: all 1.5s ease;
+	width: 600px;
+	height: 1089px;
+	position: absolute;
+	top: 80%;
+	/*background: yellow;
+	opacity: 0.2;*/
+	/*-webkit-transition: all 1.5s ease;
     -moz-transition: all 1.5s ease;
     -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
+    transition: all 1.5s ease;*/
 }
 
 .speed {
