@@ -1,0 +1,43 @@
+.space {
+	height: 1452px;
+	width: 1500px;
+}
+
+.sputnik {
+
+	position: absolute;
+	margin-left: 5%;
+	top: 5%;
+}
+
+
+.form {
+	background: yellow;
+	opacity: 0.2;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.speed {
+	background: cornflowerblue;
+	opacity: 0.2;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.sputnik {
+	/*border: 1px solid cyan;*/
+}
+
+.sculpture {
+	overflow: hidden;
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	margin-left: 1500px;
+	top: 35%;
+}

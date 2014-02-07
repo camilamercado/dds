@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+
+    	<link rel="stylesheet" type="text/css" href="css/pink.css">
+
+    </head>
+<body>
+
+<div class="space">
+<img src="img/poster/pink.jpg" width="1500" height="1660"></img>
+
+
+<!-- <div class="sculpture"></div>
+<div class="form"></div>
+<div class="speed"></div>
+ -->
+<div class="sputnik">
+<img src="img/poster/sat1.png" width="1000" height="1000"></img>
+</div>
+
+
+
+</div>
+
+<script>
+
+
+setInterval(function (turn) {
+    
+    var today = new Date();
+	  var dd = today.getDate();
+    var ss = today.getSeconds();
+    console.log(ss);
+
+    
+    var degr = ss * 6;
+    console.log(degr);
+
+      document.querySelector(".sputnik").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+
+    
+
+    if (ss > 39) {
+      
+      daph = ss - 30;
+
+      var daphne = "url(img/daphne/" + daph + ".png)";
+
+      document.querySelector('.sculpture').style.backgroundImage=daphne;
+    }
+    
+    else {
+
+      var daphne = "url(img/daphne/" + ss + ".png)";
+
+      document.querySelector('.sculpture').style.backgroundImage=daphne;
+
+    }
+
+
+}, 1000);
+
+
+
+  var degree = 0;
+
+    setInterval(function () {
+        
+        degree = ++degree % 360 + 1; // SET { 1-360 }
+        
+        document.querySelector(".form").style.setProperty("-webkit-transform","rotate("+ (degree) +"deg)", null);
+
+    }, 1900);
+
+
+
+  var degrees = 360;
+  var incrementer = 1;
+  
+  setInterval(function() {
+    
+    var deg = "rotate(" + (degrees * incrementer) + "deg)";
+    var obj = document.querySelector(".speed");
+    
+    if (typeof(obj.style.transform) !== "undefined") {
+      obj.style.transform = deg;
+    
+    } else if (typeof(obj.style.MozTransform) !== "undefined") {
+      obj.style.MozTransform= deg;
+    
+    } else if (typeof(obj.style.WebkitTransform) !== "undefined") {
+     obj.style.WebkitTransform = deg;
+    }
+    
+    incrementer = incrementer + 1;
+  
+  }, 1900);
+
+
+
+</script>
+
+
+</body>
+</html>
