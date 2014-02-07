@@ -13,18 +13,21 @@
 <img src="img/poster/pink.jpg" width="1500" height="1660"></img>
 
 
-<!-- <div class="sculpture"></div> -->
-<div class="form"><img src="img/poster/try.png" width="600" height="1089"></img>
+<div class="sculpture"></div>
+<div class="form" mouseover="show()"><img src="img/poster/try.png" width="600" height="1089"></img>
 </div>
-<!-- <div class="speed"></div> -->
+
 
 <div class="sputnik">
 <img src="img/poster/sat1.png" width="1000" height="1000"></img>
 </div>
 
-
-
 </div>
+
+<div class="text">DAPHNE and TELStAR 1<br><br>
+<i>in</i>   <br>
+     EVASION OF THE 1 POINT PERSPECIVE<BR><BR><BR>
+coming summer 2048</div>
 
 <script>
 
@@ -42,8 +45,8 @@ setInterval(function (turn) {
 
       document.querySelector(".sputnik").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
 
-    
 
+    
     if (ss > 39) {
       
       daph = ss - 30;
@@ -64,43 +67,9 @@ setInterval(function (turn) {
 
 }, 1000);
 
+function show(){
 
-
-  // var degree = 0;
-
-  //   setInterval(function () {
-        
-  //       degree = ++degree % 360 + 1; // SET { 1-360 }
-        
-  //       document.querySelector(".form").style.setProperty("-webkit-transform","rotate("+ (degree) +"deg)", null);
-
-  //   }, 1900);
-
-
-
-  var degrees = 360;
-  var incrementer = 1;
-  
-  setInterval(function() {
-    
-    var deg = "rotate(" + (degrees * incrementer) + "deg)";
-    var obj = document.querySelector(".speed");
-    
-    if (typeof(obj.style.transform) !== "undefined") {
-      obj.style.transform = deg;
-    
-    } else if (typeof(obj.style.MozTransform) !== "undefined") {
-      obj.style.MozTransform= deg;
-    
-    } else if (typeof(obj.style.WebkitTransform) !== "undefined") {
-     obj.style.WebkitTransform = deg;
-    }
-    
-    incrementer = incrementer + 1;
-  
-  }, 1900);
-
-
+}
 
 </script>
 
