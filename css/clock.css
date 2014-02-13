@@ -1,0 +1,18 @@
+.space {
+	width: 100%;
+	height: 2000px;
+	background: midnightblue;
+
+}
+
+.count {
+	width: 500px;
+	height: auto;
+	font-size: 300px;
+	font-family: "Courier New";
+
+	position: absolute;
+	margin-left: 50%;
+	left: -250px;
+}
+

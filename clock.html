@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+
+    	<link rel="stylesheet" type="text/css" href="css/clock.css">
+
+    </head>
+<body>
+
+<div class="space">
+<div class="count"></div>
+</div>
+
+<script type="text/javascript">
+
+var today = new Date();
+var dd = today.getDate();
+var ss = today.getSeconds();
+console.log(ss);
+
+if (ss < 2) {
+      
+      document.querySelector('.count').style.color="lightpink";
+      document.querySelector(".count").innerHTML="A";
+    
+    }
+    
+else if (ss < 4) {
+
+      document.querySelector('.count').style.color="goldenrod";
+      document.querySelector(".count").innerHTML="B";
+
+    }
+
+ else {
+
+      document.querySelector('.count').style.color="tomato";
+      document.querySelector(".count").innerHTML="XX";
+
+    }
+
+
+
+</script>
