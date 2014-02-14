@@ -11,6 +11,12 @@
 
 <div class="space">
 <div class="count"></div>
+
+<div class="laurel"></div>
+<div class="l2"></div>
+<div class="sculpture"></div>
+<div class="telstar"></div>
+
 </div>
 
 <script type="text/javascript">
@@ -20,90 +26,98 @@ var dd = today.getDate();
 var ss = today.getSeconds();
 console.log(ss);
 
+var degr = ss * 6;
+    
+
+
+
 if (ss < 2) {
       
-      document.querySelector('.count').style.color="lightpink";
-      document.querySelector(".count").innerHTML="A";
+      document.querySelector(".count").innerHTML="a";
     
     }
     
 else if (ss < 4) {
 
-      document.querySelector('.count').style.color="goldenrod";
-      document.querySelector(".count").innerHTML="VERY";
+      document.querySelector(".count").innerHTML="a very";
 
     }
 
  else if (ss < 6) {
 
-      document.querySelector('.count').style.color="lavender";
-      document.querySelector(".count").innerHTML="TEDIOUS";
+      document.querySelector(".count").innerHTML="a very tedious";
 
     }
 
  else if (ss < 8) {
 
-      document.querySelector('.count').style.color="whitesmoke";
-      document.querySelector(".count").innerHTML="PROCESS";
+      document.querySelector(".count").innerHTML="a very tedious process,";
 
     }
 
  else if (ss < 10) {
 
-      document.querySelector('.count').style.color="beige";
-      document.querySelector(".count").innerHTML="1";
+      document.querySelector(".count").innerHTML="a very tedious process, works";
 
     }
 
  else if (ss < 12) {
 
-      document.querySelector('.count').style.color="seafoamgreen";
-      document.querySelector(".count").innerHTML="2";
+      document.querySelector(".count").innerHTML="a very tedious process, works only";
 
     }
 
  else if (ss < 14) {
 
-      document.querySelector('.count').style.color="yellow";
-      document.querySelector(".count").innerHTML="3";
+      document.querySelector(".count").innerHTML="a very tedious process, works only under";
 
     }
 
  else if (ss < 16) {
 
-      document.querySelector('.count').style.color="magenta";
-      document.querySelector(".count").innerHTML="4";
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the ";
 
     }
 
  else if (ss < 18) {
 
-      document.querySelector('.count').style.color="cyan";
-      document.querySelector(".count").innerHTML="5";
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense";
 
     }
 
  else if (ss < 20) {
 
-      document.querySelector('.count').style.color="charteuse";
-      document.querySelector(".count").innerHTML="6";
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of";
 
     }
 
  else if (ss < 22) {
 
-      document.querySelector('.count').style.color="silver";
-      document.querySelector(".count").innerHTML="7";
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of absurd";
 
     }
 
- else {
+ else if (ss > 22) {
 
-      document.querySelector('.count').style.color="red";
-      document.querySelector(".count").innerHTML="...";
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of absurd conviction";
 
     }
 
+    if (ss > 22) {
+      
+      document.querySelector(".telstar").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
 
+      document.querySelector('.sculpture').style.display="none";
+    }
+    
+    else {
+
+      var daphne = "url(img/daphne/" + ss + ".png)";
+
+      document.querySelector('.sculpture').style.backgroundImage=daphne;
+      
+      document.querySelector('.telstar').style.display="none";
+
+    }
 
 </script>
