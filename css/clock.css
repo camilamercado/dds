@@ -75,14 +75,14 @@ audio {
 
 .telstar {
 	overflow: hidden;
-	height: 80px;
-	width: 80px;
+	height: 300px;
+	width: 300px;
 	position: absolute;
 	
 	margin-left: 50%;
-	left: -40px;
+	left: -10px;
 	top: 120px;
-	background-size:80px 80px;
+	background-size:300px 300px;
 	/*border: 1px solid magenta;*/
 	background-image: url(../img/telstar.png); 
 	z-index: 4;
