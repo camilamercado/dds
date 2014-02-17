@@ -39,7 +39,7 @@ audio {
 	text-align: left;
 	opacity: 0.9;
 	border-left: 1px solid lightsteelblue;
-	z-index: 5;
+	z-index: 6;
 	top: 0px;
 	position: absolute;
 
@@ -51,7 +51,7 @@ audio {
 	background-image: url(../img/laurel.png); 
 	/*border: 1px solid cyan;*/
 	position: absolute;
-	z-index: 1;
+	z-index: 4;
 
 	background-size:800px 800px;
 	margin-left: 10%;
@@ -70,7 +70,7 @@ audio {
 	top: 140px;
 	/*border: 1px solid magenta;*/
 	background-size:800px 800px;
-	z-index: 4;
+	z-index: 3;
 }
 
 .telstar {
@@ -79,11 +79,11 @@ audio {
 	width: 300px;
 	position: absolute;
 	
-	margin-left: 50%;
+	margin-left: 15%;
 	left: -10px;
 	top: 120px;
 	background-size:300px 300px;
 	/*border: 1px solid magenta;*/
 	background-image: url(../img/telstar.png); 
-	z-index: 4;
+	z-index: 3;
 }
