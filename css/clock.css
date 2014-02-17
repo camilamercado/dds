@@ -1,59 +1,76 @@
+audio {
+	display: none;
+}
+
 .space {
 	width: 100%;
-	height: 2000px;
-	background: black;
+	height: 1500px;
+	/*background: black;*/
 
+}
+
+.scrim {
+	width: 60%;
+	height: 100%;
+	float: left;
+	background: black;
+	opacity: 0.6;
+	z-index: 1;
+	position: absolute;
+
+}
+
+.matter {
+	width: 60%;
+	height: 100%;
+	float: left;
+	z-index: 2;
+	overflow: hidden;
 }
 
 .count {
-	width: auto;
-	height: auto;
+	width: 38%;
+	height: 100%;
 	font-size: 90px;
 	font-family: "andale mono";
 
-	position: absolute;
-	margin-left: 50%;
-	left: -880px;
-	top: 570px;
+	left: 60%;
 	color: lightsteelblue !important;
 	text-align: left;
 	opacity: 0.9;
-
-}
-
-/*.l2{
-	width: 1000px;
-	height: 895px;
-	background-image: url(../img/front.jpg); 
-	border: 1px solid cyan;
+	border-left: 1px solid lightsteelblue;
+	z-index: 5;
+	top: 0px;
 	position: absolute;
-	z-index: 2;
+
 }
-*/
+
 .laurel{
-	width: 300px;
-	height: 300px;
-	background-image: url(../img/laurels.png); 
+	width: 800px;
+	height: 800px;
+	background-image: url(../img/laurel.png); 
 	/*border: 1px solid cyan;*/
 	position: absolute;
 	z-index: 1;
 
-	margin-left: 50%;
+	background-size:800px 800px;
+	margin-left: 10%;
 	left: -150px;
 	top: 200px;
 }
 
 .sculpture {
 	overflow: hidden;
-	height: 300px;
-	width: 300px;
+	height: 800px;
+	width: 800px;
 	position: absolute;
 	
-	margin-left: 50%;
+	margin-left: 10%;
 	left: -150px;
 	top: 140px;
 	/*border: 1px solid magenta;*/
-	background-size:300px 300px;
+	background-size:800px 800px;
+	z-index: 4;
 }
 
 .telstar {
@@ -68,4 +85,5 @@
 	background-size:80px 80px;
 	/*border: 1px solid magenta;*/
 	background-image: url(../img/telstar.png); 
+	z-index: 4;
 }

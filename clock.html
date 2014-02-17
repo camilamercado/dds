@@ -5,21 +5,40 @@
     	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
 
     	<link rel="stylesheet" type="text/css" href="css/clock.css">
+      <script type="text/javascript" charset="utf-8" src="tube/js/jquery.tubular.1.0.js"></script> 
 
     </head>
 <body>
 
-<div class="space">
-<div class="count"></div>
+<audio controls autoplay>
+  <source src="TelSlow.ogg" type="audio/ogg">
+  <source src="TelSlow.mp3" type="audio/mpeg">
+</audio>
 
+<div class="space">
+
+<div class="scrim"></div>
+<div class="matter">
 <div class="laurel"></div>
 <div class="l2"></div>
 <div class="sculpture"></div>
 <div class="telstar"></div>
+</div>
+
+<div class="count"></div>
 
 </div>
 
+
+
 <script type="text/javascript">
+
+
+$().ready(function() {
+                $('.space').tubular({videoId: 'uKH-GijnAGk'}); // where idOfYourVideo is the YouTube ID.
+        });
+
+
 
 var today = new Date();
 var dd = today.getDate();
