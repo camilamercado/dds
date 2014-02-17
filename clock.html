@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+
+    	<link rel="stylesheet" type="text/css" href="css/clock.css">
+
+    </head>
+<body>
+
+<div class="space">
+<div class="count"></div>
+
+<div class="laurel"></div>
+<div class="l2"></div>
+<div class="sculpture"></div>
+<div class="telstar"></div>
+
+</div>
+
+<script type="text/javascript">
+
+var today = new Date();
+var dd = today.getDate();
+var ss = today.getSeconds();
+console.log(ss);
+
+var degr = ss * 6;
+    
+
+
+
+if (ss < 2) {
+      
+      document.querySelector(".count").innerHTML="a";
+    
+    }
+    
+else if (ss < 4) {
+
+      document.querySelector(".count").innerHTML="a very";
+
+    }
+
+ else if (ss < 6) {
+
+      document.querySelector(".count").innerHTML="a very tedious";
+
+    }
+
+ else if (ss < 8) {
+
+      document.querySelector(".count").innerHTML="a very tedious process,";
+
+    }
+
+ else if (ss < 10) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works";
+
+    }
+
+ else if (ss < 12) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only";
+
+    }
+
+ else if (ss < 14) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only under";
+
+    }
+
+ else if (ss < 16) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the ";
+
+    }
+
+ else if (ss < 18) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense";
+
+    }
+
+ else if (ss < 20) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of";
+
+    }
+
+ else if (ss < 22) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of absurd";
+
+    }
+
+ else if (ss > 24) {
+
+      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of absurd conviction";
+
+    }
+
+    if (ss > 24) {
+      
+      document.querySelector(".telstar").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+
+      document.querySelector('.sculpture').style.display="none";
+    }
+    
+    else {
+
+      var daphne = "url(img/daphne/" + ss + ".png)";
+
+      document.querySelector('.sculpture').style.backgroundImage=daphne;
+      
+      document.querySelector('.telstar').style.display="none";
+
+    }
+
+
+//     */1 * * * * /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 2; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 4; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 6; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 8; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 10; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 12; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 14; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 16; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 18; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 20; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 22; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 24; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 26; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 28; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 30; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 32; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 34; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 36; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+// */1 * * * * sleep 38; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
+
+
+</script>
+
+
+
+

@@ -1,37 +1,47 @@
 .space {
-	height: 1000px;
-	width: 100%;
+	height: 2000px;
+	width: 5940px;
 	background: black;
+}
+
+.form, .speed, .sputnik {
+	height: 3500px;
+	width: 900px;
+	position: absolute;
+	margin-left: -5%;
+	top: -1400px;
 }
 
 
 .form {
-	height: 300px;
-	width: 100px;
-	/*background: white;*/
-	border: 1px solid chartreuse;
-	position: absolute;
-	margin-left: 50%;
-	left: -50px;
-	top: 30%;
+	background: yellow;
+	opacity: 0.2;
 	-webkit-transition: all 1.5s ease;
     -moz-transition: all 1.5s ease;
     -o-transition: all 1.5s ease;
     transition: all 1.5s ease;
 }
 
-.content {
-	overflow: hidden;
-	/*opacity: 0.1;*/
-	height: 300px;
-	width: 100px;
-	border: 1px solid chartreuse;
-	position: absolute;
-	margin-left: 50%;
-	left: -50px;
-	top: 30%;
+.speed {
+	background: cornflowerblue;
+	opacity: 0.2;
 	-webkit-transition: all 1.5s ease;
     -moz-transition: all 1.5s ease;
     -o-transition: all 1.5s ease;
     transition: all 1.5s ease;
 }
+
+.sputnik {
+	/*border: 1px solid cyan;*/
+}
+
+.sculpture {
+	overflow: hidden;
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	margin-left: 1500px;
+	top: 35%;
+}
+
+
