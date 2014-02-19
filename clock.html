@@ -32,163 +32,13 @@
 </div>
 </div>
 
-
 <script type="text/javascript">
 
-
 $().ready(function() {
-                $('.space').tubular({videoId: 'uKH-GijnAGk'}); // where idOfYourVideo is the YouTube ID.
-        });
+    $('.space').tubular({videoId: 'uKH-GijnAGk'}); // where idOfYourVideo is the YouTube ID.
+});
 
-
-
-var today = new Date();
-var dd = today.getDate();
-var ss = today.getSeconds();
-console.log(ss);
-
-var degr = ss * 6;
-    
-
-if (ss < 2) {
-      
-      // document.querySelector(".space").style.backgroundImage="url(img/ss/1.png)";
-      document.querySelector(".count").innerHTML="Amidst the metallic scent of impending space dollars, 1000 bespectacled operators buzzed in the distinct air of a Cape Canaveral control room.";
-    
-    }
-    
-// else if (ss < 4) {
-
-//       document.querySelector(".count").innerHTML="a very";
-
-//     }
-
- else if (ss < 6) {
-
-      // document.querySelector(".space").style.backgroundImage="url(img/ss/2.png)";
-      document.querySelector(".count").innerHTML="The persperation of that historical moment became sterilized upon hitting the immaculate surface of NASA grade plastic. There would be no room for error in the singularly grotesque form of human sweat.";
-
-    }
-
- // else if (ss < 8) {
-
- //      document.querySelector(".count").innerHTML="a very tedious process,";
-
- //    }
-
- else if (ss < 10) {
-
-      document.querySelector(".count").innerHTML="Across the flattened fold of space time, one anxious nymph, sped with lightfooted fear after having been hit by harbernger tipped arrow of all encompasing disdain.";
-
-    }
-
- // else if (ss < 12) {
-
- //      document.querySelector(".count").innerHTML="a very tedious process, works only";
-
- //    }
-
- else if (ss < 14) {
-
-      document.querySelector(".count").innerHTML="Meanwhile, in 1985 Richard Feynman drew the connecting lines, fevershely across the muddy green of a chalkboard that had bore the marks of an encycolpedia of the bits and peices of electro surveillance.";
-
-    }
-
- // else if (ss < 16) {
-
- //      document.querySelector(".count").innerHTML="a very tedious process, works only under the ";
-
- //    }
-
- else if (ss < 18) {
-
-      document.querySelector(".count").innerHTML="The agency of the launch was matched only by the vigor of its utilization. Like a rocket into space, each switch of a living room television sent waves of causality that richoched straight through the soft pink substance of human attention.";
-
-    }
-
- // else if (ss < 20) {
-
- //      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of";
-
- //    }
-
- else if (ss < 22) {
-
-      document.querySelector(".count").innerHTML="3 nations of housewives, bachelors, freckled boyscouts, and even scrape-kneed tomboys sat down before the great flickering tube of telstar, and thus one satellite sponsored the imagination of a globe.";
-
-    }
-
- // else if (ss > 24) {
-
- //      document.querySelector(".count").innerHTML="a very tedious process, works only under the pretense of absurd conviction";
-
- //    }
-
-    else if (ss < 26) {
-
-      document.querySelector(".count").innerHTML="Somewhere, Daphne wrestled with a conciousness split between the thick sappy scent of tree bark and the prickling tingling static of 3 nations TV sets.";
-
-    }
-
-     else if (ss < 30) {
-
-      document.querySelector(".count").innerHTML="As Apollo awoke to find a laurel weath strewn lazily across his pounding brow, he lept us against the rigid flesh of wood that was once his beloved Daphne. Immediately forgetting his amnesia in the caress of a Laurel tree, Apollo's contribution to the Daphnes tragedy would now forever be attributed as the simple intertwining of consumer space probing and the term -tree hugger";
-
-    }
-
-     else if (ss < 34) {
-
-      document.querySelector(".count").innerHTML="The launch of Telstar, for those who prefer its tale to Ovids, can be mapped out against the diagrams of Retrocausality left by the soft white residue of Feynmans moving hand. ";
-
-    }
-
-    else if (ss < 38) {
-
-      document.querySelector(".count").innerHTML="Apollo never did look into that momentary blackout by the laurel tree, afterall he had become quite accostumed to loosing contact with physicality in moments of fickle play, a phenomena to which humans can only ever guess at through extreme adrenaline or orgasm. It was one of those perks of having a return adress that read Mt. Olympus.";
-
-    }
-
-    else if (ss < 42) {
-
-      document.querySelector(".count").innerHTML="The fact that Apollo had become reborn in the form of a commercially broadcasting satellite would seem as perpostuous to him as telling a positron it is in fact just an electron moving backwards through time. Though both statements are true, we must the forgive the example of the positron, as clearly they don't talk.";
-
-    }
-
-    else if (ss < 46) {
-
-      document.querySelector(".count").innerHTML="This underappreciated fact of nature, is entirely obvious despite Apollo's (and many more apple eaters) ignorance, and is apparent to anyone with common sense and a slightly more fufilled vantage point along the track of time.";
-
-    }
-
-    else if (ss < 50) {
-
-      document.querySelector(".count").innerHTML="Afterall, both Apollo and Telstar share the same track record of partaking in the casual objectification of the female form.";
-
-    }
-
-     else if (ss < 54) {
-
-      document.querySelector(".count").innerHTML="For every flattened woman depicted through the efervescant glow of static electricity, is a newely coreogrpahed wrath of laurels, placed in absent care- on the male head of a god.";
-
-    }
-
-    if (ss > 24) {
-      
-      document.querySelector(".telstar").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
-
-      document.querySelector('.sculpture').style.display="none";
-    }
-    
-    else {
-
-      var daphne = "url(img/daphne/" + ss + ".png)";
-
-      document.querySelector('.sculpture').style.backgroundImage=daphne;
-      
-      document.querySelector('.telstar').style.display="none";
-
-    }
-
+</script>
 
 // */1 * * * * /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
 
@@ -230,9 +80,9 @@ if (ss < 2) {
 
 // */1 * * * * sleep 38; /usr/bin/open -a /usr/bin/open -a "/Applications/Google Chrome.app" 'http://camilamercado.github.io/dds/clock.html'
 
-
-</script>
-
+<script src="clock.js"></script>
+</body>
+</html>
 
 
 
