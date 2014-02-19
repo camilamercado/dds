@@ -10,7 +10,8 @@ function narrate() {
 		
 		if(chapter[i].number <= sequence) {
 			
-			document.querySelector(".count").innerHTML=chapter[i].text;
+			document.querySelector(".chapter").innerHTML=chapter[i].number;
+			document.querySelector(".text").innerHTML=chapter[i].text;
 
 		}
 	}

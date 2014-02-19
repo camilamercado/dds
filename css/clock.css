@@ -62,6 +62,16 @@ audio {
 
 }
 
+.chapter, .text {
+	width: auto;
+	height: auto;
+}
+
+.chapter {
+	color: goldenrod;
+	margin-bottom: 10px;
+}
+
 .laurel{
 	width: 800px;
 	height: 800px;
