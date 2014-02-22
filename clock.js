@@ -3,7 +3,7 @@ function narrate() {
 
 	var today = new Date();
 	var ss = today.getSeconds();
-	var sequence = ss % 5;
+	var sequence = ss;
 	var degr = ss * 6;
 
 	for(var i = 0; i < chapter.length; i++) {
