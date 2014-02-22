@@ -92,7 +92,7 @@ var chapter = [
 
 	 		{ 
 				'number' : 9,  
-	 			'text' : "The launch of Telstar, for those who prefer its tale to the hopeless romantic OvidÕs, can be traced along the soft white residue of FeynmanÕs moving hand. Retro-Causality, played out on the macro-mythic/market-astrophic scale."
+	 			'text' : "The launch of Telstar, for those who prefer its tale to the hopeless romantic Ovid's, can be traced along the soft white residue of Feynman's moving hand. Retro-Causality, played out on the macro-mythic/market-astrophic scale."
 	 		}, 
 
 
