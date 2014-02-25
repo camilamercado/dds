@@ -46,8 +46,6 @@ audio {
 .count {
 	width: 60%;
 	height: 1500px;
-	font-size: 45px;
-	font-family: "andale mono";
 
 	padding-left: 10px;
 	padding-top: 10px;
@@ -64,12 +62,15 @@ audio {
 
 .chapter, .text {
 	width: auto;
-	height: auto;
+	height: auto;font-size: 45px;
+	font-family: "andale mono" !important;
 }
 
 .chapter {
 	color: goldenrod;
 	margin-bottom: 10px;
+	height: auto;font-size: 45px;
+	font-family: "andale mono" !important;
 }
 
 .laurel{
