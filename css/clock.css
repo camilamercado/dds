@@ -62,14 +62,14 @@ audio {
 
 .chapter, .text {
 	width: auto;
-	height: auto;font-size: 45px;
+	height: auto;font-size: 40px;
 	font-family: "andale mono" !important;
 }
 
 .chapter {
 	color: goldenrod;
 	margin-bottom: 10px;
-	height: auto;font-size: 45px;
+	height: auto;font-size: 40px;
 	font-family: "andale mono" !important;
 }
 
