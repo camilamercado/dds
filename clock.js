@@ -16,7 +16,7 @@ function narrate() {
 		}
 	}
 
-	if (ss < 12 || ss > 16) {
+	if (ss > 30) {
       
       document.querySelector(".telstar").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
 
@@ -44,7 +44,7 @@ var chapter = [
 	 			'number' : 1, 
 	 			'timer' : 1,
 	 			'text' : "Amidst the metallic scent of impending space dollars, 1000 bespectacled operators buzzed in the distinct air of a Cape Canaveral control room. The perspiration of that historical moment became sterilized upon hitting the immaculate surface of NASA grade plastic. There would be no room for error in the specifically grotesque form of human sweat."
-	 			     
+	 			 
 	 		}, 
 
 			{ 
