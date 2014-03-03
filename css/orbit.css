@@ -1,10 +1,19 @@
-.space { 
+body {
+	/*background: black;*/
 	width: 100%;
+	height: 100%;
+	/*position: absolute;
+	top: 0px;
+	left: 0px;*/
+}
+
+.space { 
+	width: 70%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
 	position: absolute;
-	background: cornflowerblue;
+	background-image: url(../img/sky.jpg);
 	font-family: "andale mono";
 	}
 
@@ -14,7 +23,7 @@
 	position: absolute;
 	left: -250px;
 	margin-left: 50%;
-	top: 20%;
+	top:35%;
 }
 
 
@@ -54,8 +63,8 @@
 	top: 16px;
 	height: 298px;
 	width: 83px;
-	background-image: url(../img/daph.jpg); 
-	opacity: 0.3;
+	background: lavender; 
+	opacity: 0.6;
 	border-top: 1px solid cyan;
 	border-bottom: 1px solid cyan;
 	left: 167px;
@@ -76,14 +85,39 @@
 	-webkit-transform: skew(71deg,0deg)
 }
 
+.xhair2 {
+	top: -136px;
+	height: 150px;
+	width: 83px;
+	background-image: url(../img/daph.jpg); 
+	opacity: 0.8;
+	border-top: 1px solid cyan;
+	border-bottom: 1px solid cyan;
+	left: 167px;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,20deg)
+}
 
 .yhair2 {
-	height: 30px;
-	width: 150px;
-	background:lavender;
-	opacity: 0.2;
+	height: 28px;
+	width: 148px;
+	border: 1px solid chartreuse;
 	top: 150px;
-	left: 207px;
+	left: 209px;
+	position: absolute;
+	-webkit-transform: skew(71deg,0deg)
+}
+
+.yhair3 {
+	height: 28px;
+	width: 1000px;
+	border: 1px solid chartreuse;
+	/*background-image: url(../img/telstar.jpg); */
+	background-size:170px 30px;
+	opacity: 1;
+	top: 150px;
+	left: -107px;
 	position: absolute;
 	-webkit-transform: skew(71deg,0deg)
 }
@@ -103,8 +137,7 @@
 .block {
 	width: 45.5px;
 	height: 300px;
-	background: cornflowerblue;
-	-webkit-transform: rotate(19deg);
+	opacity: 0.1;
 
 	position: absolute;
 	top: 8px;
@@ -112,10 +145,67 @@
 }
 
 
+.obj {
+	top: 252px;
+	height: 130px;
+	width: 55px;
+	background-image: url(../img/telstar.jpg); 
+	background-size:55px 150px;
+	opacity: 1;
+	/*border-top: 1px solid cyan;
+	border-bottom: 1px solid cyan;*/
+	left: 73%;
+	position: absolute;
 
+	-webkit-transform: skew(0deg,20deg)
+}
 
+.slit {
+	
+	height: 170px;
+	width: 25px;
+	/*background-image: url(../img/telstar.jpg); 
+	background-size:55px 150px;*/
+	/*opacity: 1;*/
+	border: 1px solid cyan;
+	position: absolute;
 
+	-webkit-transform: skew(0deg,20deg)
+}
 
+#s1 {
+	top: 205px;
+	left: 60%;
+}
+
+#s2 {
+	top: 220px;
+	left: 64%;
+}
+
+.line {
+	
+	top: 220px;
+	height: 3px;
+	width: 45%;
+	left: 30%;
+	border-top: 1px dashed white;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,25deg)
+}
+
+.line2 {
+	
+	top: 245px;
+	height: 3px;
+	width: 45%;
+	left: 33%;
+	border-top: 1px dashed white;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,25deg)
+}
 
 
 
