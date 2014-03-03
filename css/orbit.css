@@ -177,6 +177,20 @@ body {
 	-webkit-transform: skew(0deg,20deg)
 }
 
+.laurel {
+	display: none;
+	top: 160px;
+	height: 160px;
+	width: 150px;
+	left: -140px;
+	position: absolute;
+	background-image: url(../img/lmin.png);
+	background-size: 100% 100%;
+	z-index: 0;
+	opacity: 0.6;
+	-webkit-transform: skew(0deg,20deg)
+}
+
 .bottom {
 	height: 28px;
 	width: 80px;
@@ -238,12 +252,12 @@ body {
 .line {
 	top: -10px;
 	height: 150px;
-	width: 600px;
+	width:1px;
 	opacity:1;
 	border-top: 1px dashed white;
 	left: 167px;
 	position: absolute;
-	/*z-index: 1;*/
+	-webkit-transition: width 4s;
 	-webkit-transform: skew(0deg,25deg)
 }
 
@@ -252,12 +266,13 @@ body {
 	top: 38px;
 	height: 150px;
 	margin-left: 83px;
-	width: 600px;
+	width:1px;
 	opacity: 1;
 	border-top: 1px dashed white;
 	left: 167px;
 	position: absolute;
 	z-index: 1;
+	-webkit-transition: width 4s;
 	-webkit-transform: skew(0deg,28deg)
 }
 
