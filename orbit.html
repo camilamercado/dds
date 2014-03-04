@@ -5,6 +5,7 @@
     	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
 
     	<link rel="stylesheet" type="text/css" href="css/orbit.css">
+    	<link rel="stylesheet" type="text/css" href="css/chapter2.css">
 
     </head>
 <body>
@@ -51,6 +52,20 @@
 
 <div class="obj" onmouseover="trap();"></div>
 
+<div class="chapter2">
+
+	<div class="gravity">
+
+		<div class="earth"></div>
+		<div class="bernini"></div>
+
+
+	</div>
+
+	<div class="column"></div>
+
+</div>
+
 <script type="text/javascript">
 
 setInterval(function () {
@@ -62,6 +77,8 @@ setInterval(function () {
 	 var daphne = "url(img/daphne/" + ss + ".png)";
 
     document.querySelector('.sculp').style.backgroundImage=daphne;
+
+    document.querySelector('.bernini').style.backgroundImage=daphne;
 	
 }, 1000);
 
