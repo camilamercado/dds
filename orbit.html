@@ -72,9 +72,9 @@ setInterval(function () {
 
 	var today = new Date();
 	var ss = today.getSeconds();
-	var sequence = ss;
+	var sequence = ss - 30;
 
-	 var daphne = "url(img/daphne/" + ss + ".png)";
+	 var daphne = "url(img/daphne/" + sequence + ".png)";
 
     document.querySelector('.sculp').style.backgroundImage=daphne;
 
