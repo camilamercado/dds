@@ -63,42 +63,42 @@ var chapter = [
 
 			{ 
 				'number' : 4, 
-				'timer' : 24, 
+				'timer' : 45, 
 	 			'text' : "The agency of the launch was matched only by the vigor of its utilization. Like a rocket into space, each switch of a living room television sent waves of causality that ricocheted straight through the soft pink undulating substance of human attention.3 nations of housewives, bachelors, freckled boy scouts, and even scrape-kneed tomboys sat down before the great flickering tube of Telstar, and thus one satellite sponsored the imagination of a globe."
 	 		}, 
 
-	 		{ 
-				'number' : 5,  
-				'timer' : 32,
-	 			'text' : "Somewhere, Daphne wrestled with a consciousness split between the thick sappy scent of tree bark and the prickling tingling static of 3 nations worth of Television."
-	 		}, 
+	 		// { 
+				// 'number' : 5,  
+				// 'timer' : 32,
+	 		// 	'text' : "Somewhere, Daphne wrestled with a consciousness split between the thick sappy scent of tree bark and the prickling tingling static of 3 nations worth of Television."
+	 		// }, 
 
 
-	 		{ 
-				'number' : 6,  
-				'timer' : 40,
-	 			'text' : "As Apollo awoke to find a laurel wreath strewn lazily across his pounding brow, he leapt up against the rigid flesh of wood that was once his beloved Daphne. Immediately forgetting his amnesia in the caress of a Laurel tree, Apollo's only true contribution to the Daphne/Telstar affair would be the intertwining of consumer space probing and the term 'tree hugger'."
-	 		}, 
+	 		// { 
+				// 'number' : 6,  
+				// 'timer' : 40,
+	 		// 	'text' : "As Apollo awoke to find a laurel wreath strewn lazily across his pounding brow, he leapt up against the rigid flesh of wood that was once his beloved Daphne. Immediately forgetting his amnesia in the caress of a Laurel tree, Apollo's only true contribution to the Daphne/Telstar affair would be the intertwining of consumer space probing and the term 'tree hugger'."
+	 		// }, 
 
 
-	 		{ 
-				'number' : 7,  
-				'timer' : 48,
-	 			'text' : "The launch of Telstar, for those who prefer its tale to the hopeless romantic Ovid's, can be traced along the soft white residue of Feynman's moving hand. Retro-Causality, played out on the macro-mythic/market-astrophic scale. The fact that Apollo had become reborn in the form of a commercially broadcasting satellite would seem as preposterous to him as telling a positron it is in fact just an electron moving backwards through time."
-	 		}, 
+	 		// { 
+				// 'number' : 7,  
+				// 'timer' : 48,
+	 		// 	'text' : "The launch of Telstar, for those who prefer its tale to the hopeless romantic Ovid's, can be traced along the soft white residue of Feynman's moving hand. Retro-Causality, played out on the macro-mythic/market-astrophic scale. The fact that Apollo had become reborn in the form of a commercially broadcasting satellite would seem as preposterous to him as telling a positron it is in fact just an electron moving backwards through time."
+	 		// }, 
 
 
-	 		{ 
-				'number' : 8,  
-				'timer' : 56,
-	 			'text' : "This underappreciated fact of nature, is entirely obvious despite Apollo's (and an entire academy of hopeless romantics) ignorance, and is apparent to anyone with common sense and a slightly more fulfilled vantage point along the track of time. After all, both Apollo and Telstar share the same track record of partaking in the casual objectification of the female form."
-	 		},
+	 		// { 
+				// 'number' : 8,  
+				// 'timer' : 56,
+	 		// 	'text' : "This underappreciated fact of nature, is entirely obvious despite Apollo's (and an entire academy of hopeless romantics) ignorance, and is apparent to anyone with common sense and a slightly more fulfilled vantage point along the track of time. After all, both Apollo and Telstar share the same track record of partaking in the casual objectification of the female form."
+	 		// },
 
-	 		{ 
-				'number' : 9,
-				'timer' : 60,  
-	 			'text' : "For every flattened woman depicted through the effervescent glow of static electricity, is a freshly choreographed wreath of Laurels, placed in absent care- on the male head of a god."
-	 		},
+	 		// { 
+				// 'number' : 9,
+				// 'timer' : 60,  
+	 		// 	'text' : "For every flattened woman depicted through the effervescent glow of static electricity, is a freshly choreographed wreath of Laurels, placed in absent care- on the male head of a god."
+	 		// },
 
 
 
