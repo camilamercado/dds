@@ -49,7 +49,7 @@ var chapter = [
 
 			{ 
 				'number' : 2,
-				'timer' : 8,  
+				'timer' : 15,  
 	 			'text' : "Across the flattened fold of space-time, one anxious nymph sped with light-footed fear after having been hit by an electrostatic arrow of all encompassing disdain."
 			}, 
 
