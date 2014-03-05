@@ -84,15 +84,15 @@ var chapter = [
 	 		{ 
 				'number' : 7,  
 				'timer' : 25,
-	 			'text' : "The agency of the launch was matched only by the vigor of its utilization. Like a rocket into space, each switch of a living room television sent waves of causality that ricocheted straight through the soft pink undulating substance of human attention.3 nations of housewives, bachelors, freckled boy scouts, and even scrape-kneed tomboys sat down before the great flickering tube of Telstar, and thus one satellite sponsored the imagination of a globe."
+	 			'text' : "The agency of the launch was matched only by the vigor of its utilization. Like a rocket into space, each switch of a living room television sent waves of causality that ricocheted straight through the soft pink undulating substance of human attention."
 	 		}, 
 
 
-	 		// { 
-				// 'number' : 8,  
-				// 'timer' : 56,
-	 		// 	'text' : "This underappreciated fact of nature, is entirely obvious despite Apollo's (and an entire academy of hopeless romantics) ignorance, and is apparent to anyone with common sense and a slightly more fulfilled vantage point along the track of time. After all, both Apollo and Telstar share the same track record of partaking in the casual objectification of the female form."
-	 		// },
+	 		{ 
+				'number' : 8,  
+				'timer' : 45,
+	 			'text' : "3 nations of housewives, bachelors, freckled boy scouts, and even scrape-kneed tomboys sat down before the great flickering tube of Telstar, and thus one satellite sponsored the imagination of a globe."
+	 		},
 
 	 		// { 
 				// 'number' : 9,
