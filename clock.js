@@ -82,14 +82,14 @@ var chapter = [
 
 
 	 		{ 
-				'number' : 7,  
+				'number' : 2,  
 				'timer' : 25,
 	 			'text' : "The agency of the launch was matched only by the vigor of its utilization. Like a rocket into space, each switch of a living room television sent waves of causality that ricocheted straight through the soft pink undulating substance of human attention."
 	 		}, 
 
 
 	 		{ 
-				'number' : 8,  
+				'number' : 3,  
 				'timer' : 45,
 	 			'text' : "3 nations of housewives, bachelors, freckled boy scouts, and even scrape-kneed tomboys sat down before the great flickering tube of Telstar, and thus one satellite sponsored the imagination of a globe."
 	 		},
