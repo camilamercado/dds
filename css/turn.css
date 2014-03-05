@@ -1,12 +1,14 @@
+
+
 .space {
-	height: 2000px;
-	width: 5940px;
+	height: 1000px;
+	width: 100%;
 	background: black;
 }
 
 .form, .speed, .sputnik {
-	height: 3500px;
-	width: 900px;
+	height: 3000px;
+	width: 500px;
 	position: absolute;
 	margin-left: -5%;
 	top: -1400px;
@@ -31,17 +33,24 @@
     transition: all 1.5s ease;
 }
 
-.sputnik {
+.telstar {
 	/*border: 1px solid cyan;*/
+	top: 100px;
+	left: 125px;
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+	height: 200px;
 }
 
 .sculpture {
 	overflow: hidden;
-	height: 600px;
-	width: 600px;
+	height: 300px;
+	width: 300px;
 	position: absolute;
-	margin-left: 1500px;
+	margin-left: 750px;
 	top: 35%;
+	background-size: 300px 300px;
 }
 
 
