@@ -22,7 +22,8 @@
 		<div class="yhair2"></div>
 		<div class="yhair3"></div>
 		
-		<div class="xhair">
+		<div class="xhair"></div>
+		<div class="xhair3">
 			<br><br><br><br><br><br>daphne & telstar
 		</div>
 		<div class="yhair"></div>
@@ -56,9 +57,27 @@
 
 	<div class="gravity">
 
+		<div class="telstar"></div>
+
 		<div class="earth"></div>
+		<div class="antenna" onmouseover="dart();"></div>
+	
+		
+		<div class="retro"></div>
+		<div class="causality"></div>
+
+		<div class="box2">
+			<div class="top"></div>
+			<div class="front"></div>
+			<div class="laurel"></div>
+			<div class="back"></div>
+			<div class="bottom"></div>
+		</div>
+
 		<div class="bernini"></div>
 
+		<div class="line3"></div>
+		<div class="line4"></div>
 
 	</div>
 
@@ -74,20 +93,53 @@ setInterval(function () {
 	var ss = today.getSeconds();
 	var sequence = ss - 30;
 
-	 var daphne = "url(img/daphne/" + sequence + ".png)";
+  	
+  	if (ss < 30) {
 
-    document.querySelector('.sculp').style.backgroundImage=daphne;
+	    var daphne = "url(img/daphne/" + ss + ".png)";
 
-    document.querySelector('.bernini').style.backgroundImage=daphne;
+	    document.querySelector('.sculp').style.backgroundImage=daphne;
+
+	    document.querySelector('.bernini').style.backgroundImage=daphne;
+	    
+    }
+
+    else {
+    	
+    	var daphne = "url(img/daphne/" + sequence + ".png)";
+
+	    document.querySelector('.sculp').style.backgroundImage=daphne;
+
+	    document.querySelector('.bernini').style.backgroundImage=daphne;
+    }
 	
 }, 1000);
 
+
+
 function trap(){
 
-	document.querySelector('.sculp').style.display="none";
-	document.querySelector('.laurel').style.display="block";
 	document.querySelector('.line').style.width="600px";
 	document.querySelector('.line2').style.width="600px";
+
+	setInterval(function () {
+		
+		document.querySelector('.sculp').style.display="none";
+		document.querySelector('.laurel').style.display="block";
+
+	}, 3000);
+}
+
+function dart(){
+	
+	document.querySelector('.line3').style.width="33%";
+	document.querySelector('.line4').style.width="60%";
+	
+	setInterval(function () {
+		
+		document.querySelector('.box2').style.display="block";
+	
+	}, 3000);
 }
 
 
