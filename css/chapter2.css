@@ -59,18 +59,6 @@
 	z-index: 2;
 }
 
-.bernini {
-	top: -10px;
-	height: 160px;
-	width: 150px;
-	left: 75%;
-	position: absolute;
-	background-image: url(../img/daphne/1.png);
-	background-size: 140% 140%;
-	z-index: 3;
-	opacity: 0.9;
-}
-
 .retro {
 	width: 100%;
 	height: 100%;
@@ -158,6 +146,7 @@
 	top: 145px;
 	height: 170px;
 	border-top: 1pt dashed white !important;
+	z-index: 4;
 }
 
 .box2 .top {
@@ -171,5 +160,29 @@
 	-webkit-transform: skew(71deg,0deg)
 }
 
+.bernini {
+	top: -10px;
+	height: 160px;
+	width: 150px;
+	left: 73%;
+	position: absolute;
+	background-image: url(../img/daphne/1.png);
+	background-size: 140% 140%;
+	z-index: 3;
+	opacity: 0.9;
+}
 
+.laurel2 {
+	display: none;
+	top: 80px;
+	height: 250px;
+	width: 220px;
+	right: -40px;
+	position: absolute;
+	background-image: url(../img/lmin.png);
+	background-size: 100% 100%;
+	z-index: 0;
+	opacity: 0.9;
+	-webkit-transform: skew(0deg,26deg)
+}
 
