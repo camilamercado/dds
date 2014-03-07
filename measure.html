@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+
+    	<link rel="stylesheet" type="text/css" href="css/measure.css">
+
+    </head>
+
+	<body>
+		
+		<div id="x"></div>
+		<div id="y"></div>
+		<div id="z"></div>
+		<div id="result" onclick="position()">pointVal</div>
+		<div id="result2" onclick="position()"></div>
+
+		<div class="circle"></div>
+
+		<div class="orb"></div>
+		
+	<script type="text/javascript">
+
+
+	function position() {
+
+		var max = 600;
+		var min = 0;
+		var pos = (Math.random() * (max - min) + min);
+		var pos2 = (Math.random() * (max - min) + min);
+		var pos3 = (Math.random() * (max - min) + min);
+		var pos4 = (Math.random() * (max - min) + min);
+		console.log(pos);
+
+		document.getElementById('x').style.top= pos+"px";
+		document.getElementById('x').style.left= pos2+"px";
+
+		document.getElementById('y').style.top= pos3+"px";
+		document.getElementById('y').style.left= pos4+"px";
+
+		
+
+		var getPositionAtCenter = function (element) {
+		        var data = element.getBoundingClientRect();
+		        return {
+		            x: data.left + data.width / 2,
+		            y: data.top + data.height / 2
+		        };
+		    };
+
+	    var getDistanceBetweenElements = function (a, b) {
+	        var aPosition = getPositionAtCenter(a);
+	        var bPosition = getPositionAtCenter(b);
+	        return Math.sqrt(
+	        Math.pow(aPosition.x - bPosition.x, 2) + Math.pow(aPosition.y - bPosition.y, 2));
+	    };
+
+	    var distX = getDistanceBetweenElements(document.getElementById("z"),
+	    document.getElementById("x"));
+	    var distY = getDistanceBetweenElements(document.getElementById("z"),
+	    document.getElementById("y"));
+
+	    document.getElementById("result").textContent = distX;
+	    document.getElementById("result2").textContent = distY;
+
+	    if (distX < distY){
+
+	    	console.log("X is closer");
+	    	document.getElementById("result").style.color = "cyan";
+	    	document.getElementById("result2").style.color = "black";
+	    }
+
+	    else {
+
+	    	console.log("Y is closer");
+	    	document.getElementById("result2").style.color = "tomato";
+	    	document.getElementById("result").style.color = "black";
+
+	    }
+	}
+
+	var t = 0;
+
+function circle() {
+    t += 0.05;
+
+    var r = 100;
+    var xcenter = 100;
+    var ycenter = 100;
+    var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+    var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+    $('.circle').animate({
+        top: newTop,
+        left: newLeft,
+    }, 1, function() {
+        moveit();
+    });
+}
+
+$(document).ready(function() {
+    moveit();
+});
+
+
+	</script>
+
+	</body>
+
+</html>

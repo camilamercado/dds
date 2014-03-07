@@ -1,0 +1,58 @@
+#x {
+    width: 10px;
+    height: 10px;
+    background: cyan;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#y {
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    background: tomato;
+    border-radius: 50%;
+}
+
+#z {
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    background: chartreuse;
+    border-radius: 50%;
+}
+
+.circle {
+	position: absolute;
+    /*width: 10px;
+    height: 10px;*/
+    background: magenta;
+    border-radius: 50%;
+}
+
+#result {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 50px;
+	font-family: "andale mono";
+}
+#result2 {
+	position: absolute;
+	top: 60px;
+	right: 0px;
+	font-size: 50px;
+	font-family: "andale mono";
+}
+
+.orb {
+	width: 40%;
+	height: 0;
+	padding-bottom: 40%;
+	margin-left: 29%;
+	top: 25%;
+	border-radius: 50%;
+	border: 1px solid chartreuse;
+	z-index: 3;
+	position: absolute;
+}
