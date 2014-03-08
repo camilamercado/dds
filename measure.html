@@ -107,10 +107,10 @@
 			var calc = Math.sqrt(90000 - (Math.pow(Xax,2)));
 			console.log(calc);
 
-			var Ypos = 300 - calc;
+			var Ypos = 295 - calc;
 			console.log(Ypos);
 			
-			var Xmark = 300 - Xax; 
+			var Xmark = 295 - Xax; 
 
 		}
 
@@ -122,10 +122,10 @@
 
 			console.log(calc);
 
-			var Ypos = 300 - calc;
+			var Ypos = 295 - calc;
 			console.log(Ypos);
 			
-			var Xmark = (parseInt(Xpos) - parseInt(300))+ parseInt(300)
+			var Xmark = (parseInt(Xpos) - parseInt(300))+ parseInt(295)
 			console.log(Xmark);
 
 		}	
@@ -138,14 +138,31 @@
 
 	}
 
+	var count=290;
+
+	var counter=setInterval(neg, 1000); //1000 will  run it every 1 second
+
 	function neg(){
+
+		count=count+1;
+		
+		if (count >= 600)
+		  
+		{
+		    clearInterval(counter);
+		    //counter ended, do something here
+		    return;
+		}
+
 
 		// x^2 + y^2 = r^2
 		// x^2 + y^2 = 300^2 (90000)
 		//y^2 = 9000 - x^2
 
-	var Xpos = parseInt(document.getElementById("Xpos").value);
-	console.log(Xpos);
+	var Xpos = count;
+
+	// var Xpos = parseInt(document.getElementById("Xpos").value);
+	// console.log(Xpos);
 
 		if ( Xpos < 300 ) {
 
@@ -154,10 +171,10 @@
 			var calc = Math.sqrt(90000 - (Math.pow(Xax,2)));
 			console.log(calc);
 
-			var Ypos = 298+ calc;
+			var Ypos = 296+ calc;
 			console.log(Ypos);
 			
-			var Xmark = 300 - Xax; 
+			var Xmark = 296 - Xax; 
 
 		}
 
@@ -169,13 +186,13 @@
 
 			console.log(calc);
 
-			var Ypos = 298 + calc;
+			var Ypos = 296 + calc;
 			console.log(Ypos);
 			
-			var Xmark = (parseInt(Xpos) - parseInt(300))+ parseInt(300)
+			var Xmark = (parseInt(Xpos) - parseInt(300))+ parseInt(296)
 			console.log(Xmark);
 
-		}	
+		}
 
 
 	document.getElementById('x').style.left= Xmark+"px";
@@ -183,7 +200,7 @@
 	document.getElementById('x').style.top= Ypos+"px";
 	
 
-	}
+	};
 	
 
 
