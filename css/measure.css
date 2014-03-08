@@ -37,6 +37,7 @@
 	font-size: 50px;
 	font-family: "andale mono";
 }
+
 #result2 {
 	position: absolute;
 	top: 60px;
@@ -45,12 +46,53 @@
 	font-family: "andale mono";
 }
 
+#Xpos {
+
+	position: absolute;
+	top: 150px;
+	right: 0px;
+	font-size: 50px;
+	font-family: "andale mono";
+	width: 200px;
+}
+
+.submit {
+
+	position: absolute;
+	top: 150px;
+	right: 260px;
+	font-size: 50px;
+	font-family: "andale mono";
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: white;
+	background: tomato;
+}
+
+.xaxis {
+	width: 600px;
+	height: 1px;
+	position: absolute;
+	top: 300px;
+	background: lightgreen;
+	left: 0px;
+}
+
+.yaxis {
+	width: 1px;
+	height: 600px;
+	position: absolute;
+	left: 300px;
+	background: lightgreen;
+	top: 0px;
+}
+
 .orb {
-	width: 40%;
-	height: 0;
-	padding-bottom: 40%;
-	margin-left: 29%;
-	top: 25%;
+	width: 600px;
+	height: 600px;
+	top: 0px;
+	left: 0px;
 	border-radius: 50%;
 	border: 1px solid chartreuse;
 	z-index: 3;

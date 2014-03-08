@@ -15,8 +15,12 @@
 		<div id="z"></div>
 		<div id="result" onclick="position()">pointVal</div>
 		<div id="result2" onclick="position()"></div>
+		<input id="Xpos"></input>
+		<div class="submit" onclick="orbit()">=</div>
 
 		<div class="circle"></div>
+		<div class="xaxis"></div>
+		<div class="yaxis"></div>
 
 		<div class="orb"></div>
 		
@@ -80,27 +84,33 @@
 	    }
 	}
 
-	var t = 0;
+	function orbit(){
 
-function circle() {
-    t += 0.05;
+		// x^2 + y^2 = r^2
+		// x^2 + y^2 = 300^2 (90000)
+		//y^2 = 9000 - x^2
 
-    var r = 100;
-    var xcenter = 100;
-    var ycenter = 100;
-    var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
-    var newTop = Math.floor(ycenter + (r * Math.sin(t)));
-    $('.circle').animate({
-        top: newTop,
-        left: newLeft,
-    }, 1, function() {
-        moveit();
-    });
-}
+	var Xpos = document.getElementById("Xpos").value;
+	
+	console.log(Xpos);
 
-$(document).ready(function() {
-    moveit();
-});
+	var square = Math.pow(Xpos,2);
+	console.log(square);
+
+	var cart = 9000 - square;
+	console.log(cart);
+
+	var Ypos = Math.sqrt(cart);
+
+	console.log(Ypos);
+
+	
+
+	}
+
+	
+
+
 
 
 	</script>
