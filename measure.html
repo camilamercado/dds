@@ -13,14 +13,14 @@
 		<div id="x"></div>
 		<div id="y"></div>
 		<div id="z"></div>
-		<div id="result" onclick="position()">RdmPos</div>
-		<div id="result2" onclick="position()"></div>
+		<div id="result"></div>
+		<div id="result2"></div>
 
-		<div id="distance" onclick="distance()">distanceVal</div>
+		<div id="distance" onclick="position()">Place Y</div>
 
-		<input id="Xpos"></input>
+		<!-- <input id="sizer"></input>
 		<div class="submit" onclick="orbit()">=</div>
-		<div class="neg" onclick="neg()">-</div>
+		<div class="neg" onclick="neg()">-</div> -->
 
 		<div class="circle"></div>
 		<div class="xaxis"></div>
@@ -41,14 +41,16 @@
 		var pos4 = (Math.random() * (max - min) + min);
 		console.log(pos);
 
-		document.getElementById('x').style.top= pos+"px";
-		document.getElementById('x').style.left= pos2+"px";
+		// document.getElementById('x').style.top= pos+"px";
+		// document.getElementById('x').style.left= pos2+"px";
 
 		document.getElementById('y').style.top= pos3+"px";
 		document.getElementById('y').style.left= pos4+"px";
 
 
 	}
+
+	var counter = setInterval(distance, 1000);
 
 	function distance(){		
 
@@ -92,117 +94,77 @@
 	}
 
 
-	var count=0;
+	var count = 0;
 
-	var counter=setInterval(orbit, 1000);
-
+	var counter = setInterval(orbit, 1000);
 		
-		function orbit(){
+	function orbit(){
 
-			count=count+10;
+		count = count+10;
+		var Xpos = count;
+		var Rad = 300;
+		
+		if (count > 1200){
+			   
+		   	clearInterval(counter);
+		    //counter ended, do something here
+		    return;
+		}
 
-			// var Xpos = parseInt(document.getElementById("Xpos").value);
-			// console.log(Xpos);
+			if (Xpos < (Rad * 2))
 
-			var Xpos = count;
-			var Rad = 300;
-
-			if (count > 1200){
-				   
-			   	clearInterval(counter);
-			    //counter ended, do something here
-			    return;
-			}
-
-			{
+			{		//QUADRANT 3
 					if ( Xpos < Rad ) {
 
 						var Xaxis = Rad - Xpos;
-						console.log("X variable = ");
-						console.log(Xaxis);
-
 						//distance from count to center point is the remainder 
 						
 					}
-
+					//QUADRANT 3
 					else if ( Xpos > Rad ) {
 
 						Xaxis = Xpos - Rad; 
-						console.log("X variable = ");
-						console.log(Xpos);
 						
 					}
-
-					
+				
 					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
-					console.log("Cartesian = ");
-					console.log(cart);
-
-					
-
-					var Ypos = cart + Rad;
-					console.log("Y position = ");
-					console.log(Ypos);
-					
-					
+					var Ypos = cart + Rad;				
 					document.getElementById('x').style.left= Xpos+"px";
 					document.getElementById('x').style.top= Ypos+"px";
 
-				}
+
+				} else if (Xpos > (Rad * 2))
+
+				{	
+					//QUADRANT 1
+					if ( Xpos > (Rad * 2) ) {
+
+						Xpos = (Rad * 2) - (Xpos - (Rad * 2));
+						// X point on axis eqaulized to 4th quadrant despite count val
+						Xvar = Xpos - Rad;
+						// X variable calculated as distance from 00
+						var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xvar,2)));		
+
+					}
+					//QUADRANT 2
+					else if ( Xpos > (Rad * 3) ) {
+
+						Xaxis = Xpos - (Rad * 3)
+						console.log(Xaxis);
+						Xpos = Rad - Xaxis;
+						// X variable calculated as distance from 00
+						var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
+
+					}
+
+						var Ypos = Rad - cart;										
+						document.getElementById('x').style.left= Xpos+"px";
+						document.getElementById('x').style.top= Ypos+"px";
+
+				}	
 
 
-				if ( Xpos > (Rad * 2) ) {
-
-					Xpos = (Rad * 2) - (Xpos - (Rad * 2));
-					console.log("X variable = ");
-
-					// X point on axis eqaulized to 3rd quadrant despite count val
-
-					Xvar = Xpos - Rad;
-					console.log(Xvar);
-
-					// X variable calculated as distance from 00
-
-					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xvar,2)));
-					console.log("Cartesian = ");
-					console.log(cart);			
-
-					var Ypos = Rad - cart;
-					console.log("Y position = ");
-					console.log(Ypos);
-					
-					
-					document.getElementById('x').style.left= Xpos+"px";
-					document.getElementById('x').style.top= Ypos+"px";
-
-					
-				}
-
-				else if ( Xpos > (Rad * 3) ) {
-
-					Xaxis = Xpos - (Rad * 3)
-					console.log(Xaxis);
-
-					Xpos = Rad - Xaxis;
-
-					// X variable calculated as distance from 00
-
-					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
-					console.log("Cartesian = ");
-					console.log(cart);		
-
-					var Ypos = Rad - cart;
-					console.log("Y position = ");
-					console.log(Ypos);
-					
-					
-					document.getElementById('x').style.left= Xpos+"px";
-					document.getElementById('x').style.top= Ypos+"px";	
-					
-				}
-
-
-		}
+	}
 
 
 

@@ -54,7 +54,7 @@
 	font-family: "andale mono";
 }
 
-#Xpos {
+#sizer {
 
 	position: absolute;
 	top: 200px;
@@ -97,7 +97,7 @@
 }
 
 .xaxis {
-	width: 600px;
+	width: 601px;
 	height: 1px;
 	position: absolute;
 	top: 300px;
@@ -107,7 +107,7 @@
 
 .yaxis {
 	width: 1px;
-	height: 600px;
+	height: 601px;
 	position: absolute;
 	left: 300px;
 	background: chartreuse;
