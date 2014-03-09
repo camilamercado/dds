@@ -91,118 +91,118 @@
 	    }
 	}
 
-	function orbit(){
 
-		// x^2 + y^2 = r^2
-		// x^2 + y^2 = 300^2 (90000)
-		//y^2 = 9000 - x^2
+	var count=0;
 
-	var Xpos = parseInt(document.getElementById("Xpos").value);
-	console.log(Xpos);
+	var counter=setInterval(orbit, 1000);
 
-		if ( Xpos < 300 ) {
-
-			var Xax = 300 - Xpos;
-
-			var calc = Math.sqrt(90000 - (Math.pow(Xax,2)));
-			console.log(calc);
-
-			var Ypos = 295 - calc;
-			console.log(Ypos);
-			
-			var Xmark = 295 - Xax; 
-
-		}
-
-		else if ( Xpos > 300 ) {
-
-			Xinv = Xpos - 300; 
-
-			var calc = Math.sqrt(90000 - (Math.pow(Xinv,2)));
-
-			console.log(calc);
-
-			var Ypos = 295 - calc;
-			console.log(Ypos);
-			
-			var Xmark = (parseInt(Xpos) - parseInt(300))+ parseInt(295)
-			console.log(Xmark);
-
-		}	
-
-
-	document.getElementById('y').style.left= Xmark+"px";
-
-	document.getElementById('y').style.top= Ypos+"px";
-	
-
-	}
-
-	var count=290;
-
-	var counter=setInterval(neg, 1000); //1000 will  run it every 1 second
-
-	function neg(){
-
-		count=count+1;
 		
-		if (count >= 600)
-		  
-		{
-		    clearInterval(counter);
-		    //counter ended, do something here
-		    return;
+		function orbit(){
+
+			count=count+10;
+
+			// var Xpos = parseInt(document.getElementById("Xpos").value);
+			// console.log(Xpos);
+
+			var Xpos = count;
+			var Rad = 300;
+
+			if (count > 1200){
+				   
+			   	clearInterval(counter);
+			    //counter ended, do something here
+			    return;
+			}
+
+			{
+					if ( Xpos < Rad ) {
+
+						var Xaxis = Rad - Xpos;
+						console.log("X variable = ");
+						console.log(Xaxis);
+
+						//distance from count to center point is the remainder 
+						
+					}
+
+					else if ( Xpos > Rad ) {
+
+						Xaxis = Xpos - Rad; 
+						console.log("X variable = ");
+						console.log(Xpos);
+						
+					}
+
+					
+					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
+					console.log("Cartesian = ");
+					console.log(cart);
+
+					
+
+					var Ypos = cart + Rad;
+					console.log("Y position = ");
+					console.log(Ypos);
+					
+					
+					document.getElementById('x').style.left= Xpos+"px";
+					document.getElementById('x').style.top= Ypos+"px";
+
+				}
+
+
+				if ( Xpos > (Rad * 2) ) {
+
+					Xpos = (Rad * 2) - (Xpos - (Rad * 2));
+					console.log("X variable = ");
+
+					// X point on axis eqaulized to 3rd quadrant despite count val
+
+					Xvar = Xpos - Rad;
+					console.log(Xvar);
+
+					// X variable calculated as distance from 00
+
+					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xvar,2)));
+					console.log("Cartesian = ");
+					console.log(cart);			
+
+					var Ypos = Rad - cart;
+					console.log("Y position = ");
+					console.log(Ypos);
+					
+					
+					document.getElementById('x').style.left= Xpos+"px";
+					document.getElementById('x').style.top= Ypos+"px";
+
+					
+				}
+
+				else if ( Xpos > (Rad * 3) ) {
+
+					Xaxis = Xpos - (Rad * 3)
+					console.log(Xaxis);
+
+					Xpos = Rad - Xaxis;
+
+					// X variable calculated as distance from 00
+
+					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
+					console.log("Cartesian = ");
+					console.log(cart);		
+
+					var Ypos = Rad - cart;
+					console.log("Y position = ");
+					console.log(Ypos);
+					
+					
+					document.getElementById('x').style.left= Xpos+"px";
+					document.getElementById('x').style.top= Ypos+"px";	
+					
+				}
+
+
 		}
-
-
-		// x^2 + y^2 = r^2
-		// x^2 + y^2 = 300^2 (90000)
-		//y^2 = 9000 - x^2
-
-	var Xpos = count;
-
-	// var Xpos = parseInt(document.getElementById("Xpos").value);
-	// console.log(Xpos);
-
-		if ( Xpos < 300 ) {
-
-			var Xax = 300 - Xpos;
-
-			var calc = Math.sqrt(90000 - (Math.pow(Xax,2)));
-			console.log(calc);
-
-			var Ypos = 296+ calc;
-			console.log(Ypos);
-			
-			var Xmark = 296 - Xax; 
-
-		}
-
-		else if ( Xpos > 300 ) {
-
-			Xinv = Xpos - 300; 
-
-			var calc = Math.sqrt(90000 - (Math.pow(Xinv,2)));
-
-			console.log(calc);
-
-			var Ypos = 296 + calc;
-			console.log(Ypos);
-			
-			var Xmark = (parseInt(Xpos) - parseInt(300))+ parseInt(296)
-			console.log(Xmark);
-
-		}
-
-
-	document.getElementById('x').style.left= Xmark+"px";
-
-	document.getElementById('x').style.top= Ypos+"px";
-	
-
-	};
-	
-
 
 
 
