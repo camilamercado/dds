@@ -1,0 +1,118 @@
+audio {
+	display: none;
+}
+
+.container {
+	top: 0px;
+	width: 100%;
+	height: 1500px;
+	background: black;
+	position: absolute;
+
+}
+
+#tubular-container {
+	left: -210px;
+	top: 0px;
+}
+
+.space {
+	width: 100%;
+	height: 1500px;
+	top: 0px;
+}
+
+.scrim {
+	top: 0px;
+	width: 60%;
+	left: 38%;
+	height: 1500px;
+	float: left;
+	background: black;
+	opacity: 0.8;
+	z-index: 6;
+	position: absolute;
+
+}
+
+.matter {
+	width: 38%;
+	height: 1500px;
+	float: left;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.count {
+	width: 60%;
+	height: 1500px;
+	font-size: 45px;
+	font-family: "andale mono";
+
+	padding-left: 10px;
+	padding-top: 10px;
+	left: 38%;
+	color: lightsteelblue !important;
+	text-align: left;
+	opacity: 0.9;
+	border-left: 1px solid lightsteelblue;
+	z-index: 7;
+	top: 0px;
+	position: absolute;
+
+}
+
+.chapter, .text {
+	width: auto;
+	height: auto;
+}
+
+.chapter {
+	color: goldenrod;
+	margin-bottom: 10px;
+}
+
+.laurel{
+	width: 800px;
+	height: 800px;
+	background-image: url(../img/laurel.png); 
+	/*border: 1px solid cyan;*/
+	position: absolute;
+	z-index: 4;
+
+	background-size:800px 800px;
+	margin-left: 15%;
+	left: -350px;
+	top: 150px;
+	opacity: 0.8;
+}
+
+.sculpture {
+	overflow: hidden;
+	height: 800px;
+	width: 800px;
+	position: absolute;
+	
+	margin-left: 15%;
+	left: -350px;
+	top: 0px;
+	/*border: 1px solid magenta;*/
+	background-size:800px 800px;
+	z-index: 3;
+	opacity: 0.8;
+}
+
+.telstar {
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	
+	margin-left: 15%;
+	left: -80px;
+	top: 60px;
+	background-size:300px 300px;
+	/*border: 1px solid magenta;*/
+	background-image: url(../img/telstar.png); 
+	z-index: 3;
+}
