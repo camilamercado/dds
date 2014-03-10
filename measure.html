@@ -113,27 +113,27 @@
 
 			if (Xpos < (Rad * 2))
 
-			{		//QUADRANT 3
-					if ( Xpos < Rad ) {
+			{	//QUADRANT 3
+				if ( Xpos < Rad ) {
 
-						var Xaxis = Rad - Xpos;
-						//distance from count to center point is the remainder 
-						
-					}
-					//QUADRANT 3
-					else if ( Xpos > Rad ) {
+					var Xaxis = Rad - Xpos;
+					//distance from count to center point is the remainder 
+					
+				}
+				//QUADRANT 3
+				else if ( Xpos > Rad ) {
 
-						Xaxis = Xpos - Rad; 
-						
-					}
-				
-					var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
-					var Ypos = cart + Rad;				
-					document.getElementById('x').style.left= Xpos+"px";
-					document.getElementById('x').style.top= Ypos+"px";
+					Xaxis = Xpos - Rad; 
+					
+				}
+			
+				var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
+				var Ypos = cart + Rad;				
+				document.getElementById('x').style.left= Xpos+"px";
+				document.getElementById('x').style.top= Ypos+"px";
 
 
-				} else if (Xpos > (Rad * 2))
+			} else if (Xpos > (Rad * 2))
 
 				{	
 					//QUADRANT 1
@@ -157,7 +157,7 @@
 
 					}
 
-						var Ypos = Rad - cart;										
+						var Ypos = Rad - cart;									
 						document.getElementById('x').style.left= Xpos+"px";
 						document.getElementById('x').style.top= Ypos+"px";
 
