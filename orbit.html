@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+
+    	<link rel="stylesheet" type="text/css" href="css/orbit.css">
+    	<link rel="stylesheet" type="text/css" href="css/chapter2.css">
+    	<link rel="stylesheet" type="text/css" href="css/chapter3.css">
+		<script type="text/javascript" charset="utf-8" src="tube/js/jquery.tubular.1.0.js"></script> 
+
+
+    </head>
+<body>
+<div class="space">
+
+<div class="container">
+
+	<div class="orb" id="two"></div>
+	<div class="bridge"></div>
+	
+	
+	<div class="structure">
+		
+		<div class="yhair2"></div>
+		<div class="yhair3"></div>
+		
+		<div class="xhair"></div>
+		<div class="xhair3">
+			<br><br><br><br><br><br>daphne & telstar
+		</div>
+		<div class="yhair"></div>
+		<div class="xhair2"></div>
+
+			<div class="line"></div>
+			<div class="line2"></div>
+
+				<div class="box">
+					<div class="front"></div>
+					<div class="sculp"></div>
+					<div class="laurel"></div>
+					<div class="back"></div>
+					<div class="bottom"></div>
+				</div>
+	</div>
+	
+	<div class="orb" id="one"></div>
+	<div class="block"></div>
+	
+</div>
+
+</div>
+
+<div class="slit" id="s1"></div>
+<div class="slit" id="s2"></div>
+
+<div class="obj" onmouseover="trap();"></div>
+
+<div class="chapter2">
+
+	<div class="gravity">
+
+		<div class="telstar"></div>
+		<div class="earth"></div>
+		<div class="antenna" onmouseover="dart();"></div>
+	
+		
+			<div class="retro"></div>
+			<div class="causality"></div>
+
+				<div class="box2">
+					<div class="top"></div>
+					<div class="front"></div>
+					<div class="laurel2"></div>
+					<div class="back"></div>
+					<div class="bottom"></div>
+				</div>
+
+			<div class="bernini"></div>
+
+			<div class="line3"></div>
+			<div class="line4"></div>
+
+	</div>
+
+	<div class="column"></div>
+
+</div>
+
+<div class="chapter3">
+
+	<div class="nation"></div>
+	<div class="livingRoom">
+
+		<div class="screen">
+
+			<iframe width="640" height="390" src="//www.youtube.com/embed/uKH-GijnAGk" frameborder="0" allowfullscreen></iframe>
+		
+			<div class="static"></div>
+		
+		</div>
+		
+		<div class="sony"></div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+setInterval(function () {
+
+	var today = new Date();
+	var ss = today.getSeconds();
+	var sequence = ss - 30;
+
+  	
+  	if (ss < 30) {
+
+	    var daphne = "url(img/daphne/" + ss + ".png)";
+
+	    document.querySelector('.sculp').style.backgroundImage=daphne;
+
+	    document.querySelector('.bernini').style.backgroundImage=daphne;
+	    
+    }
+
+    else {
+    	
+    	var daphne = "url(img/daphne/" + sequence + ".png)";
+
+	    document.querySelector('.sculp').style.backgroundImage=daphne;
+
+	    document.querySelector('.bernini').style.backgroundImage=daphne;
+    }
+	
+}, 1000);
+
+
+
+function trap(){
+
+	document.querySelector('.line').style.width="600px";
+	document.querySelector('.line2').style.width="600px";
+
+	setInterval(function () {
+		
+		document.querySelector('.sculp').style.display="none";
+		document.querySelector('.laurel').style.display="block";
+
+	}, 4000);
+}
+
+function dart(){
+	
+	document.querySelector('.line3').style.width="33%";
+	document.querySelector('.line4').style.width="60%";
+	
+	setInterval(function () {
+		
+		document.querySelector('.box2').style.display="block";
+	
+	}, 4000);
+
+	setInterval(function () {
+		
+		document.querySelector('.bernini').style.display="none";
+		document.querySelector('.laurel2').style.display="block";
+	
+	}, 7000);
+}
+
+$().ready(function() {
+    $('').tubular({videoId: 'uKH-GijnAGk'}); // where idOfYourVideo is the YouTube ID.
+});
+
+
+
+</script>
+
+</body>
+</html>

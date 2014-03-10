@@ -1,0 +1,303 @@
+@font-face {
+	font-family: "andale mono";
+}
+
+body {
+	/*background: black;*/
+	width: 100%;
+	height: 100%;
+	/*position: absolute;
+	top: 0px;
+	left: 0px;*/
+}
+
+.space { 
+	width: 70%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	background-image: url(../img/sky.jpg);
+	font-family: "andale mono";
+	}
+
+.container {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: -250px;
+	margin-left: 60%;
+	top:35%;
+}
+
+
+.orb {
+	width: 300px;
+	height: 300px;
+	
+	border:1px solid chartreuse;
+	position: absolute;
+	border-radius: 50%;
+	/*transform: skew(1 30deg, 2 10deg);*/
+	-ms-transform: skew(1 30deg, 2 10deg); /* IE 9 */
+	-webkit-transform: skew(1 30deg, 2 10deg); /* Opera, Chrome, and Safari */
+}
+
+#one {
+	top: 30px;
+	margin-left: 50%;
+	left: -150px;
+	z-index: 4;
+}
+
+#two {
+	top: 0px;
+	margin-left: 50%;
+	left: -234px;
+	/*background-image: url(../img/trees.jpg);*/
+	/*background-size: 600px 600px;*/
+	opacity: 0.6;
+}
+
+.structure {
+	/*border: 1px solid magenta;*/
+	border-radius: 50%;
+	width: 370px;
+	height: 327px;
+	/*-webkit-transform: rotate(20deg)*/
+}
+
+.xhair {
+	top: 16px;
+	height: 298px;
+	width: 83px;
+	background-image: url(../img/trees.jpg);; 
+	opacity: 0.4;
+	border-top: 1px solid chartreuse;
+	border-bottom: 1px solid chartreuse;
+	left: 167px;
+	position: absolute;
+	z-index: 3;
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.xhair3 {
+	top: 16px;
+	height: 298px;
+	width: 83px;
+	border-top: 1px solid chartreuse;
+	border-bottom: 1px solid chartreuse;
+	left: 167px;
+	position: absolute;
+	z-index: 3;
+	-webkit-transform: skew(0deg,20deg)
+}
+.yhair {
+	height: 30px;
+	width: 150px;
+	background:lavender;
+	border-left:3px solid chartreuse;
+	border-right:3px solid white;
+	opacity: 0.5;
+	top: 150px;
+	left: 57px;
+	position: absolute;
+	-webkit-transform: skew(71deg,0deg);
+	z-index: 3;
+}
+
+.xhair2 {
+	top: -136px;
+	height: 150px;
+	width: 83px;
+	background-image: url(../img/daph.jpg); 
+	opacity: 0.8;
+	border-top: 1px solid chartreuse;
+	border-bottom: 1px solid chartreuse;
+	left: 167px;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.yhair2 {
+	height: 28px;
+	width: 148px;
+	border: 1px solid chartreuse;
+	top: 150px;
+	left: 209px;
+	position: absolute;
+	-webkit-transform: skew(71deg,0deg)
+}
+
+.yhair3 {
+	height: 28px;
+	width: 1000px;
+	border: 1px solid chartreuse;
+	z-index: 1;
+	background-size:170px 30px;
+	opacity: 1;
+	top: 150px;
+	left: -107px;
+	position: absolute;
+	-webkit-transform: skew(71deg,0deg)
+}
+
+.bridge {
+	width: 91px;
+	height: 300px;
+	border-top: 1px solid chartreuse;
+	border-bottom: 1px solid chartreuse;
+	/*background: cornflowerblue;*/
+	-webkit-transform: rotate(19deg);
+
+	position: absolute;
+	top: 15px;
+	left: 165px;
+}
+
+.front {
+	top: 165px;
+	height: 150px;
+	width: 83px;
+	border: 1px dashed white;
+	border-top: 1px solid chartreuse !important;
+	left: -149px;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.back {
+	top: 165px;
+	height: 150px;
+	width: 83px;
+	border-top: 1px solid chartreuse !important;
+	border: 1px dashed white;
+	left: -66px;
+	position: absolute;
+	z-index: 0;
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.sculp {
+	top: 150px;
+	height: 160px;
+	width: 150px;
+	left: -165px;
+	position: absolute;
+	background-image: url(../img/daphne/1.png);
+	background-size: 140% 140%;
+	z-index: 0;
+	opacity: 0.6;
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.laurel {
+	display: none;
+	top: 160px;
+	height: 160px;
+	width: 150px;
+	left: -140px;
+	position: absolute;
+	background-image: url(../img/lmin.png);
+	background-size: 100% 100%;
+	z-index: 0;
+	opacity: 0.6;
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.bottom {
+	height: 28px;
+	width: 80px;
+	border: 1px dashed white;
+	top: 301px;
+	left: -107px;
+	position: absolute;
+	-webkit-transform: skew(71deg,0deg)
+}
+
+
+.block {
+	width: 45.5px;
+	height: 300px;
+	opacity: 0.1;
+
+	position: absolute;
+	top: 8px;
+	left: 165px;
+}
+
+
+.obj {
+	top: 33%;
+	margin-top: 50px;
+	height: 130px;
+	width: 55px;
+	background-image: url(../img/telstar.jpg); 
+	background-size:55px 150px;
+	opacity: 1;
+	z-index: 2;
+	left: 73%;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.slit {
+	
+	height: 170px;
+	width: 25px;
+	border: 1px solid cornflowerblue;
+	position: absolute;
+	z-index: 1;
+	-webkit-transform: skew(0deg,20deg)
+}
+
+#s1 {
+	top: 33%;
+	left: 60%;
+}
+
+#s2 {
+	top: 33%;
+	left: 64%;
+	margin-top: 15px; 
+}
+
+.line {
+	top: -10px;
+	height: 150px;
+	width:1px;
+	opacity:1;
+	border-top: 1px dashed white;
+	left: 167px;
+	position: absolute;
+	-webkit-transition: width 4s;
+	-webkit-transform: skew(0deg,25deg)
+}
+
+.line2 {
+	
+	top: 38px;
+	height: 150px;
+	margin-left: 83px;
+	width:1px;
+	opacity: 1;
+	border-top: 1px dashed white;
+	left: 167px;
+	position: absolute;
+	z-index: 1;
+	-webkit-transition: width 4s;
+	-webkit-transform: skew(0deg,28deg)
+}
+
+
+
+
+
+
+
+
+
+

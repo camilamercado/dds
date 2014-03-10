@@ -46,8 +46,11 @@ audio {
 .count {
 	width: 60%;
 	height: 1500px;
+<<<<<<< HEAD
 	font-size: 45px;
 	font-family: "andale mono";
+=======
+>>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
 
 	padding-left: 10px;
 	padding-top: 10px;
@@ -64,12 +67,22 @@ audio {
 
 .chapter, .text {
 	width: auto;
+<<<<<<< HEAD
 	height: auto;
+=======
+	height: auto;font-size: 40px;
+	font-family: "andale mono" !important;
+>>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
 }
 
 .chapter {
 	color: goldenrod;
 	margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+	height: auto;font-size: 40px;
+	font-family: "andale mono" !important;
+>>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
 }
 
 .laurel{
