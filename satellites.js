@@ -1,4 +1,4 @@
-var satellites = [
+var telstar =
 
 	 		{ 
 	 			'obj'    : "telstar",
@@ -6,7 +6,7 @@ var satellites = [
 	 			'Radius' : 350
 	 			     
 	 			
-	 		}, 
+	 		}; 
 	
 
 			{ 
@@ -23,22 +23,20 @@ var satellites = [
 				
 			}
 
-]
-
 
 	var count = 0;
 
 	var counter = setInterval(orbit, 1000);
 		
-	function orbit(){
+	function orbit(telstar){
 
 		for(var i = 0; i < satellites.length; i++) {
 			
 			count = count+10;
 			
-			var Xpos = satellites[i].offset + count;
+			var Xpos = offset + count;
 
-			var Rad = satellites[i].Radius;
+			var Rad = Radius;
 		
 	}
 

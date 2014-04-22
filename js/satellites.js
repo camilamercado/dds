@@ -1,44 +1,37 @@
-var satellites = [
+var telstar =
 
 	 		{ 
-	 			'obj'    : "telstar",
 	 			'offset'   : 0,
-	 			'radius' : 350
-	 			     
-	 			
-	 		}, 
-	
+	 			'Radius' : 350	 			     
+	 		}; 
+
+var antenna1 =	
 
 			{ 
-				'obj'    : "antenna1",
 	 			'offset'   : 90,
-	 			'Radius' : 300       
-				
-			},     
+	 			'Radius' : 300       				
+			}; 
+
+var antenna2 =    
 
 			{ 
-				'obj'    : "antenna2",
 	 			'offset'   : 180,
-	 			'radius' : 300       
-				
+	 			'Radius' : 300       			
 			}
-
-]
-
 
 
 	var count = 0;
 
 	var counter = setInterval(orbit, 1000);
 		
-	surveil = satellites.every(function orbit(element, index, array) {
+	function orbit(telstar, antenna1, antenna2){
 
-				
+			
 			count = count+10;
 			
-			var Xpos = satellites[i].offset + count;
+			var Xpos = offset + count;
 
-			var Rad = satellites[i].radius;
+			var Rad = Radius;
 
 		
 		if (count > 1200){
