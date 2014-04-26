@@ -1,16 +1,28 @@
 #x {
 	position: absolute;
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/daphne/16.png);
-   	background-size:40px 40px;
+   	width: 10px;
+   	height: 10px;
+   	background: cyan;
+   	border-radius: 50%;
     z-index: 1;
 }
 
 #y {
 	position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
+    background-size:30px 30px;
+    background-image: url(../img/telstarB.png);
+    /*background: cyan;*/
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.y {
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size:30px 30px;
     background-image: url(../img/telstarB.png);
     /*background: cyan;*/
     border-radius: 50%;
@@ -21,84 +33,65 @@
 	position: absolute;
     width: 10px;
     height: 10px;
-    background: gold;
+    background: silver;
     border-radius: 50%;
     z-index: 1;
 }
 
-.circle {
+.laurel {
 	position: absolute;
-    /*width: 10px;
-    height: 10px;*/
-    background: magenta;
+	top: 150px;
+	left: 150px;
+    width: 200px;
+    height: 200px;
+    background-size:200px 200px;
+    background-image: url(../img/laurel.png);
     border-radius: 50%;
+    z-index: 3;
+    display: none;
 }
 
-#result {
+.peneus {
 	position: absolute;
+	top: 300px;
+	left: 380px;
+    width: 10px;
+    height: 10px;
+    background: darkblue;
+    border-radius: 50%;
+    z-index: 3;
+/*    display: none;*/
+}
+
+.beam {
+	position: absolute;
+	top: 150px;
+	left: 158px;
+	width: 1px;
+	height: 1px;
+	border-top: 1px dashed magenta;
+	/*-webkit-transition: width 4s;*/
+	-ms-transform: rotate(210deg); /* IE 9 */
+	-webkit-transform: rotate(247deg); /* Opera, Chrome, and Safari */
+}
+
+
+
+.beam2 {
+	/*display: none;*/
+	width: 1px;
+	height: 0px;
+	position: absolute;
+	left: 250px;
+	border-left: 1px dashed magenta;
 	top: 0px;
-	right: 0px;
-	font-size: 30px;
-	font-family: "andale mono";
+	z-index: 3;
+
+
 }
 
-#result2 {
-	position: absolute;
-	top: 60px;
-	right: 0px;
-	font-size: 30px;
-	font-family: "andale mono";
-}
 
-#distance {
-	position: absolute;
-	top: 120px;
-	right: 0px;
-	font-size: 30px;
-	font-family: "andale mono";
-}
 
-#sizer {
-
-	position: absolute;
-	top: 200px;
-	right: 20px;
-	font-size: 50px;
-	font-family: "andale mono";
-	width: 200px;
-}
-
-.submit {
-
-	position: absolute;
-	top: 208px;
-	right: 250px;
-	font-size: 48px;
-	font-family: "andale mono";
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	color: white;
-	background: tomato;
-	text-align: center;
-	line-height: 50px;
-}
-
-.neg {
-
-	position: absolute;
-	top: 208px;
-	right: 300px;
-	font-size: 48px;
-	font-family: "andale mono";
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	color: white;
-	background: cyan;
-	text-align: center;
-	line-height: 50px;
-}
 
 .space {
 	width: 501px;
@@ -147,8 +140,8 @@
 
 .right {
 
-	width: 35%;
-	right: 0px;
+	width: 100%;
+	left: 550px;
 	position: absolute;
 	height: 2000px;
 	top: 0px;
@@ -157,3 +150,64 @@
 	padding: 20px;
 
 }
+
+.meter{
+	width: 1000px;
+	/*position: absolute;*/
+	font-size: 30px;
+	font-family: "andale mono";
+	margin-bottom: 100px;
+}
+
+
+#distance {
+	position: absolute;
+	top: 120px;
+	/*right: 0px;*/
+	font-size: 30px;
+	font-family: "andale mono";
+}
+
+.text {
+	position: absolute;
+	top: 150px;
+	font-size: 15px;
+	width: 600px;
+}
+
+.title {
+	font-size: 18px;
+}
+
+.key {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 450px;
+	padding-left: 20px;
+}
+
+.key #x {
+	margin-top:5px !important;
+	margin-left:-15px !important;
+}
+
+.key #z {
+	margin-top:-10px !important;
+	margin-left:-16px !important;
+}
+
+.key #y {
+	margin-top:25px !important;
+	margin-left:-16px !important;
+	width: 10px;
+    height: 10px;
+    background-size:10px 10px;
+}
+
+.key .peneus {
+	margin-top:-240px !important;
+	margin-left:-377px !important;
+}
+
+

@@ -52,7 +52,7 @@ function position() {
 	    document.getElementById("result").textContent = distX;
 	    document.getElementById("result2").textContent = distY;
 
-	    if (distZ < distY){
+	    if (distX < distY){
 
 	    	console.log("Z is closer");
 	    	document.getElementById("result").style.color = "cyan";
@@ -69,7 +69,7 @@ function position() {
 	}
 
 
-	var count = 300;
+	var count =300;
 
 	var counter = setInterval(orbit, 1000);
 		
@@ -78,16 +78,53 @@ function position() {
 
 		count = count+10;
 		count2 = (count - 300) *1.2;
+		count2 = (count - 300) *1.2;
 
 		var Xpos = count;
 		
 		var Rad = 250;
 		
-		if (count > 1200 ){
+		if (count > 880 ){
 			   
 		   	clearInterval(counter);
 		    //counter ended, do something here
 		    return;
+		}
+
+		if (count > 740 ){
+			   
+		   	document.getElementById('x').style.display= "none";
+		   	document.getElementById('y').style.display= "none";
+		   	
+		   
+		    document.getElementById('z').style.backgroundImage="url(./img/telstarB2.png)";
+		    document.getElementById('z').style.width="20px";
+		    document.getElementById('z').style.height="20px";
+
+		    document.querySelector('.beam').style.width="320px";
+		   
+
+		    setInterval(function () {
+				
+				 document.querySelector('.beam2').style.height="310px";
+
+			}, 100);
+
+		    setInterval(function () {
+				
+				document.querySelector('.laurel').style.display= "block";
+
+			}, 200);
+
+			setInterval(function () {
+				
+				document.querySelector('.beam').style.display= "none";
+				document.querySelector('.beam2').style.display= "none";
+
+
+			}, 300);
+
+
 		}
 
 			if (Xpos < (Rad * 2) )
