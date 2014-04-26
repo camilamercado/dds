@@ -4,22 +4,25 @@
     background: cyan;
     border-radius: 50%;
     position: absolute;
+    z-index: 1;
 }
 
 #y {
 	position: absolute;
     width: 10px;
     height: 10px;
-    background: tomato;
+    background: silver;
     border-radius: 50%;
+    z-index: 1;
 }
 
 #z {
 	position: absolute;
     width: 10px;
     height: 10px;
-    background: chartreuse;
+    background: gold;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .circle {
@@ -34,7 +37,7 @@
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	font-size: 50px;
+	font-size: 30px;
 	font-family: "andale mono";
 }
 
@@ -42,7 +45,7 @@
 	position: absolute;
 	top: 60px;
 	right: 0px;
-	font-size: 50px;
+	font-size: 30px;
 	font-family: "andale mono";
 }
 
@@ -50,7 +53,7 @@
 	position: absolute;
 	top: 120px;
 	right: 0px;
-	font-size: 50px;
+	font-size: 30px;
 	font-family: "andale mono";
 }
 
@@ -96,31 +99,60 @@
 	line-height: 50px;
 }
 
+.space {
+	width: 501px;
+	height: 501px;
+	position: absolute;
+	border-radius: 50%;
+	left: 0px;
+	top: 0px;
+	background-image:url(../img/0.jpg);
+	opacity: 0.2; 
+	/*top: 30%;
+	left: 30%;*/
+}
+
 .xaxis {
-	width: 601px;
+	width: 501px;
 	height: 1px;
 	position: absolute;
-	top: 300px;
-	background: chartreuse;
+	top: 250px;
+	background: cornflowerblue;
 	left: 0px;
+	z-index: 0;
 }
 
 .yaxis {
 	width: 1px;
-	height: 601px;
+	height: 501px;
 	position: absolute;
-	left: 300px;
-	background: chartreuse;
+	left: 250px;
+	background: cornflowerblue;
 	top: 0px;
+	z-index: 0;
 }
 
 .orb {
-	width: 600px;
-	height: 600px;
+	width: 500px;
+	height:500px;
 	top: 0px;
 	left: 0px;
 	border-radius: 50%;
-	border: 1px solid chartreuse;
-	z-index: 3;
+	border: 1px solid cornflowerblue;
+	z-index: 0;
 	position: absolute;
+}
+
+
+.right {
+
+	width: 35%;
+	right: 0px;
+	position: absolute;
+	height: 2000px;
+	top: 0px;
+	border-left: 1px dashed cornflowerblue;
+	font-family: "andale mono";
+	padding: 20px;
+
 }
