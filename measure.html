@@ -5,71 +5,223 @@
     	<script src='https://code.jquery.com/jquery-latest.min.js'></script>
 
     	<link rel="stylesheet" type="text/css" href="css/measure.css">
+    	<link rel="stylesheet" type="text/css" href="css/two.css">
+    	<link rel="stylesheet" type="text/css" href="css/three.css">
 
     </head>
 
 	<body>
 		
+		<div class="one">
 		<div id="x"></div>
 		<div id="y"></div>
 		<div id="z"></div>
 
 		<div class="right">
 
-			
-		<!-- <div style="color:silver">Apollo</div>chases<div style="color:cyan">Daphne</div>
-		</p> -->
-
-
-		<div class= "meter">
-		<div id="result"></div>
-		<div id="result2"></div>
-		</div>
-		<div class="text">
-			<div class="title">
-				The path of a single figure (Daphne)<br>
-				is pursued by 3 bodies:
+			<div class= "meter">
+				<div id="result"></div>
+				<div id="result2"></div>
 			</div>
-			<br>
-			<br>
-			1) Apollo : Son of Jupiter, proclaimer of prophecy, a god for lonely poets.
-			<br>
-			<br>
-			2) Peneus : Son of Oceanus, father of Daphne, a river god seeking a male heir.
-			<br>
-			<br>
-			3) Telstar : Child of Nasa and Bell Labs, provider of cross continental television programming, the first commercially broadcasting GEO satellite.
-		</div>
+			
+			<div class="text">
+				<div class="title">
+					The path of a single figure (Daphne)<br>
+					is pursued by 3 bodies:
+				</div>
+				<br>
+				<br>
+				1) Apollo : Son of Jupiter, proclaimer of prophecy, a god for lonely poets.
+				<br>
+				<br>
+				2) Peneus : Son of Oceanus, father of Daphne, a river god seeking a male heir.
+				<br>
+				<br>
+				3) Telstar : Child of Nasa and Bell Labs, provider of cross continental television programming, the first commercially broadcasting GEO satellite.
+			</div>
 
-		<div class="key">
-		<div id="x"></div>Daphne<br>
-		<div id="z"></div>Apollo<br>
-		<div id="y"></div>Telstar<br>
-		<div class="peneus"></div>Peneus<br>
-
-
-		</div>
-
+			<div class="key" onclick="two()">
+				<div id="x"></div>Daphne<br>
+				<div id="z"></div>Apollo<br>
+				<div id="y"></div>Telstar<br>
+				<div class="peneus"></div>Peneus<br>
+			</div>
 
 		</div>
 		
 		<div class="space"></div>
+		<div class="xaxis"></div>
+		<div class="yaxis"></div>
+		<div class="orb"></div>
 
 			<div class="laurel"></div>
 			<div class="peneus"></div>
 			<div class="beam"></div>
 			<div class="beam2"></div>
 
-			<div class="xaxis"></div>
-			<div class="yaxis"></div>
-
-			<div class="orb"></div>
 
 
+		</div>
 
+
+		<div class="two">
+
+			<div class="body1"></div>
+			<div class="body2"></div>
+			<div class="body3"></div>
+
+
+			<div class="right2">
+				
+
+				<div class="text2">
+					
+					<div class="title2">
+						Three bodies in orbit
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					1) Acting in duality as the Sun god Helios, each day Apollo drives a chariot that pulls the sun around the earth.
+					<br><br>
+					<br><br>
+					<br><br>
+					<br><br>
+					<br><br>
+					<br><br>
+					2) Oceanus - (grandfather of Daphne) Diety of a fresh water stream that circles the earth along the equator. The sun, moon and stars are all claimed to rise and fall in his waters.
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					2) "A satellite in Geostationary Earth Orbit (GEO) revolves around the earth in the plane of the equator once in 24 hours, maintaining precise synchronization with the earths rotation."<br>
+					-Introduction to Satellite Communication 
+
+				</div>
+				
+
+			</div>
+
+		</div>
+
+
+			<div class="three">
+
+				<div class="text3">
+				<p class="p1">
+
+				"Silly girl, you do not know from whom you are fleeing: indeed, you do not, or else you would not flee. I am the lord of Delphi, Claros and Tenedos, and of the realms of Patara too. I am the son of Jupiter. By my skill, the past, the present, and the future are revealed."
+				<br><br>
+				-Apollo (Metamorphosis)
+				</p>
+
+
+				<p class="p2">
+
+				"Telstar was a tremendous technical success, and the international reactios was spectacular. A U.S. Information Agency (USIA) poll showed that Telstar was better known in Great Britain than Sputnik had been in 1957. Rather than launching a useless bauble, the Americans had put into orbit a satellite that promised to tie together the ears and eyes of the world."
+				<br><br><br><br>
+				-Andrew J. Butrica  
+				(Beyond the ionosphere: fifty years of satellite communication)
+				</p>
+
+				</div>
+
+
+				<div class="gravity">
+
+					<div class="telstar"></div>
+					<div class="earth"></div>
+					<div class="antenna" onmouseover="dart();"></div>
+				
+					
+						<div class="retro"></div>
+						<div class="causality"></div>
+
+							<div class="box2">
+								<div class="top"></div>
+								<div class="front"></div>
+								<div class="laurel2"></div>
+								<div class="back"></div>
+								<div class="bottom"></div>
+							</div>
+
+						<div class="bernini"></div>
+
+						<div class="line3"></div>
+						<div class="line4"></div>
+
+				</div>
+
+				<div class="column"></div>
+
+			</div>
+
+
+
+
+
+
+
+	
+
+		<script type="text/javascript">
+
+
+		var timer = setInterval(bodies, 1000);
+
+		var time =99;
+
+		function bodies () {
+			
+
+			time = time +1;
+			console.log(time);
+
+			if (time > 60) {
+				document.querySelector('.one').style.display= "none";
+				document.querySelector('.two').style.display= "block";
+			}
+
+			if (time > 100) {
+				document.querySelector('.two').style.display= "none";
+				document.querySelector('.three').style.display= "block";
+			}
+
+			if (time > 110) {
+				document.querySelector('.line3').style.width="33%";
+				document.querySelector('.line4').style.width="60%";
+				
+				setInterval(function () {
+					
+					document.querySelector('.box2').style.display="block";
+				
+				}, 4000);
+
+				setInterval(function () {
+					
+					document.querySelector('.bernini').style.display="none";
+					document.querySelector('.laurel2').style.display="block";
+				
+				}, 10000);
+			}
+
+		}
+
+
+
+		</script>
 
 		<script src="js/measure.js" type="text/javascript"></script>
 		<script src="js/2.js" type="text/javascript"></script>
+		<script src="js/three.js" type="text/javascript"></script>
 	</body>
 
 </html>

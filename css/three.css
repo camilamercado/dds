@@ -1,10 +1,10 @@
-.chapter2 {
+.three {
 	display: none;
 	width: 100%;
 	height: 1000px;
 	/*background-image: url(../img/telstar.jpg); 
 	background-size: 100%;*/
-	background: black;
+	background: white;
 	height: 1000px;
 	position: absolute;
 	/*top: 700px;*/
@@ -15,6 +15,7 @@
 	width: 60%;
 	height: 300px;
 	min-width: 400px;
+	max-width: 900px;
 	min-height: 100px;
 	margin-left:20%;
 	top: 35%;
@@ -26,7 +27,7 @@
 	height: 95%;
 	border-radius: 50%;
 	/*border: 1px solid chartreuse;*/
-	background-image: url(../img/slice.jpg);
+	background-image: url(../img/slice2.jpg);
 	/*background-size: 800px 800px;*/
 	z-index: 3;
 	position: absolute;
@@ -37,7 +38,7 @@
 	height: 462px;
 	/*border-radius: 50%;*/
 	/*border: 1px solid chartreuse;*/
-	background-image: url(../img/slick.png);
+	background-image: url(../img/slick2.png);
 	/*background-size: 800px 800px;*/
 	z-index: 1;
 	position: absolute;
@@ -55,7 +56,7 @@
 	margin-left:20%;
 	top: 50%;
 	/*background-image: url(../img/sky.jpg);*/
-	background: black;
+	background: white;
 	position: absolute;
 	z-index: 2;
 }
@@ -64,7 +65,7 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	border: 1px solid chartreuse;
+	border: 1px solid whitesmoke;
 	background-size: 800px 800px;
 	/*z-index: 3;*/
 	position: absolute;
@@ -94,7 +95,7 @@
 	top: -250px;
 	height: 400px;
 	width: 180px;
-	background-image: url(../img/telstar.jpg); 
+	background-image: url(../img/telstar2.jpg); 
 	background-size:180px 400px;
 	opacity: 1;
 	z-index: 1;
@@ -109,7 +110,7 @@
 	height: 150px;
 	width:1px;
 	opacity:1;
-	border-top: 1px dashed white;
+	border-top: 1px dashed silver;
 	left: 390px;
 	position: absolute;
 	z-index: 3;
@@ -123,7 +124,7 @@
 	height: 150px;
 	width:1px;
 	opacity:1;
-	border-top: 1px dashed white;
+	border-top: 1px dashed silver;
 	left: 185px;
 	position: absolute;
 	z-index: 3;
@@ -139,6 +140,30 @@
 	position: absolute;
 	z-index: 4;
 	-webkit-transform: skew(0deg,-6deg)
+}
+
+.front {
+	top: 165px;
+	height: 150px;
+	width: 83px;
+	border: 1px dashed white;
+	border-top: 1px solid chartreuse !important;
+	left: -149px;
+	position: absolute;
+
+	-webkit-transform: skew(0deg,20deg)
+}
+
+.back {
+	top: 165px;
+	height: 150px;
+	width: 83px;
+	border-top: 1px solid chartreuse !important;
+	border: 1px dashed white;
+	left: -66px;
+	position: absolute;
+	z-index: 0;
+	-webkit-transform: skew(0deg,20deg)
 }
 
 .box2 .front,
@@ -186,4 +211,43 @@
 	opacity: 0.9;
 	-webkit-transform: skew(0deg,26deg)
 }
+
+.p1 {
+	font-family: "andale mono";
+	width: 500px;
+	font-size: 15px;
+	position: absolute;
+	height: auto;
+	left: 100px;
+	top: 100px;
+
+
+}
+
+.p2 {
+	font-family: "andale mono";
+	width: 500px;
+	font-size: 15px;
+	position: absolute;
+	height: auto;
+	right: 100px;
+	top: 600px;
+	z-index: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

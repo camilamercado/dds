@@ -22,7 +22,7 @@
 			if (Xpos2 < (Rad2 * 2) )
 
 			{	//QUADRANT 3
-				if ( Xpos2 < Rad2 ) {
+				if ( Xpos2 < Rad2 ) {z
 
 					var Xaxis2 = Rad2 - Xpos2;
 					

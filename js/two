@@ -1,0 +1,13 @@
+function bodies () {
+	
+	var today = new Date();
+	var ss = today.getSeconds();
+	var sequence = ss % 5;
+	var degr = ss * 6;
+
+	document.querySelector(".body1").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+	document.querySelector(".body2").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+	document.querySelector(".body3").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
+}
+
+var counter = setInterval(bodies, 1000);

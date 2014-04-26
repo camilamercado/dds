@@ -1,0 +1,73 @@
+.two {
+	display: none;
+	font-family: "andale mono";
+}
+
+.right2 {
+
+	width: 100%;
+	left: 550px;
+	position: absolute;
+	height: 1000px;
+	top: 0px;
+	border-left: 1px dashed cornflowerblue;
+	font-family: "andale mono";
+	padding: 20px;
+
+}
+
+.title2 {
+	font-size: 20px;
+}
+
+.text2 {
+	font-size: 15px;
+	width: 600px;
+	margin-top: 75px;
+}
+
+
+
+.body1 {
+	position: absolute;
+	/*background-color: cyan;*/
+	background-image: url(../img/helios.jpg);
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	left: 180px;
+	top: 150px;
+	opacity: 0.8;
+	 -webkit-animation:spin 30s linear infinite;
+}
+
+
+.body2 {
+	position: absolute;
+	background-size: 180px 180px;
+	background-image: url(../img/oceanus.jpg);
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	left: 180px;
+	top: 370px;
+	opacity: 0.8;
+	-webkit-animation:spin 40s linear infinite;
+}
+
+.body3 {
+	position: absolute;
+	background-size: 200px 200px;
+	background-image: url(../img/telstar.png);
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	left: 180px;
+	top: 590px;
+	opacity: 0.8;
+	-webkit-animation:spin 20s linear infinite;
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
+

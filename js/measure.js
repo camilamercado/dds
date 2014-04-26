@@ -78,7 +78,7 @@ function position() {
 
 		count = count+10;
 		count2 = (count - 300) *1.2;
-		count2 = (count - 300) *1.2;
+	
 
 		var Xpos = count;
 		
@@ -125,6 +125,9 @@ function position() {
 			}, 300);
 
 
+		}if (count > 870){
+			document.querySelector('.one').style.display= "none";
+			document.querySelector('.two').style.display= "block";
 		}
 
 			if (Xpos < (Rad * 2) )
