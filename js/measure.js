@@ -37,19 +37,19 @@ function position() {
 	        var aPosition = getCenter(a);
 	        var bPosition = getCenter(b);
 	        return Math.sqrt(
-	        Math.pow(aPosition.z - bPosition.z, 2) + Math.pow(aPosition.y - bPosition.y, 2));
+	        Math.pow(aPosition.x - bPosition.x, 2) + Math.pow(aPosition.y - bPosition.y, 2));
 	   
-	        console.log(aPosition.z);
+	        console.log(aPosition.x);
 	        console.log(aPosition.y);
 	        // console.log(bPosition);
 	    };
 
-	    var distZ = getDistance(document.getElementById("x"),
+	    var distX = getDistance(document.getElementById("x"),
 	    document.getElementById("z"));
 	    var distY = getDistance(document.getElementById("x"),
 	    document.getElementById("y"));
 
-	    document.getElementById("result").textContent = distZ;
+	    document.getElementById("result").textContent = distX;
 	    document.getElementById("result2").textContent = distY;
 
 	    if (distZ < distY){

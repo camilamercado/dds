@@ -1,17 +1,18 @@
 #x {
-    width: 10px;
-    height: 10px;
-    background: cyan;
-    border-radius: 50%;
-    position: absolute;
+	position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/daphne/16.png);
+   	background-size:40px 40px;
     z-index: 1;
 }
 
 #y {
 	position: absolute;
-    width: 10px;
-    height: 10px;
-    background: silver;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/telstarB.png);
+    /*background: cyan;*/
     border-radius: 50%;
     z-index: 1;
 }
