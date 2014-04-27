@@ -1,6 +1,8 @@
+.four{
+	display: none;
+}
 
-
-.space {
+.spacey {
 	height: 1000px;
 	width: 100%;
 }
@@ -49,8 +51,22 @@
 	width: 350px;
 	position: absolute;
 	right: 20%;
-	top: 15%;
+	top: 20%;
 	background-size: 350px 350px;
+}
+
+.Laurel4 {
+	display: none;
+	right: 20%;
+	top: 20%;
+	height: 350px;
+	width: 350px;
+	position: absolute;
+	background-image: url(../img/lmin.png);
+	background-size: 350px 350px;
+	z-index: 1;
+	opacity: 0.1;
+/*	-webkit-transform: skew(0deg,26deg)*/
 }
 
 .earthglimpse {
@@ -70,6 +86,34 @@
 	bottom: -100px;
 	left: 0px;
 	background: url(../img/moonsurf.png);
+}
+
+.title4 {
+	width: 200px;
+	left: 2%;
+	position: absolute;
+	height: 100px;
+	top: 20px;
+	font-family: "andale mono";
+}
+
+.text4 {
+	width: 480px;
+	left: 15%;
+	position: absolute;
+	height: 600px;
+	top: 100px;
+	/*border-left: 1px dashed cornflowerblue;*/
+	font-family: "andale mono";
+}
+
+.chapter {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 12%;
+	top: 100px;
+	font-family: "andale mono";
 }
 
 
