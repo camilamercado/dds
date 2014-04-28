@@ -205,7 +205,7 @@
 
 		var timer = setInterval(bodies, 1000);
 
-		var time =0;
+		var time =100;
 
 		function bodies () {
 			
@@ -218,12 +218,12 @@
 				document.querySelector('.two').style.display= "block";
 			}
 
-			if (time > 100) {
+			if (time > 75) {
 				document.querySelector('.two').style.display= "none";
 				document.querySelector('.three').style.display= "block";
 			}
 
-			if (time > 110) {
+			if (time > 85) {
 				document.querySelector('.line3').style.width="33%";
 				document.querySelector('.line4').style.width="60%";
 				
@@ -241,7 +241,7 @@
 				}, 10000);
 			}
 
-			if (time > 200) {
+			if (time > 100) {
 				document.querySelector('.three').style.display= "none";
 				document.querySelector('.four').style.display= "block";
 			}
