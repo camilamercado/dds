@@ -1,0 +1,94 @@
+.five {
+	display: none;
+}
+
+.blackboard {
+	height: 1000px;
+	width: 100%;
+}
+
+.title5 {
+	width: 800px;
+	left: 2%;
+	position: absolute;
+	height: 100px;
+	top: 20px;
+	font-family: "andale mono";
+	font-size: 18px;
+	/*color: red;*/
+}
+
+.container {
+	left: 15%;
+	position: absolute;
+	height: 600px;
+	top: 200px;
+	/*border-left: 1px dashed cornflowerblue;*/
+	font-family: "andale mono";
+}
+
+.text5 {
+	margin-left: 50px;
+	width: 600px;
+	margin-bottom: 40px;
+}
+
+.subtext5,
+.subtext52 {
+	width: 480px;
+	margin-left: 65px;
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+.chapter5 {
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+
+.board1 {
+	height: 227px;
+	width: 400px;
+	position: absolute;
+	right: 18%;
+	top: 45%;
+	background-size: 400px 227px!important;
+	background-repeat: no-repeat;
+	background: url(../img/board1.png);
+	z-index: 1;
+-webkit-transform: skew(0deg,12deg)
+
+}
+
+.board2 {
+	height: 227px;
+	width: 400px;
+	position: absolute;
+	right: 10%;
+	top: 38%;
+	background: url(../img/bb.jpg);
+-webkit-transform: skew(0deg,12deg)
+}
+
+.egun {
+	height: 200px;
+	width: 300px;
+	position: absolute;
+	right: 37%;
+	top: 70%;
+	background-size: 300px 200px!important;
+	background: url(../img/egun.png);
+-webkit-transform: rotate(-30deg);
+	z-index: 3;
+
+}
+
+
+
+
+
+
+
+
