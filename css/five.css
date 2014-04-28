@@ -68,25 +68,51 @@
 	position: absolute;
 	right: 10%;
 	top: 38%;
-	background: url(../img/bb.jpg);
+	background: #347d6b;
+/*	background: url(../img/diffraction.png);*/
 -webkit-transform: skew(0deg,12deg)
 }
 
 .egun {
-	height: 200px;
+	height: 114px;
 	width: 300px;
 	position: absolute;
-	right: 37%;
+	right: 30%;
 	top: 70%;
-	background-size: 300px 200px!important;
-	background: url(../img/egun.png);
+	background-size: 300px 114px!important;
+	background: url(../img/eegun2.png);
 -webkit-transform: rotate(-30deg);
 	z-index: 3;
 
 }
 
 
+.line5 {
+	top: 70%;
+	height: 100px;
+	width:1px;
+	opacity:1;
+	border-top: 1px dashed cyan;
+	right: 20%;
+	position: absolute;
+	z-index: 3;
+	-webkit-transition: width 4s;
+	-webkit-transform: skew(0deg,-30deg)
+}
 
+.line6 {
+	
+/*	top: -85px;*/
+	height: 150px;
+	width:1px;
+	opacity:1;
+	border-top: 1px dashed cyan;
+	left: 185px;
+	position: absolute;
+	z-index: 3;
+	-webkit-transition: width 4s;
+	-webkit-transform: skew(0deg,172deg)
+}
 
 
 
