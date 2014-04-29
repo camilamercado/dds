@@ -1,3 +1,18 @@
+var degree = 0;
+
+setInterval(function daphne() {
+
+		  degree = degree +1;
+
+		  var daphne = "url(./img/daphne/" + degree + ".png)";
+	      document.querySelector('.sculpture').style.display="block";
+	      document.querySelector('.sculpture').style.backgroundImage=daphne;
+
+	      if (degree > 29){
+	      	degree = degree - 29;
+	      }
+},1000);
+
 
 var time =0;
 
@@ -11,6 +26,10 @@ setInterval(function narrate() {
 	var sequence = ss;
 	var degr = ss - 30;
 
+	var figure1 = 1;
+	var figure2 = 2;
+	var figure3 = 3;
+
 
 	for(var i = 0; i < chapter.length; i++) {
 		
@@ -22,32 +41,36 @@ setInterval(function narrate() {
 
 		}
 	    
-	    if (chapter[i].figure === 1){
+	    // if (chapter[i].figure === figure1){
 
-	      var daphne = "url(./img/daphne/" + time + ".png)";
+	    //   var daphne = "url(./img/daphne/" + time + ".png)";
 
 
-	      document.querySelector('.sculpture').style.display="block";
-	      document.querySelector('.sculpture').style.backgroundImage=daphne;
+	    //   document.querySelector('.sculpture').style.display="block";
+	    //   document.querySelector('.sculpture').style.backgroundImage=daphne;
 	      
-	      document.querySelector('.telstar').style.display="none";
+	    //   document.querySelector('.telstar').style.display="none";
 
-	    } if (chapter[i].figure === 2){
+	    // } if (chapter[i].figure === figure2){
 
-	    	 document.querySelector('.telstar').style.display="none";
-	    	 document.querySelector('.sculpture').style.display="none";
-	    	 document.querySelector('.dwaves').style.display="block";
+	    // 	 document.querySelector('.telstar').style.display="none";
+	    // 	 document.querySelector('.sculpture').style.display="none";
+	    // 	 // document.querySelector('.dwaves').style.display="block";
 
-	    }
+	    // }
 
-	    if (chapter[i].figure === 3) {
+	    // if (chapter[i].figure === 3) {
 	      
-	      document.querySelector(".telstar").style.setProperty("-webkit-transform","rotate("+ (degr) +"deg)", null);
-	      document.querySelector('.telstar').style.display="block";
-	      document.querySelector('.sculpture').style.display="none";
-	      document.querySelector('.dwaves').style.display="none";
+	    //   document.querySelector(".telstar").style.setProperty("-webkit-transform","rotate("+ (time) +"deg)", null);
+	    //   document.querySelector('.telstar').style.display="block";
+	    //   document.querySelector('.sculpture').style.display="none";
+	    //   document.querySelector('.dwaves').style.display="none";
 	    
-	    }
+	    // }
+
+	    if (time > 131) {
+				window.location.replace("file:///Users/theronmercado/Desktop/dds/orbit.html");
+			}
 	}
 
 
@@ -108,21 +131,21 @@ var chapter = [
 				'number' : "2A", 
 				'timer' : 61, 
 				'figure' : 1,
-	 			'text' : "At the end of three rotations around the earth, Daphne grows tired enough for Apollo to catch up. She calls to father the river god Peneus for aid in escaping Apollo’s embrace."
+	 			'text' : "At the end of three rotations around the earth, Daphne grows tired enough for Apollo to catch up. She calls to father the river god Peneus for aid in escaping Apollo's embrace."
 	 		}, 
 
 
 	 		{ 
 				'number' : "2B", 
-				'timer' : 40, 
+				'timer' : 71, 
 				'figure' : 2, 
-	 			'text' : "The Electron’s movement is evaluated by the monitor that was built to establish a logical history of action, in the binary terms is was wired with. Left of right, on or off, true or false."
+	 			'text' : "The Electron's movement is evaluated by the monitor that was built to establish a logical history of action, in the binary terms is was wired with. Left of right, on or off, true or false."
 	 		}, 
 
 
 	 		{ 
 				'number' : "2C",  
-				'timer' : 40, 
+				'timer' : 81, 
 				'figure' : 3,
 	 			'text' : "Telstar is successfully orbiting the planet earth, and the task of locating it with antennas begins. The antennas probe space, ready to beam the first man made narrative beyond the confines of oxygen in the form of commercial broadcasting."
 	 		}, 
@@ -130,15 +153,15 @@ var chapter = [
 
 	 		{ 
 				'number' : "3A",  
-				'timer' : 40, 
+				'timer' : 91, 
 				'figure' : 1,
-	 			'text' : "The moment in which Apollo’s arm extends to grasp Daphne is the same in which her father observes her plight. Daphne is in a forced state of evasion or objectivity."
+	 			'text' : "The moment in which Apollo's arm extends to grasp Daphne is the same in which her father observes her plight. Daphne is in a forced state of evasion or objectivity."
 	 		}, 
 
 
 	 		{ 
 				'number' : "3B", 
-				'timer' : 40, 
+				'timer' : 101, 
 				'figure' : 2, 
 	 			'text' : "The moment in which the electron must pass through the wall is the same in which the monitor holds its gaze on the two points of passage, not equipped to process the possibility simultaneity. The electron is in a forced state of evasion or reflexivity."
 	 		},
@@ -146,24 +169,24 @@ var chapter = [
 
 	 		{ 
 				'number' : "3C",  
-				'timer' : 40, 
+				'timer' : 111, 
 				'figure' : 3, 
-	 			'text' : "The moment is which the antennas catch hold of Telstar’s trajectory is the same in which a signal of man made narrative is programmed to pierce outer space in a non physical form. The narrative of space-time is in a forced state of evasion or subjectivity."
-	 		},
+	 			'text' : "The moment is which the antennas catch hold of Telstar's trajectory is the same in which a signal of man made narrative is programmed to pierce outer space in a non physical form. The narrative of space-time is in a forced state of evasion or subjectivity."
+	 		}
 
 
-	 		{ 
-				'number' : "4",  
-				'timer' : 40, 
-				'figure' : 1, 
-	 			'text' : "Afterall, both Apollo and Telstar share the same track record of partaking in the casual objectification of the female form."
-	 		},
+	 		// { 
+				// 'number' : "4",  
+				// 'timer' : 40, 
+				// 'figure' : 1, 
+	 		// 	'text' : "Afterall, both Apollo and Telstar share the same track record of partaking in the casual objectification of the female form."
+	 		// },
 
 
-	 		{ 
-				'number' : 14,  
-	 			'text' : "For every flattened woman depicted through the efervescant glow of static electricity, is a newely coreogrpahed wrath of laurels, placed in absent care- on the male head of a god."
-	 		},
+	 		// { 
+				// 'number' : 14,  
+	 		// 	'text' : "For every flattened woman depicted through the efervescant glow of static electricity, is a newely coreogrpahed wrath of laurels, placed in absent care- on the male head of a god."
+	 		// },
 
 
 

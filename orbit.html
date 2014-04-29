@@ -12,6 +12,11 @@
 
     </head>
 <body>
+
+<div class="title">
+Observation and Evasion
+from <br/>Daphne to Telstar
+</div>
 <div class="space">
 
 <div class="container">
@@ -27,7 +32,7 @@
 		
 		<div class="xhair"></div>
 		<div class="xhair3">
-			<br><br><br><br><br><br>daphne & telstar
+			<br><br><br><br><br><br>the fixed form
 		</div>
 		<div class="yhair"></div>
 		<div class="xhair2"></div>
@@ -108,12 +113,34 @@
 
 <script type="text/javascript">
 
+var time = 0;
+
 setInterval(function () {
+
+	time = time +1;
 
 	var today = new Date();
 	var ss = today.getSeconds();
 	var sequence = ss - 30;
 
+	if (time === 5){
+
+		document.querySelector('.line').style.width="600px";
+		document.querySelector('.line2').style.width="600px";
+
+		setInterval(function () {
+		
+		document.querySelector('.sculp').style.display="none";
+		document.querySelector('.laurel').style.display="block";
+
+	}, 4000);
+
+	}
+
+	if (time === 15){
+		window.location.replace("file:///Users/theronmercado/Desktop/dds/measure.html");
+
+	}
   	
   	if (ss < 30) {
 
@@ -138,18 +165,18 @@ setInterval(function () {
 
 
 
-function trap(){
+// function trap(){
 
-	document.querySelector('.line').style.width="600px";
-	document.querySelector('.line2').style.width="600px";
+// 	document.querySelector('.line').style.width="600px";
+// 	document.querySelector('.line2').style.width="600px";
 
-	setInterval(function () {
+// 	setInterval(function () {
 		
-		document.querySelector('.sculp').style.display="none";
-		document.querySelector('.laurel').style.display="block";
+// 		document.querySelector('.sculp').style.display="none";
+// 		document.querySelector('.laurel').style.display="block";
 
-	}, 4000);
-}
+// 	}, 4000);
+// }
 
 function dart(){
 	
