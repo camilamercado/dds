@@ -14,14 +14,87 @@ setInterval( function order5(){
 
         if( time >= 202) {
 
+          document.querySelector(".ebeam").style.display="block";
+
+
+        }
+
+        if( time >= 203) {
+
+          document.querySelector(".board2").style.backgroundImage="url(./img/diffraction.png)";
+          document.querySelector(".ebeam").style.display="none";
+
+        }
+
+        if( time >= 213) {
+
+          document.querySelector(".subtext5").style.display="block";
+          document.querySelector(".board1").style.display="none";
+          // document.querySelector(".board2").style.display="none";
+          document.querySelector(".dwaves").style.display="block";
+
+        }
+
+        if( time >= 232) {
+
+          document.querySelector(".board2").style.background="#347d6b";
+          document.querySelector(".ebeam").style.display="none";
+          document.querySelector(".dwaves").style.display="none";
+          document.querySelector(".board1").style.display="block";
+
+        }
+
+        if( time >= 235) {
+
+          document.querySelector(".board2").style.backgroundImage="url(./img/particle.jpg)";
+
+        }
+
+        if( time >= 236) {
+
+          document.querySelector(".board2").style.background="#347d6b";
+
+        }
+
+        if( time >= 242) {
+
+          document.querySelector(".cam").style.display="block";
+
+        }
+
+        if( time >= 252) {
+
+         document.querySelector(".ebeam").style.display="block";
+         document.querySelector(".board2").style.backgroundImage="url(./img/particle.jpg)";
+         document.querySelector(".subtext5").style.display="block";
+
+        }
+
+        if( time >= 253) {
+
+         document.querySelector(".ebeam").style.display="none";
+         document.querySelector(".board2").style.backgroundImage="url(./img/particle.jpg)";
+
+        }
+
+        if( time >= 272) {
+
+          document.querySelector(".board2").style.background="#347d6b";
+
+        }
+
+        if( time >= 274) {
+
+          document.querySelector(".subtext5").style.display="block";
           document.querySelector(".board2").style.backgroundImage="url(./img/diffraction.png)";
 
-          setInterval(function () {
-            
-            // document.querySelector('.Laurel4').style.opacity="0.3";
-            // document.querySelector('.sculpture').style.opacity="0.9";
-          
-          }, 10000);
+        }
+
+        if( time >= 280) {
+
+          document.querySelector(".subtext52").style.display="block";
+          document.querySelector(".subtext5").style.display="none";
+          document.querySelector(".board2").style.backgroundImage="url(./img/particle.jpg)";
 
         }
 
@@ -62,7 +135,7 @@ var chapter5 = [
 
       { 
         'number' : "4)",
-        'timer' : 252,  
+        'timer' : 242,  
         'text' : "A monitor is applied to observe the moment in which the P/E must travel through board1. It is meant to establish what occurs when P/E display simultaneity in passing through the slits.",
         'subtext' : "",
         'subtext2' : ""
@@ -71,17 +144,16 @@ var chapter5 = [
 
       { 
         'number' : "5)",
-        'timer' : 272,  
+        'timer' : 252,  
         'text' : "The results of the experiment are found on the board2.",
         'subtext' : "The diffraction pattern on board2 has been replaced with a replica of the two slits. With a monitor present, the illogical simultaneous behavior of P/E is replaced with the originally expected behavior of particles. ",
-        'subtext' : "",
         'subtext2' : ""
 
       }, 
 
       { 
         'number' : "6)",
-        'timer' : 292,  
+        'timer' : 272,  
         'text' : "The experiment is repeated numerous times, and in every instance:",
         'subtext' : "Without a monitor P/E produces the pattern of wave / particle duality. The identities of P/E are non-fixed, adopting illogical traits of either state depending on their orientation in space/time. ",
         'subtext2' : "With a monitor P/E produces the fixed particle image. "
