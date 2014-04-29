@@ -29,7 +29,7 @@ audio {
 	height: 1500px;
 	float: left;
 	background: black;
-	opacity: 0.8;
+	opacity: 0.85;
 	z-index: 6;
 	position: absolute;
 
@@ -46,12 +46,6 @@ audio {
 .count {
 	width: 60%;
 	height: 1500px;
-<<<<<<< HEAD
-	font-size: 45px;
-	font-family: "andale mono";
-=======
->>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
-
 	padding-left: 10px;
 	padding-top: 10px;
 	left: 38%;
@@ -62,27 +56,24 @@ audio {
 	z-index: 7;
 	top: 0px;
 	position: absolute;
+	padding: 40px;
 
 }
 
 .chapter, .text {
 	width: auto;
-<<<<<<< HEAD
 	height: auto;
-=======
-	height: auto;font-size: 40px;
+	font-size: 40px;
 	font-family: "andale mono" !important;
->>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
+	padding-right: 10%!important;
+	padding-left: 5%!important;
 }
 
 .chapter {
 	color: goldenrod;
 	margin-bottom: 10px;
-<<<<<<< HEAD
-=======
 	height: auto;font-size: 40px;
 	font-family: "andale mono" !important;
->>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
 }
 
 .laurel{
@@ -101,6 +92,7 @@ audio {
 }
 
 .sculpture {
+	display: none;
 	overflow: hidden;
 	height: 800px;
 	width: 800px;
@@ -116,6 +108,7 @@ audio {
 }
 
 .telstar {
+	display: none;
 	overflow: hidden;
 	height: 300px;
 	width: 300px;
@@ -128,4 +121,21 @@ audio {
 	/*border: 1px solid magenta;*/
 	background-image: url(../img/telstar.png); 
 	z-index: 3;
+}
+
+.dwaves{
+	display: none!important;
+	height: 800px;
+	width: 800px;
+	position: absolute;
+	
+	margin-left: 15%;
+	left: -350px;
+	top: 0px;
+
+	background-size:800px 800px;
+	z-index: 3;
+	opacity: 0.8;
+	background: url(../img/dwaves.png);
+
 }

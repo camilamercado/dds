@@ -248,7 +248,7 @@
 
 		var timer = setInterval(bodies, 1000);
 
-		var time =180;
+		var time =188;
 
 		function bodies () {
 			
@@ -297,6 +297,11 @@
 			if (time > 180) {
 				document.querySelector('.four').style.display= "none";
 				document.querySelector('.five').style.display= "block";
+				// window.location.replace("http://stackoverflow.com");
+			}
+
+			if (time > 190) {
+				window.location.replace("file:///Users/80613/Desktop/dds/clock.html");
 			}
 
 		}

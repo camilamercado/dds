@@ -125,10 +125,12 @@ function position() {
 			}, 300);
 
 
-		}if (count > 870){
-			document.querySelector('.one').style.display= "none";
-			document.querySelector('.two').style.display= "block";
 		}
+
+		// if (count > 870){
+		// 	document.querySelector('.one').style.display= "none";
+		// 	document.querySelector('.two').style.display= "block";
+		// }
 
 			if (Xpos < (Rad * 2) )
 
