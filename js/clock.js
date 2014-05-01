@@ -69,7 +69,8 @@ setInterval(function narrate() {
 	    // }
 
 	    if (time > 131) {
-				window.location.replace("file:///Users/theronmercado/Desktop/dds/orbit.html");
+				// window.location.replace("file:///Users/theronmercado/Desktop/dds/orbit.html");
+				window.location.replace("http://camilamercado.github.io/dds/orbit.html");
 			}
 	}
 
