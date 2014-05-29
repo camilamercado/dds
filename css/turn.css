@@ -1,0 +1,71 @@
+
+
+.space {
+	height: 2000px;
+	width: 5940px;
+	background: black;
+}
+
+.form, .speed, .sputnik {
+<<<<<<< HEAD
+	height: 3500px;
+	width: 900px;
+=======
+	height: 3000px;
+	width: 500px;
+>>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
+	position: absolute;
+	margin-left: -5%;
+	top: -1400px;
+}
+
+
+.form {
+	background: yellow;
+	opacity: 0.2;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.speed {
+	background: cornflowerblue;
+	opacity: 0.2;
+	-webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+<<<<<<< HEAD
+.sputnik {
+	/*border: 1px solid cyan;*/
+=======
+.telstar {
+	/*border: 1px solid cyan;*/
+	top: 100px;
+	left: 125px;
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+>>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
+}
+
+.sculpture {
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+<<<<<<< HEAD
+	margin-left: 1500px;
+	top: 35%;
+=======
+	margin-left: 750px;
+	top: 35%;
+	background-size: 300px 300px;
+>>>>>>> 55f96d186acd8be99b95b85fd3f0679c13648661
+}
+
+
