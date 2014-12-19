@@ -10,7 +10,7 @@
 		count2 = count2*1.4;
 
 		var Xpos2 = count2+offset;
-		var Rad2 = 250;
+		var Rad2 = 300;
 		
 		if (count2 > 1680 ){
 			   
@@ -84,6 +84,11 @@
 
 						document.getElementById('y').style.left= (Xpos2+100)+"px";
 						document.getElementById('y').style.top= Ypos2+"px";
+
+						document.getElementById('x').style.left= Xpos+"px";
+						document.getElementById('x').style.top= Ypos+"px";
+
+						
 
 						
 				}	

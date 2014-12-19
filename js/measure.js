@@ -1,90 +1,124 @@
-function position() {
-
-		var max = 600;
-		var min = 0;
-		var pos = (Math.random() * (300 - min) + min);
-		var pos2 = (Math.random() * (300 - min) + min);
-		var pos3 = (Math.random() * (max - min) + min);
-		var pos4 = (Math.random() * (max - min) + min);
-		// console.log(pos);
-
-		document.getElementById('z').style.top= pos+"px";
-		document.getElementById('z').style.left= pos2+"px";
-
-		document.getElementById('y').style.top= pos3+"px";
-		document.getElementById('y').style.left= pos4+"px";
-
-		var getA = pos - pos3;
-		var getB = pos2 -pos4;
-
-		console.log(getA);
-		console.log(getB);
-	}
-
-	var counter = setInterval(distance, 1000);
-
-	function distance(){		
-
-		var getCenter = function (element) {
-		        var data = element.getBoundingClientRect();
-		        return {
-		            x: data.left + data.width / 2,
-		            y: data.top + data.height / 2
-		        };
-		    };
-
-	    var getDistance = function (a, b) {
-	        var aPosition = getCenter(a);
-	        var bPosition = getCenter(b);
-	        return Math.sqrt(
-	        Math.pow(aPosition.x - bPosition.x, 2) + Math.pow(aPosition.y - bPosition.y, 2));
-	   
-	        console.log(aPosition.x);
-	        console.log(aPosition.y);
-	        // console.log(bPosition);
-	    };
-
-	    var distX = getDistance(document.getElementById("x"),
-	    document.getElementById("z"));
-	    var distY = getDistance(document.getElementById("x"),
-	    document.getElementById("y"));
-
-	    document.getElementById("result").textContent = distX;
-	    document.getElementById("result2").textContent = distY;
-
-	    if (distX < distY){
-
-	    	console.log("Z is closer");
-	    	document.getElementById("result").style.color = "cyan";
-	    	document.getElementById("result2").style.color = "black";
-	    }
-
-	    else {
-
-	    	console.log("Y is closer");
-	    	document.getElementById("result2").style.color = "tomato";
-	    	document.getElementById("result").style.color = "black";
-
-	    }
-	}
+var objx = document.getElementById('x');
+var objy = document.getElementById('y');
+var objz = document.getElementById('z');
 
 
-	var count =300;
+	var count =550;
 
 	var counter = setInterval(orbit, 1000);
 		
 	function orbit(){
-		console.log(count);
+		//console.log(count);
 
 		count = count+10;
 		count2 = (count - 300) *1.2;
-	
+		var offset=document.querySelector('.space').style.left;
+		var Xpos2 = count2+offset;
 
 		var Xpos = count;
+
+		//console.log(Xpos, Xpos2);
 		
-		var Rad = 250;
+		var Rad = 300;
 		
-		if (count > 880 ){
+
+		// if (count > 870){
+		// 	document.querySelector('.one').style.display= "none";
+		// 	document.querySelector('.two').style.display= "block";
+		// }
+
+			if (Xpos < (Rad * 2) || Xpos2 < (Rad * 2) )
+
+			{	//QUADRANT 4
+				if ( Xpos < Rad || Xpos2 < Rad ) {
+
+					var Xaxis = Rad - Xpos;
+					var Xaxis2 = Rad - Xpos2;
+					console.log("Q4");
+					
+					//distance from count to center point is the remainder 
+					
+				}
+				//QUADRANT 3
+				else if ( Xpos > Rad || Xpos2 > Rad ) {
+
+					Xaxis = Xpos - Rad; 
+					Xaxis2 = Xpos2 - Rad; 
+					console.log("Q3");
+					
+					
+				}
+			
+				var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
+				var cart2 = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis2,2)));
+				var Ypos = cart + Rad;
+				var Ypos2 = cart2 + Rad;
+				
+				objx.style.left= Xpos+"px";
+				objx.style.top= Ypos+"px";
+				
+				objy.style.left= (Xpos+80)+"px";
+				objy.style.top= (Ypos+80)+"px";
+				
+				objz.style.left= Xpos2+"px";
+				objz.style.top= Ypos2+"px";
+				
+				//console.log("Q1");
+						console.log(Xpos);
+						console.log(Xpos2);
+
+			} else if (Xpos > (Rad * 2) || Xpos2 > (Rad * 2) )
+
+				{	
+					//QUADRANT 1
+					if ( Xpos >= (Rad * 2) || Xpos2 > (Rad * 2) ) {
+
+						Xpos = (Rad * 2) - (Xpos - (Rad * 2));
+						Xpos2 = (Rad * 2) - (Xpos2 - (Rad * 2));
+						
+						// X point on axis equalized to 4th quadrant despite count val
+						Xvar = Xpos - Rad;
+						Xvar2 = Xpos2 - Rad;
+						
+						// X variable calculated as distance from 00
+						var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xvar,2)));
+						var cart2 = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xvar2,2)));	
+						
+						
+					}
+					//QUADRANT 2
+					else if ( Xpos > (Rad * 3) || Xpos > (Rad * 3) ) {
+
+						Xaxis = Xpos - (Rad * 3)
+						Xaxis2 = Xpos2 - (Rad * 3)
+						
+						Xpos = Rad - Xaxis;
+						Xpos2 = Rad - Xaxis2;
+						
+						// X variable calculated as distance from 00
+						var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
+						var cart2 = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis2,2)));
+						
+
+
+					}
+
+						var Ypos = Rad - cart;	
+						var Ypos2 = Rad - cart2;	
+														
+						// objx.style.left= Xpos+"px";
+						// objx.style.top= Ypos+"px";
+						
+						objy.style.left= (Xpos2+80)+"px";
+						objy.style.top= (Ypos2+80)+"px";
+						
+						objx.style.left= Xpos2+"px";
+						objx.style.top= Ypos2+"px";
+
+
+				}	
+
+	if (count > 880 ){
 			   
 		   	clearInterval(counter);
 		    //counter ended, do something here
@@ -126,86 +160,6 @@ function position() {
 
 
 		}
-
-		// if (count > 870){
-		// 	document.querySelector('.one').style.display= "none";
-		// 	document.querySelector('.two').style.display= "block";
-		// }
-
-			if (Xpos < (Rad * 2) )
-
-			{	//QUADRANT 3
-				if ( Xpos < Rad ) {
-
-					var Xaxis = Rad - Xpos;
-					
-					//distance from count to center point is the remainder 
-					
-				}
-				//QUADRANT 3
-				else if ( Xpos > Rad ) {
-
-					Xaxis = Xpos - Rad; 
-					
-					
-				}
-			
-				var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
-				var Ypos = cart + Rad;
-				
-				document.getElementById('x').style.left= Xpos+"px";
-				document.getElementById('x').style.top= Ypos+"px";
-
-
-			} else if (Xpos > (Rad * 2) )
-
-				{	
-					//QUADRANT 1
-					if ( Xpos > (Rad * 2) ) {
-
-						Xpos = (Rad * 2) - (Xpos - (Rad * 2));
-						
-						// X point on axis eqaulized to 4th quadrant despite count val
-						Xvar = Xpos - Rad;
-						
-						// X variable calculated as distance from 00
-						var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xvar,2)));		
-						
-					}
-					//QUADRANT 2
-					else if ( Xpos > (Rad * 3) ) {
-
-						Xaxis = Xpos - (Rad * 3)
-						
-						Xpos = Rad - Xaxis;
-						
-						// X variable calculated as distance from 00
-						var cart = Math.sqrt((Math.pow(Rad,2)) - (Math.pow(Xaxis,2)));
-
-					}
-
-						var Ypos = Rad - cart;	
-														
-						document.getElementById('x').style.left= Xpos+"px";
-						document.getElementById('x').style.top= Ypos+"px";
-
-						}	
-
 				
 	}
-
-
-
-	// var counter = setInterval(beamer, 1000);
-
-	// function beamer(){
-
-	// 	var offsetx = getOffset(document.getElementById('x'));
-	// 	var offsety = getOffset(document.getElementById('y'));
-	// 	var offsetz = getOffset(document.getElementById('z'));
-
-	// 	console.log("WHATTHEFUCK");
-
-
-	// }
 

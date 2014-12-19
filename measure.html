@@ -10,57 +10,70 @@
     	<link rel="stylesheet" type="text/css" href="css/four.css">
     	<link rel="stylesheet" type="text/css" href="css/five.css">
 
+    	<style type="text/css">
+
+    	.four {
+    		display: none;
+    	}
+
+    	</style>
+
     </head>
 
 	<body>
 		
-		<div class="one">
-		<div id="x"></div>
-		<div id="y"></div>
-		<div id="z"></div>
-
-		<div class="right">
-
-			<div class= "meter">
-				<div id="result"></div>
-				<div id="result2"></div>
-			</div>
-			
-			<div class="text">
-				<div class="title">
-					The path of a single figure (Daphne)<br>
-					is pursued by 3 bodies:
-				</div>
-				<br>
-				<br>
-				1) Apollo : Son of Jupiter, proclaimer of prophecy, a god for lonely poets.
-				<br>
-				<br>
-				2) Peneus : Son of Oceanus, father of Daphne, a river god seeking a male heir.
-				<br>
-				<br>
-				3) Telstar : Child of Nasa and Bell Labs, provider of cross continental television programming, the first commercially broadcasting GEO satellite.
-			</div>
-
-			<div class="key" onclick="two()">
-				<div id="x"></div>Daphne<br>
-				<div id="z"></div>Apollo<br>
-				<div id="y"></div>Telstar<br>
-				<div class="peneus"></div>Peneus<br>
-			</div>
-
-		</div>
 		
-		<div class="space"></div>
-		<div class="xaxis"></div>
-		<div class="yaxis"></div>
-		<div class="orb"></div>
+		<div class="one">
 
-			<div class="laurel"></div>
-			<div class="peneus"></div>
-			<div class="beam"></div>
-			<div class="beam2"></div>
+			<div class="left">
+				
+				<div id="x"></div>
+				<div id="y"></div>
+				<div id="z"></div>
+				
+				<div class="space"></div>
+				<div class="xaxis"></div>
+				<div class="yaxis"></div>
+				<div class="orb"></div>
 
+					<div class="laurel"></div>
+					<div class="peneus"></div>
+					<div class="beam"></div>
+					<div class="beam2"></div>
+
+			</div>
+
+			<div class="right">
+
+				<div class= "meter">
+					<div id="result"></div>
+					<div id="result2"></div>
+				</div>
+				
+				<div class="text">
+					<div class="title">
+						The path of a single figure (Daphne)<br>
+						is pursued by 3 bodies:
+					</div>
+					<br>
+					<br>
+					1) Apollo : Son of Jupiter, proclaimer of prophecy, a god for lonely poets.
+					<br>
+					<br>
+					2) Peneus : Son of Oceanus, father of Daphne, a river god seeking a male heir.
+					<br>
+					<br>
+					3) Telstar : Child of Nasa and Bell Labs, provider of cross continental television programming, the first commercially broadcasting GEO satellite.
+				</div>
+
+				<div class="key" onclick="two()">
+					<div id="x"></div>Daphne<br>
+					<div id="z"></div>Apollo<br>
+					<div id="y"></div>Telstar<br>
+					<div class="peneus"></div>Peneus<br>
+				</div>
+
+			</div>
 
 
 		</div>
@@ -246,76 +259,78 @@
 		<script type="text/javascript">
 
 
-		var timer = setInterval(bodies, 1000);
+		// var timer = setInterval(bodies, 1000);
 
-		var time =0;
+		// var time =0;
 
-		function bodies () {
+		// function bodies () {
 			
 
-			time = time +1;
-			console.log(time);
+		// 	time = time +1;
+		// 	//console.log(time);
 
-			if (time > 60) {
-				document.querySelector('.one').style.display= "none";
-				document.querySelector('.two').style.display= "block";
-			}
+		// 	if (time > 60) {
+		// 		document.querySelector('.one').style.display= "none";
+		// 		document.querySelector('.two').style.display= "block";
+		// 	}
 
-			if (time > 75) {
-				document.querySelector('.two').style.display= "none";
-				document.querySelector('.three').style.display= "block";
-			}
+		// 	if (time > 75) {
+		// 		document.querySelector('.two').style.display= "none";
+		// 		document.querySelector('.three').style.display= "block";
+		// 	}
 
-			if (time > 85) {
-				document.querySelector('.line3').style.width="33%";
-				document.querySelector('.line4').style.width="60%";
+		// 	if (time > 85) {
+		// 		document.querySelector('.line3').style.width="33%";
+		// 		document.querySelector('.line4').style.width="60%";
 				
-				setInterval(function () {
+		// 		setInterval(function () {
 					
-					document.querySelector('.box2').style.display="block";
+		// 			document.querySelector('.box2').style.display="block";
 				
-				}, 4000);
+		// 		}, 4000);
 
-				setInterval(function () {
+		// 		setInterval(function () {
 					
-					document.querySelector('.bernini').style.display="none";
-					document.querySelector('.laurel2').style.display="block";
+		// 			document.querySelector('.bernini').style.display="none";
+		// 			document.querySelector('.laurel2').style.display="block";
 				
-				}, 10000);
-			}
+		// 		}, 10000);
+		// 	}
 
-			if (time > 100) {
-				document.querySelector('.three').style.display= "none";
-				document.querySelector('.four').style.display= "block";
-			}
+		// 	if (time > 100) {
+		// 		document.querySelector('.three').style.display= "none";
+		// 		document.querySelector('.four').style.display= "block";
+		// 	}
 
-			if (time > 100) {
-				document.querySelector('.three').style.display= "none";
-				document.querySelector('.four').style.display= "block";
-			}
+		// 	if (time > 100) {
+		// 		document.querySelector('.three').style.display= "none";
+		// 		document.querySelector('.four').style.display= "block";
+		// 	}
 
-			if (time > 180) {
-				document.querySelector('.four').style.display= "none";
-				document.querySelector('.five').style.display= "block";
-				// window.location.replace("http://stackoverflow.com");
-			}
+		// 	if (time > 180) {
+		// 		document.querySelector('.four').style.display= "none";
+		// 		document.querySelector('.five').style.display= "block";
+		// 		// window.location.replace("http://stackoverflow.com");
+		// 	}
 
-			if (time > 280) {
-				// window.location.replace("file:///Users/theronmercado/Desktop/dds/clock.html");
-				window.location.replace("http://camilamercado.github.io/dds/clock.html");
-			}
+		// 	if (time > 280) {
+		// 		// window.location.replace("file:///Users/theronmercado/Desktop/dds/clock.html");
+		// 		window.location.replace("http://camilamercado.github.io/dds/clock.html");
+		// 	}
 
-		}
+		// }
 
 
 
-		</script>
+		// </script>
 
 		<script src="js/measure.js" type="text/javascript"></script>
+		 
 		<script src="js/2.js" type="text/javascript"></script>
+		 <!--
 		<script src="js/three.js" type="text/javascript"></script>
 		<script src="js/4.js" type="text/javascript"></script>
-		<script src="js/five.js" type="text/javascript"></script>
+		<script src="js/five.js" type="text/javascript"></script>-->
 	</body>
 
 </html>
