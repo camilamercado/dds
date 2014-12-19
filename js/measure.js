@@ -11,7 +11,7 @@ var objz = document.getElementById('z');
 		//console.log(count);
 
 		count = count+10;
-		count2 = (count - 300) *1.2;
+		count2 = (count - 275) *1.2;
 		var offset=document.querySelector('.space').style.left;
 		var Xpos2 = count2+offset;
 
@@ -19,7 +19,7 @@ var objz = document.getElementById('z');
 
 		//console.log(Xpos, Xpos2);
 		
-		var Rad = 300;
+		var Rad = 275;
 		
 
 		// if (count > 870){

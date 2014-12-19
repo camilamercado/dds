@@ -1,11 +1,42 @@
-.left{
-	left: 100px;
-	top: 15%;
+.landscape {
+	position: fixed;
+	top: 200px;
+	/*background-image: url(../img/0.jpg);*/
+	background-repeat: no-repeat;
+	height: 100%;
 	width: 100%;
-	position: absolute;
+	left: 15%;
 }
 
-#x {
+.chapter3 .buffer {
+	width: 25%;
+	height: 100%;
+	left: -25%;
+	position: absolute;
+	background-color: white;
+}
+
+.chapter3 {
+	position: absolute;
+	width: 100%;
+	height: 1000px;
+	top: 1200px;
+	background-color: transparent;
+	z-index: 6;
+}
+
+.chapter3 .left{
+	left: 16.4%;
+	top: 3%;
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	padding-left: 18%;
+	background: transparent; 
+}
+
+
+.chapter3 #x {
 	position: absolute;
    	width: 10px;
    	height: 10px;
@@ -14,7 +45,7 @@
     z-index: 1;
 }
 
-#y {
+.chapter3 #y {
 	position: absolute;
     width: 30px;
     height: 30px;
@@ -26,7 +57,7 @@
     -webkit-transition: top 1s, left 1s;
 }
 
-.y {
+.chapter3 .y {
 	position: absolute;
     width: 30px;
     height: 30px;
@@ -38,7 +69,7 @@
     -webkit-transition: top 0.5s, left 0.5s;
 }
 
-#z {
+.chapter3 #z {
 	position: absolute;
     width: 10px;
     height: 10px;
@@ -48,7 +79,7 @@
     -webkit-transition: top 0.5s, left 0.5s;
 }
 
-.laurel {
+.chapter3 .laurel {
 	position: absolute;
 	top: 200px;
 	left: 200px;
@@ -61,7 +92,7 @@
     display: none;
 }
 
-.peneus {
+.chapter3 .peneus {
 	position: absolute;
 	top: 360px;
 	left: 390px;
@@ -70,10 +101,9 @@
     background: darkblue;
     border-radius: 50%;
     z-index: 3;
-/*    display: none;*/
 }
 
-.beam {
+.chapter3 .beam {
 	position: absolute;
 	top: 150px;
 	left: 158px;
@@ -87,7 +117,7 @@
 
 
 
-.beam2 {
+.chapter3 .beam2 {
 	/*display: none;*/
 	width: 1px;
 	height: 0px;
@@ -96,50 +126,52 @@
 	border-left: 1px dashed magenta;
 	top: 0px;
 	z-index: 3;
+}
 
-
+.chapter3 .scope {
+	position: absolute;
+	left: 0%;
+	width: 56%;
+	height: 55%;
+	background-image: url(../img/circle.png); 
+	background-size: 100%;
 }
 
 
-
-
-.space {
-	width: 601px;
-	height: 602px;
+.chapter3 .space {
+	width: 551px;
+	height: 552px;
 	position: absolute;
 	border-radius: 50%;
 	left: 0px;
 	top: 0px;
-	background-image:url(../img/0.jpg);
-	background-size: 600px 601px;
+	background-color: transparent;
 	opacity: 0.2; 
-	/*top: 30%;
-	left: 30%;*/
 }
 
-.xaxis {
-	width: 601px;
+.chapter3 .xaxis {
+	width: 551px;
 	height: 2px;
 	position: absolute;
-	top: 300px;
+	top: 275px;
 	border-top: 1px solid cornflowerblue;
 	left: 0px;
 	z-index: 2;
 }
 
-.yaxis {
+.chapter3 .yaxis {
 	width: 2px;
-	height: 601px;
+	height: 551px;
 	position: absolute;
-	left: 300px;
+	left: 275px;
 	border-left: 1px solid cornflowerblue;
 	top: 0px;
 	z-index: 1;
 }
 
-.orb {
-	width: 600px;
-	height:600px;
+.chapter3 .orb {
+	width: 550px;
+	height:550px;
 	top: 0px;
 	left: 0px;
 	border-radius: 50%;
@@ -149,21 +181,22 @@
 }
 
 
-.right {
+.chapter3 .right {
 
-	width: 100%;
-	left: 50%;
+	width: 40%;
+	left: 60%;
 	position: absolute;
 	height: 900px;
 	top: 0px;
-	border-left: 1px dashed cornflowerblue;
+	/*border-left: 1px dashed cornflowerblue;*/
 	font-family: "andale mono";
 	padding: 80px;
-	padding-top: 12%;
+	background-color: white;
+	
 
 }
 
-.meter{
+.chapter3 .meter{
 	width: 1000px;
 	/*position: absolute;*/
 	font-size: 30px;
@@ -172,7 +205,7 @@
 }
 
 
-#distance {
+.chapter3 #distance {
 	position: absolute;
 	top: 120px;
 	/*right: 0px;*/
@@ -180,38 +213,41 @@
 	font-family: "andale mono";
 }
 
-.text {
-	/*position: absolute;*/
-	font-size: 15px;
-	width: 600px;
+.chapter3 .text {
+	line-height: 21px;
+	font-size: 12px;
+	width: 70%;
+	top: 20%; 
 }
 
-.title {
+.chapter3 .3title {
 	font-size: 18px;
+	margin-bottom: 100px;
 }
 
-.key {
+.chapter3 .key {
 	height: 150px;
 	width: 150px;
 	position: absolute;
-	top: 540px;
+	top: 5%;
 	padding-left: 20px;
 	line-height: 20px;
+	left: -10%;
 }
 
-.key #x {
+.chapter3 .key #x {
 	position: absolute;
 	top: 5px;
 	left: 0px;
 }
 
-.key #z {
+.chapter3 .key #z {
 	position: absolute;
 	top: 25px;
 	left: 0px;
 }
 
-.key #y {
+.chapter3 .key #y {
 	position: absolute;
 	top: 45px;
 	left: 0px;
@@ -221,7 +257,7 @@
     display: block;
 }
 
-.key .peneus {
+.chapter3 .key .peneus {
 	position: absolute;
 	top: 65px;
 	left: 0px;
