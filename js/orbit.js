@@ -10,8 +10,8 @@ setInterval(function () {
 
 	if (time === 5){
 
-		document.querySelector('.line').style.width="400px";
-		document.querySelector('.line2').style.width="380px";
+		document.querySelector('.line').style.width="115%";
+		document.querySelector('.line2').style.width="110%";
 
 		setInterval(function () {
 		

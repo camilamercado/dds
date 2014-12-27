@@ -15,9 +15,18 @@ body {
 	top: 320px;
 	right: 20px;
 	font-size: 12px;
+	z-index: 10;
 }
 
 .chapter1 { 
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.sky {
 	width: 70%;
 	height: 50%;
 	position: fixed;
@@ -31,9 +40,7 @@ body {
 	height: 350px;
 	position: absolute;
 	top: 50%;
-	left: -300px;
-	margin-left: 55%;
-	
+	left: 20%;
 }
 
 
@@ -72,6 +79,7 @@ body {
 	position: absolute;
 	top: 3.5%;
 	left: 33%;
+	opacity: 0.5;
 
 }
 
@@ -191,7 +199,7 @@ body {
 
 .line {
 	top: -9%;
-	height: 150px;
+	height: 50%;
 	width:1px;
 	opacity:1;
 	border-top: 1px dashed white;
@@ -217,7 +225,7 @@ body {
 .line2 {
 	
 	top: -3.5%;
-	height: 150px;
+	height: 50%;
 	width:1px;
 	opacity: 1;
 	border-top: 1px dashed white;
@@ -306,10 +314,40 @@ body {
 	-webkit-transform: skew(0deg,20deg)
 }
 
+/********************MOBILE*********************/
+
+.chapter1M {
+	background: black;
+}
+
+.chapter1M .title {
+	
+	top: 20px;
+	left: 20px;
+	
+}
+
+.chapter1M .sky {
+	width: 100% ;
+	height: 40%;
+	/*position: fixed;
+	top: 0px;
+	left: 0px;
+	background-image: url(../img/sky.jpg);*/
+}
+
+.chapter1M .container {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+}
 
 
-
-
+.chapter1M .xhair3 {
+	font-size: 10px;
+}
 
 
 

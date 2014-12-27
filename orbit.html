@@ -9,16 +9,42 @@
     	<link rel="stylesheet" type="text/css" href="css/chapter2.css">
     	<link rel="stylesheet" type="text/css" href="css/orbit3.css">
     	<link rel="stylesheet" type="text/css" href="css/measure.css">
+
+    	<link href= "js/intention/examples/grid/css/responsivegrid.css" rel="stylesheet" />
+		<script src="js/intention/test/vendor/underscore.js"></script>
+	    <script src="js/intention/test/vendor/jquery.js"></script>
+	    <script src="js/intention/intention.js"></script>
+	    <script src="js/intention/context.js"></script>
    
     </head>
-<body>
+<body in data-in-base-class="" 
+		class="standard" 
+		data-in-tablet-class="tablet" 
+		data-in-standard-class="standard" 
+		data-in-mobile-class="mobile">
+		
+		<div class="fullwide ux theme grid col10wide colum" 
+		in
+		data-in-base-class="ux theme grid colum"
+		data-in-mobile-class="col3wide" 
+		data-in-tablet-class="col6wide" 
+		data-in-standard-class="col10wide" 
+		>
 
-	<div class="title">
-		Observation and Evasion
-		from <br/>Daphne to Telstar
-	</div>
+		<div class="chapter1"
+		in
+		data-in-base-class="chapter1"
+		data-in-mobile-class="chapter1M" 
+		data-in-tablet-class="chapter1" 
+		data-in-standard-class="chapter1" 
+		>
 
-		<div class="chapter1">
+			<div class="title">
+				Observation and Evasion
+				from <br/>Daphne to Telstar
+			</div>
+
+			<div class="sky"></div>
 
 			<div class="container">				
 
@@ -61,7 +87,7 @@
 
 
 
-
+<!-- 
 <div class="chapter2">
 
 	<div class="text3">
@@ -181,7 +207,7 @@
 
 <div class="four">
 
-	<!-- <div class="atmosphere"></div> -->
+	
 	<div class="atmosphere">
 				
 	<div class="spacey">
@@ -207,6 +233,8 @@
 
 
 	</div>
+</div> -->
+
 </div>
 
 <script src="js/orbit.js"></script>
@@ -214,6 +242,31 @@
 <script src="js/measure.js" type="text/javascript"></script>
 		 
 		<script src="js/2.js" type="text/javascript"></script>
+
+		<script src="js/jquery-scrolldepth/jquery.scrolldepth.min.js"></script>
+		<script>
+		
+		jQuery(function() {
+		 
+		 jQuery.scrollDepth({
+		  
+			  minHeight: 2000,
+			  elements: ['#comments', 'footer'],
+			  percentage: false,
+			  userTiming: false,
+			  pixelDepth: false,
+			  nonInteraction: false,
+			  
+			  eventHandler: function(data) {
+			    console.log(data)
+			  
+			  }
+
+		});
+
+		});
+
+		</script>
 
 </body>
 </html>
