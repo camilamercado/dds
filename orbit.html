@@ -35,7 +35,7 @@
 		in
 		data-in-base-class="chapter1"
 		data-in-mobile-class="chapter1M" 
-		data-in-tablet-class="chapter1" 
+		data-in-tablet-class="chapter1T" 
 		data-in-standard-class="chapter1" 
 		>
 
@@ -87,19 +87,16 @@
 
 
 
-<!-- 
-<div class="chapter2">
+
+<div class="chapter2"
+in
+data-in-base-class="chapter2"
+data-in-mobile-class="chapter2M" 
+data-in-tablet-class="chapter2T" 
+data-in-standard-class="chapter2" >
 
 	<div class="text3">
 				
-		<p class="p1">
-
-		"Silly girl, you do not know from whom you are fleeing: indeed, you do not, or else you would not flee. I am the lord of Delphi, Claros and Tenedos, and of the realms of Patara too. I am the son of Jupiter. By my skill, the past, the present, and the future are revealed."
-		<br><br>
-		-Apollo (Metamorphosis)
-		</p>
-
-
 		<p class="p2">
 
 		"Telstar was a tremendous technical success, and the international reaction was spectacular. A U.S. Information Agency (USIA) poll showed that Telstar was better known in Great Britain than Sputnik had been in 1957. Rather than launching a useless bauble, the Americans had put into orbit a satellite that promised to tie together the ears and eyes of the world."
@@ -110,10 +107,21 @@
 
 	</div>
 
+	<div class="connect"> 
+
+	<p class="p1">
+
+		"Silly girl, you do not know from whom you are fleeing: indeed, you do not, or else you would not flee. I am the lord of Delphi, Claros and Tenedos, and of the realms of Patara too. I am the son of Jupiter. By my skill, the past, the present, and the future are revealed."
+		<br><br>
+		-Apollo (Metamorphosis)
+		</p>
+
+
+	</div>
 
 	<div class="gravity">
 
-		<div class="connect"></div>
+		
 
 		<div class="telstar"></div>
 		<div class="earth"></div>
@@ -136,7 +144,7 @@
 			<div class="line3"></div>
 			<div class="line4"></div>
 
-			<div class="column"></div>
+			<div class="column2"></div>
 
 	</div>
 
@@ -144,13 +152,16 @@
 
 </div>
 
+
+
 		<div class="landscape"></div>
 
 		<div class="chapter3">
 
+		<div class="buffer"></div>
+
 			<div class="left">
 				
-				<div class="buffer"></div>
 
 				<div id="x"></div>
 				<div id="y"></div>
@@ -204,7 +215,7 @@
 
 
 		</div>
-
+<!-- 
 <div class="four">
 
 	
@@ -238,8 +249,9 @@
 </div>
 
 <script src="js/orbit.js"></script>
-<script src="js/orbit3.js"></script>
-<script src="js/measure.js" type="text/javascript"></script>
+<!-- <script src="js/orbit3.js"></script>
+ -->
+ <script src="js/measure.js" type="text/javascript"></script>
 		 
 		<script src="js/2.js" type="text/javascript"></script>
 
@@ -250,8 +262,8 @@
 		 
 		 jQuery.scrollDepth({
 		  
-			  minHeight: 2000,
-			  elements: ['#comments', 'footer'],
+			 minHeight: 2000,
+			  elements: ['.chapter3'],
 			  percentage: false,
 			  userTiming: false,
 			  pixelDepth: false,
@@ -259,6 +271,7 @@
 			  
 			  eventHandler: function(data) {
 			    console.log(data)
+			    document.querySelector('body').style.background="cyan";
 			  
 			  }
 

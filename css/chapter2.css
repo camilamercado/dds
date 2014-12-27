@@ -1,5 +1,5 @@
 .chapter2 {
-	width: 800px;
+	width: 100%;
 	height: 700px;
 	position: absolute;
 	top: 55%;
@@ -8,10 +8,11 @@
 }
 
 .gravity {
-	width: 58%;
-	height: 23%;
-	right: -150px;
-	top: 18%;
+	width: 468px;
+	height: 161px;
+	right: 30%;
+	margin-right: -65px;
+	top: 156px;
 	position: absolute;
 }
 
@@ -39,12 +40,13 @@
 	opacity:1;
 }
 
-.column {
+.column2 {
 	width: 100%;
 	height: 409%;
 	min-width: 400px;
 	min-height: 100px;
 	top: 46%;
+	right: 0px;
 	background: white;
 	position: absolute;
 	z-index: 2;
@@ -187,19 +189,145 @@
 	line-height: 21px;
 	position: absolute;
 	height: auto;
-	left: 125%;
+	/*left: 125%;*/
 	top: 32%;
 	z-index: 4;
 }
 
+.connect .p1 {
+	font-family: "andale mono";
+	width: 60%;
+	font-size: 12px;
+	line-height: 21px;
+	position: absolute;
+	height: auto;
+	margin-left: 28%;
+	top: 240px;
+	/*z-index: 4;*/
+}
+
 .connect {
 
-	top: -61%;
-	width: 98%;
+	top: 60px;
+	width: 30%;
 	border-top:1px solid #eeeeee;
-	height: 440%;
+	height: 845px;
 	position: absolute;
-	left: 70%;
+	right: 0px;
+
 	background-image: url(../img/sky.jpg);
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 }
+
+/********************TABLET*********************/
+
+.chapter2T {
+	/*background: black;*/
+}
+
+.chapter2T .gravity {
+	width: 350px;
+	height: 121px;
+	right: 20%;
+	margin-right: -50px;
+	top: 100px;
+	position: absolute;
+}
+
+.chapter2T  .connect {
+
+	top: 28px;
+	width: 20%;
+	border-top:none;
+}
+
+.chapter2T .connect .p1 {
+	font-family: "andale mono";
+	width: 250px;
+	font-size: 12px;
+	line-height: 21px;
+	position: absolute;
+	height: auto;
+	left: -180%;
+	top: 240px;
+	/*z-index: 4;*/
+}
+
+.chapter2T .gravity .column2 {
+	min-width: 100px !important;
+	background-color: white;
+	height: 900px;
+}
+
+.chapter2T .p2 {
+	
+	width: 240px;
+
+	left:50px;
+	top: 500px;
+	padding-left: 20px;
+	
+	/*background-color: pink;*/
+	
+	
+
+
+}
+
+
+
+/********************MOBILE*********************/
+
+.chapter2M {
+	/*background: black;*/
+}
+
+.chapter2M .gravity {
+	width: 300px;
+	height: 104px;
+	right: 30%;
+	margin-right: -65px;
+	top: 100px;
+	position: absolute;
+}
+
+.chapter2M  .connect {
+
+	top: -33px;
+	width: 30%;
+	border-top:none;
+}
+
+.chapter2M .connect .p1 {
+	font-family: "andale mono";
+	width: 250px;
+	font-size: 12px;
+	line-height: 21px;
+	position: absolute;
+	height: auto;
+	left: -205%;
+	top: 240px;
+	/*z-index: 4;*/
+}
+
+.chapter2M .gravity .column2 {
+	min-width: 100px !important;
+	background-color: white;
+	height: 900px;
+}
+
+.chapter2M .p2 {
+	
+	width: 240px;
+
+	left:50px;
+	top: 500px;
+	padding-left: 20px;
+	
+	/*background-color: pink;*/
+	
+	
+
+
+}
+

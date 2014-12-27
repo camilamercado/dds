@@ -8,31 +8,49 @@
 	left: 15%;
 }
 
-.chapter3 .buffer {
-	width: 25%;
-	height: 100%;
-	left: -25%;
-	position: absolute;
-	background-color: white;
-}
 
 .chapter3 {
 	position: absolute;
 	width: 100%;
 	height: 1000px;
-	top: 1200px;
+	top: 1248px;
 	background-color: transparent;
 	z-index: 6;
 }
 
-.chapter3 .left{
-	left: 16.4%;
-	top: 3%;
-	width: 60%;
+.chapter3 .buffer {
+	width: 20%;
 	height: 100%;
-	position: absolute;
-	padding-left: 18%;
+	float: left;
+	
+	background-color: white;
+
+}
+
+.chapter3 .left{
+	position: relative;
+	/*margin-left: 100px;*/
+	margin-top: 30px;
+	width: 554px;
+	height: 100%;
+	float: left;
+	/*padding-left: 18%;*/
 	background: transparent; 
+}
+
+.chapter3 .right {
+
+	width: 20%;
+	/*left: 60%;*/
+	float: left;
+	height: 900px;
+	top: 0px;
+	/*border-left: 1px dashed cornflowerblue;*/
+	font-family: "andale mono";
+	padding: 80px;
+	background-color: white;
+	
+
 }
 
 
@@ -131,8 +149,8 @@
 .chapter3 .scope {
 	position: absolute;
 	left: 0%;
-	width: 56%;
-	height: 55%;
+	width: 554px;
+	height: 555px;
 	background-image: url(../img/circle.png); 
 	background-size: 100%;
 }
@@ -181,20 +199,6 @@
 }
 
 
-.chapter3 .right {
-
-	width: 40%;
-	left: 60%;
-	position: absolute;
-	height: 900px;
-	top: 0px;
-	/*border-left: 1px dashed cornflowerblue;*/
-	font-family: "andale mono";
-	padding: 80px;
-	background-color: white;
-	
-
-}
 
 .chapter3 .meter{
 	width: 1000px;

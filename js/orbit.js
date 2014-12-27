@@ -82,7 +82,7 @@ function dart(){
 	}, 7000);
 }
 
-$().ready(function() {
-    $('').tubular({videoId: 'uKH-GijnAGk'}); // where idOfYourVideo is the YouTube ID.
-});
+// $().ready(function() {
+//     $('').tubular({videoId: 'uKH-GijnAGk'}); // where idOfYourVideo is the YouTube ID.
+// });
 
