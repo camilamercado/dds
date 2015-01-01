@@ -163,3 +163,8 @@ var objz = document.getElementById('z');
 				
 	}
 
+	function whiteout () {
+		document.querySelector('.whiteout').style.opacity= "1.0";
+		document.querySelector('.whiteout').style.position= "fixed";
+	}
+

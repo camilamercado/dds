@@ -1,8 +1,8 @@
 .chapter2 {
 	width: 100%;
-	height: 700px;
+	height: 1000px;
 	position: absolute;
-	top: 55%;
+	top: 350px;
 	right: 0px;
 	
 }
@@ -38,11 +38,12 @@
 	left: -.55%;
 	opacity: 0.8;
 	opacity:1;
+	
 }
 
 .column2 {
 	width: 100%;
-	height: 409%;
+	height: 770px;
 	min-width: 400px;
 	min-height: 100px;
 	top: 46%;
@@ -50,6 +51,7 @@
 	background: white;
 	position: absolute;
 	z-index: 2;
+	/*border: 1px solid magenta;*/
 }
 
 .retro {
@@ -169,16 +171,15 @@
 	font-size: 12px;
 	line-height: 21px;
 	position: absolute;
-	height: 54.5%;
+	height: 336px;
 	left:-2%;
-	top: 55%;
+	top: 530px;
 	/*border: 1px solid hotpink;*/
 	background-color: white;
 	padding-left: 9%;
 	padding-top: 10%;
 	padding-right: 7%;
 	z-index: 4;
-
 
 }
 
@@ -211,7 +212,7 @@
 	top: 60px;
 	width: 30%;
 	border-top:1px solid #eeeeee;
-	height: 845px;
+	height: 940px;
 	position: absolute;
 	right: 0px;
 

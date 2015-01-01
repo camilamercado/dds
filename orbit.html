@@ -153,12 +153,15 @@ data-in-standard-class="chapter2" >
 </div>
 
 
+		<div class="whiteout">
+			<div class="landscape"></div>
+		</div>
+		
 
-		<div class="landscape"></div>
-
-		<div class="chapter3">
+		<div class="chapter3" onmouseover="whiteout();">
 
 		<div class="buffer"></div>
+		<div class="padder"></div>
 
 			<div class="left">
 				
@@ -262,7 +265,7 @@ data-in-standard-class="chapter2" >
 		 
 		 jQuery.scrollDepth({
 		  
-			 minHeight: 2000,
+			  minHeight: 2000,
 			  elements: ['.chapter3'],
 			  percentage: false,
 			  userTiming: false,
@@ -271,7 +274,7 @@ data-in-standard-class="chapter2" >
 			  
 			  eventHandler: function(data) {
 			    console.log(data)
-			    document.querySelector('body').style.background="cyan";
+			    document.querySelector('body').style.background="";
 			  
 			  }
 
