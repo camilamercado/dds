@@ -7,6 +7,12 @@
 	
 }
 
+.chapter2 span {
+	background-color: black;
+	color: pink;
+	font-style: italic;
+}
+
 .gravity {
 	width: 468px;
 	height: 161px;
@@ -43,10 +49,10 @@
 
 .column2 {
 	width: 100%;
-	height: 770px;
+	height: 1046px;
 	min-width: 400px;
 	min-height: 100px;
-	top: 46%;
+	top: 65px;
 	right: 0px;
 	background: white;
 	position: absolute;
@@ -171,13 +177,13 @@
 	font-size: 12px;
 	line-height: 21px;
 	position: absolute;
-	height: 336px;
+	height: 300px;
 	left:-2%;
 	top: 530px;
 	/*border: 1px solid hotpink;*/
 	background-color: white;
-	padding-left: 9%;
-	padding-top: 10%;
+	padding-left: 12%;
+	padding-top: 120px;
 	padding-right: 7%;
 	z-index: 4;
 
@@ -209,10 +215,10 @@
 
 .connect {
 
-	top: 60px;
+	top: 50px;
 	width: 30%;
-	border-top:1px solid #eeeeee;
-	height: 940px;
+	border-top:10px solid white;
+	height: 900px;
 	position: absolute;
 	right: 0px;
 
@@ -257,17 +263,18 @@
 .chapter2T .gravity .column2 {
 	min-width: 100px !important;
 	background-color: white;
-	height: 900px;
+	height: 894px;
+	top: 50px;
 }
 
 .chapter2T .p2 {
 	
-	width: 240px;
-
+	width: 450px;
 	left:50px;
 	top: 500px;
-	padding-left: 20px;
-	
+	/*padding-left: 50px;*/
+	padding-top: 150px;
+	height: 382px;
 	/*background-color: pink;*/
 	
 	
@@ -314,7 +321,8 @@
 .chapter2M .gravity .column2 {
 	min-width: 100px !important;
 	background-color: white;
-	height: 900px;
+	height: 985px;
+	top: 40px;
 }
 
 .chapter2M .p2 {
@@ -322,7 +330,7 @@
 	width: 240px;
 
 	left:50px;
-	top: 500px;
+	top: 400px;
 	padding-left: 20px;
 	
 	/*background-color: pink;*/

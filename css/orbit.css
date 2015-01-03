@@ -8,14 +8,41 @@ body {
 	font-family: "andale mono";	
 }
 
-.title {
-	width: 250px;
-	height: 250px;
+/*.title {
+	width: 23.7%;
+	height: 330px;
 	position: absolute;
-	top: 320px;
-	right: 20px;
-	font-size: 12px;
+	top: 10px;
+	padding: 30px;
+	margin-left: 10px;
+	left: 70%;
+	font-size: 36px;
+	z-index: 0;
+	background:black;
+	color: pink;
+	font-style: italic;
+
+}*/
+
+ .title {
+	position: absolute;
+	top: 0px;
+	left: 70%;
+	width: 30%;
+	height: 20px;
 	z-index: 10;
+	font-size:14px;
+	padding: 0px;
+	margin-left: 0px;
+	background:black;
+	color: pink;
+	font-style: italic;
+	text-align: right;
+	line-height: 30px;
+}
+
+span {
+	background-color: black;
 }
 
 .chapter1 { 
@@ -307,6 +334,15 @@ body {
 	background-size: 100% 100%;	
 }
 
+.laurl {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/lmin.png);
+	background-size: 100% 100%;	
+}
+
 .sculp, .laurel {
 	z-index: 0;
 	opacity: 0.7;
@@ -322,10 +358,23 @@ body {
 
 .chapter1T .title {
 	
-	top: 40px;
-	left: 40px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 10px;
+	z-index: 6;
+	font-size:12px;
+	padding: 0px;
+	margin-left: 0px;
+	text-align: left;
+	line-height: 12px;
 	
 }
+
+.chapter1T span {
+	background-color: transparent;
+}
+
 
 .chapter1T .sky {
 	width: 100% ;
@@ -357,9 +406,21 @@ body {
 
 .chapter1M .title {
 	
-	top: 20px;
-	left: 20px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 10px;
+	z-index: 6;
+	font-size:12px;
+	padding: 0px;
+	margin-left: 0px;
+	text-align: left;
+	line-height: 12px;
 	
+}
+
+.chapter1M span {
+	background-color: transparent;
 }
 
 .chapter1M .sky {

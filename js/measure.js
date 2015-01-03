@@ -3,7 +3,7 @@ var objy = document.getElementById('y');
 var objz = document.getElementById('z');
 
 
-	var count =550;
+	var count =400;
 
 	var counter = setInterval(orbit, 1000);
 		
@@ -11,13 +11,14 @@ var objz = document.getElementById('z');
 		//console.log(count);
 
 		count = count+10;
-		count2 = (count - 275) *1.2;
-		var offset=document.querySelector('.space').style.left;
-		var Xpos2 = count2+offset;
+		count2 =(count - 275) * 1.5;
+		console.log(count);
+		
+		var Xpos2 = count2;
 
 		var Xpos = count;
 
-		//console.log(Xpos, Xpos2);
+		console.log(Xpos, Xpos2);
 		
 		var Rad = 275;
 		
@@ -27,24 +28,24 @@ var objz = document.getElementById('z');
 		// 	document.querySelector('.two').style.display= "block";
 		// }
 
-			if (Xpos < (Rad * 2) || Xpos2 < (Rad * 2) )
+			if ( (count < (Rad * 2) ) )
 
-			{	//QUADRANT 4
-				if ( Xpos < Rad || Xpos2 < Rad ) {
+			{	//QUADRANT 3
+				if ( (Xpos < Rad) || (Xpos2 < Rad) ) {
 
 					var Xaxis = Rad - Xpos;
 					var Xaxis2 = Rad - Xpos2;
-					console.log("Q4");
+					console.log("Q3");
 					
 					//distance from count to center point is the remainder 
 					
 				}
-				//QUADRANT 3
-				else if ( Xpos > Rad || Xpos2 > Rad ) {
+				//QUADRANT 4
+				else if ( (Xpos > Rad) || (Xpos2 > Rad)) {
 
 					Xaxis = Xpos - Rad; 
 					Xaxis2 = Xpos2 - Rad; 
-					console.log("Q3");
+					console.log("Q4");
 					
 					
 				}
@@ -67,11 +68,11 @@ var objz = document.getElementById('z');
 						console.log(Xpos);
 						console.log(Xpos2);
 
-			} else if (Xpos > (Rad * 2) || Xpos2 > (Rad * 2) )
+			} else if (Xpos >= (Rad * 2) )
 
-				{	
+				{	console.log(Xpos, "TOP");
 					//QUADRANT 1
-					if ( Xpos >= (Rad * 2) || Xpos2 > (Rad * 2) ) {
+					if ( (Xpos > (Rad * 2)) || (Xpos2 > (Rad * 2)) ) {
 
 						Xpos = (Rad * 2) - (Xpos - (Rad * 2));
 						Xpos2 = (Rad * 2) - (Xpos2 - (Rad * 2));
@@ -87,7 +88,7 @@ var objz = document.getElementById('z');
 						
 					}
 					//QUADRANT 2
-					else if ( Xpos > (Rad * 3) || Xpos > (Rad * 3) ) {
+					else if ( Xpos > (Rad * 3) || Xpos2 > (Rad * 3) ) {
 
 						Xaxis = Xpos - (Rad * 3)
 						Xaxis2 = Xpos2 - (Rad * 3)
@@ -105,15 +106,16 @@ var objz = document.getElementById('z');
 
 						var Ypos = Rad - cart;	
 						var Ypos2 = Rad - cart2;	
+						console.log(Rad, cart, Ypos);
 														
-						// objx.style.left= Xpos+"px";
-						// objx.style.top= Ypos+"px";
+						objx.style.left= Xpos+"px";
+						objx.style.top= Ypos+"px";
 						
 						objy.style.left= (Xpos2+80)+"px";
 						objy.style.top= (Ypos2+80)+"px";
 						
-						objx.style.left= Xpos2+"px";
-						objx.style.top= Ypos2+"px";
+						objz.style.left= Xpos2+"px";
+						objz.style.top= Ypos2+"px";
 
 
 				}	
@@ -163,8 +165,8 @@ var objz = document.getElementById('z');
 				
 	}
 
-	function whiteout () {
-		document.querySelector('.whiteout').style.opacity= "1.0";
-		document.querySelector('.whiteout').style.position= "fixed";
-	}
+	// function whiteout () {
+	// 	document.querySelector('.whiteout').style.opacity= "1.0";
+	// 	document.querySelector('.whiteout').style.position= "fixed";
+	// }
 
