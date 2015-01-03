@@ -66,3 +66,61 @@
 	font-style: italic;
 }
 
+/****************TABLET******************/
+
+.blockOutT {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	height: 85%;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	background: black;
+	z-index: 15;
+	display: none;
+	color: yellow;
+	background-size: 100% auto;
+}
+
+/****************MOBILE******************/
+
+
+.blockOutM{
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	height: 85%;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	background: black;
+	z-index: 15;
+	display: none;
+	color: yellow;
+	background-size: auto 100%;
+	background-position: 600px 0px;
+
+}
+
+
+.blockOutM .number {
+	position: absolute;
+	width: 300px;
+	margin-top: 120px;
+	height: 300px; 80%
+	color: yellow;
+	margin-left: 50%;
+	left: -250px;
+	background: black;
+	border-radius: 50%;
+	background-position: 550px -100px;
+	background-size:250%;
+	 -webkit-animation: spin 13s linear infinite;
+}
+
+
+
+
+
+

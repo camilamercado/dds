@@ -226,6 +226,7 @@
 	width: 100%;
 	top: 8.7%; 
 	z-index: 3;
+	color: black;
 }
 
 .chapter3 .3title {
@@ -509,12 +510,25 @@
 }
 .chapter3M .switcher {
 	position: absolute;
-	top: 1100px;
+	top: 700px;
 	width: 100%;
-	height: 150px;
+	height: 450px;
 	background-size: 100% 400px;
 	background-image: url(../img/trees.jpg);
 	opacity: 0.4;
+}
+
+.chapter3M .switch {
+	position: absolute;
+	bottom: 280px;
+	width: 100%;
+	height: 20px;
+	background-color: black;
+	z-index: 6;
+	overflow: hidden;
+	padding-left: 20px;
+	color: pink;
+	font-style: italic;
 }
 
 .chapter3M .peneus {
@@ -522,43 +536,7 @@
 }
 
 
-.countDown {
-	position: absolute;
-	top: 100px;
-	height: 300px;
-	width: 100%;
-	text-align: center;
-	font-size: 500px;
-	color: orange;
-	z-index: 10;
-}
 
-.blockOut {
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	height: 85%;
-	width: 92%;
-	text-align: center;
-	font-size: 20px;
-	background: black;
-	z-index: 15;
-	display: none;
-	color: white;
-
-}
-
-.number {
-	width: 100px;
-	height: 100px;
-	color: white;
-}
-
-.text {
-	width: 500px;
-	height: 500px;
-	color: white;
-}
 
 
 
