@@ -32,7 +32,7 @@ setInterval(function () {
 	    var daphne = "url(img/daphne/" + ss + ".png)";
 
 	    document.querySelector('.sculp').style.backgroundImage=daphne;
-
+	    document.querySelector('.sculpture4').style.backgroundImage=daphne;
 	    document.querySelector('.bernini').style.backgroundImage=daphne;
 	    
     }
@@ -42,7 +42,7 @@ setInterval(function () {
     	var daphne = "url(img/daphne/" + sequence + ".png)";
 
 	    document.querySelector('.sculp').style.backgroundImage=daphne;
-
+	    document.querySelector('.sculpture4').style.backgroundImage=daphne;
 	    document.querySelector('.bernini').style.backgroundImage=daphne;
     }
 	

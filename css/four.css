@@ -1,10 +1,14 @@
-.four{
-	/*display: none;*/
+.events{
+	display: none;
 }
 
 .spacey {
-	height: 1000px;
+	position: absolute;
+	height:100%;
 	width: 100%;
+	background: white;
+	/*background-image: url(../img/xerox2.jpg);*/
+	color: black;
 }
 
 .form, .speed, .sputnik {
@@ -45,67 +49,75 @@
 	height: 200px;
 }
 
-.sculpture {
+.sculpture4 {
 	overflow: hidden;
-	height: 350px;
-	width: 350px;
+	height: 250px;
+	width: 250px;
 	position: absolute;
 	right: 20%;
-	top: 20%;
-	background-size: 350px 350px;
+	top: 12%;
+	background-size: 250px 250px;
+	opacity: 0.7;
 }
 
 .Laurel4 {
-	display: none;
-	right: 20%;
-	top: 20%;
-	height: 350px;
-	width: 350px;
+	right: 18%;
+	top: 13%;
+	height: 300px;
+	width: 300px;
 	position: absolute;
 	background-image: url(../img/lmin.png);
-	background-size: 350px 350px;
+	background-size: 300px 300px;
 	z-index: 1;
-	opacity: 0.1;
+	opacity: 0;
 /*	-webkit-transform: skew(0deg,26deg)*/
 }
 
 .earthglimpse {
-	height: 300px;
-	width: 404px;
+	height: 220px;
+	width: 224px;
 	position: absolute;
-	right: 18%;
-	top: 45%;
-	/*background-size: 300px 404px!important;*/
+	right: 22%;
+	top: 40%;
+	background-size: 100% auto !important;
 	background: url(../img/earthblue.png);
+	background-repeat: no-repeat;
+	opacity: 0.6;
 }
 
 .moon {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	position: absolute;
-	bottom: -100px;
+	bottom: 0px;
 	left: 0px;
 	background: url(../img/moonsurf.png);
+	background-size: 100% auto;
+	opacity: 0.9;
 }
 
 .title4 {
 	width: 200px;
-	left: 2%;
+	left: 0px;
 	position: absolute;
 	height: 100px;
 	top: 20px;
 	font-family: "andale mono";
-	font-size: 18px;
+	font-size: 16px;
+	color: aliceblue;
+	text-align: left;
+	font-style: italic;
 }
 
 .text4 {
-	width: 480px;
-	left: 15%;
+	width: 350px;
+	left: 14%;
 	position: absolute;
 	height: 600px;
-	top: 100px;
+	top: 150px;
 	/*border-left: 1px dashed cornflowerblue;*/
 	font-family: "andale mono";
+	font-size: 12px;
 }
 
 .chapter {
@@ -113,7 +125,8 @@
 	height: 20px;
 	position: absolute;
 	left: 12%;
-	top: 100px;
+	top: 150px;
+	font-size: 12px;
 	font-family: "andale mono";
 }
 

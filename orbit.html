@@ -9,9 +9,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     	<link rel="stylesheet" type="text/css" href="css/orbit.css">
     	<link rel="stylesheet" type="text/css" href="css/chapter2.css">
-    	<link rel="stylesheet" type="text/css" href="css/orbit3.css">
     	<link rel="stylesheet" type="text/css" href="css/measure.css">
     	<link rel="stylesheet" type="text/css" href="css/blockOut.css">
+    	<link rel="stylesheet" type="text/css" href="css/four.css">
 
     	<link href= "js/intention/examples/grid/css/responsivegrid.css" rel="stylesheet" />
 		<script src="js/intention/test/vendor/underscore.js"></script>
@@ -252,11 +252,39 @@ data-in-standard-class="chapter2" >
 		data-in-tablet-class="blockOutT" 
 		data-in-standard-class="blockOut">
 
-			<div class="Btitle">3 BODIES IN ORBIT</div>
-			<div class="number"><span></span></div>
-			<div class="textA"><span></span></div>
-			</span>
-		</div>
+			<div class="bodies">
+				<div class="Btitle">3 BODIES IN ORBIT</div>
+				<div class="number"><span></span></div>
+				<div class="textA"><span></span></div>
+			</div>
+
+			<div class="events">
+				
+				<div class="spacey">
+					<p class="title4">
+						<span>
+							Daphne and Apollo <br> <br>Order of events 
+						</span>
+					</p>	
+
+					<div class="earthglimpse"></div>
+					<div class="Laurel4"></div>
+					<div class="sculpture4"></div>
+					<div class="form"></div>
+					<div class="speed"></div>
+					<div class="moon"></div>
+
+					
+					<div class="chapter"></div>
+					<div class="text4"></div>
+
+
+					<div class="telstar">
+					<img src="img/telstarB.png" width="200" height="200"/>
+					</div>
+				</div>
+			
+			</div>
 
 </div>
 
@@ -297,16 +325,30 @@ data-in-standard-class="chapter2" >
 
 	    		for(var i = 0; i < bodies.length; i++) {
 		
-				if(bodies[i].timer === timer ) {
-		
-					document.querySelector(".number").style.backgroundImage=bodies[i].img;
-					document.querySelector(".textA").innerHTML=bodies[i].btext;
-					document.querySelector(".blockOut").style.backgroundImage=bodies[i].img;
-					
+					if(bodies[i].timer === timer ) {
+			
+						document.querySelector(".number").style.backgroundImage=bodies[i].img;
+						document.querySelector(".textA").innerHTML=bodies[i].btext;
+						document.querySelector(".blockOut").style.backgroundImage=bodies[i].img;
+						
+					}
 				}
-			}
 	    		
-	    	}
+	    	} if (timer >= 50 ) {
+	    		document.querySelector('.bodies').style.display= "none";
+	    		document.querySelector('.events').style.display= "block";
+
+	    		 for(var i = 0; i < events.length; i++) {
+        
+			        if(events[i].timer === timer ) {
+			          document.querySelector(".chapter").innerHTML=events[i].number;
+			          document.querySelector(".text4").innerHTML=events[i].text;
+			          document.querySelector(".Laurel4").style.opacity=events[i].opacity;
+			        }
+	    		
+	    		}
+
+		    }	
 
 
 	 	},1000);
