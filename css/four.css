@@ -39,7 +39,7 @@
     transition: all 1.5s ease;
 }
 
-.telstar {
+/*.telstar {
 	display: none;
 	top: 100px;
 	left: 125px;
@@ -47,7 +47,7 @@
 	z-index: 1;
 	width: 200px;
 	height: 200px;
-}
+}*/
 
 .sculpture4 {
 	overflow: hidden;
@@ -113,7 +113,7 @@
 	width: 350px;
 	left: 14%;
 	position: absolute;
-	height: 600px;
+	height: auto;
 	top: 150px;
 	/*border-left: 1px dashed cornflowerblue;*/
 	font-family: "andale mono";

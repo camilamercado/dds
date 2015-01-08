@@ -12,6 +12,7 @@
     	<link rel="stylesheet" type="text/css" href="css/measure.css">
     	<link rel="stylesheet" type="text/css" href="css/blockOut.css">
     	<link rel="stylesheet" type="text/css" href="css/four.css">
+    	<link rel="stylesheet" type="text/css" href="css/five.css">
 
     	<link href= "js/intention/examples/grid/css/responsivegrid.css" rel="stylesheet" />
 		<script src="js/intention/test/vendor/underscore.js"></script>
@@ -227,7 +228,10 @@ data-in-standard-class="chapter2" >
 					<br>
 					<br>
 					2) Peneus : Son of Oceanus, father of <br>
-					</span>Daphne, a river god seeking a male heir.
+					</span>Daphne,
+					<span class="whitey"> 
+					a river god seeking a male heir.
+					</span>
 					<br>
 					<br>
 					<span class="whitey">
@@ -272,18 +276,47 @@ data-in-standard-class="chapter2" >
 					<div class="sculpture4"></div>
 					<div class="form"></div>
 					<div class="speed"></div>
-					<div class="moon"></div>
-
-					
+					<div class="moon"></div>	
 					<div class="chapter"></div>
 					<div class="text4"></div>
-
-
-					<div class="telstar">
-					<img src="img/telstarB.png" width="200" height="200"/>
-					</div>
+					
 				</div>
 			
+			</div>
+
+			<div class="five">
+				
+				<div class="blackboard">
+					<p class="title5" onclick="dart();">
+					<span>
+						Observation defined in the terms of fundamental matter
+						<br>
+						<br>(A brief glimpse at wave/particle duality)
+					</span>	
+					</p>	
+
+					<div class="board1"></div>
+					<div class="board2"></div>
+					
+					<div class="pe">
+						<div class="cam"></div>
+						<div class="ebeam"></div>
+						<div class="egun"></div>
+						<div class="dwaves"></div>
+					</div>
+					
+					<div class="line6"></div>
+					<div class ="container5">
+
+						<div class="chapter5"></div>
+						<div class="text5"></div>
+						<div class="subtext5"></div>
+						<div class="subtext52"></div>
+
+					</div>
+
+				</div>
+
 			</div>
 
 </div>
@@ -348,12 +381,98 @@ data-in-standard-class="chapter2" >
 	    		
 	    		}
 
-		    }	
+		    } if (timer >= 148 ) {
+	    		document.querySelector('.bodies').style.display= "none";
+	    		document.querySelector('.events').style.display= "none";
+	    		document.querySelector('.five').style.display= "block";
+	    		document.querySelector(".five").style.backgroundImage="url(./img/dss.gif)";
+
+	    		 for(var i = 0; i < chapter5.length; i++) {
+        
+			        if(chapter5[i].timer === timer ) {
+			          document.querySelector(".five").style.backgroundImage="url(./img/dss.gif)";
+			          document.querySelector(".chapter5").innerHTML=chapter5[i].number;
+			          document.querySelector(".text5").innerHTML=chapter5[i].text;
+			          document.querySelector(".subtext5").innerHTML=chapter5[i].subtext;
+			          document.querySelector(".subtext52").innerHTML=chapter5[i].subtext2;
+			          
+			        }
+	    		
+	    		}
+
+				 }
+
+		        if( timer >= 152) {
+
+		          document.querySelector(".ebeam").style.display="block";
+		          document.querySelector(".five").style.background="black";
 
 
-	 	},1000);
+		        }
 
-	 };
+		        if( timer >= 153) {
+
+		          document.querySelector(".board2").style.backgroundImage="url(./img/diffraction.png)";
+		          document.querySelector(".ebeam").style.display="none";
+
+		        }
+
+		        if( timer >= 163) {
+
+		          document.querySelector(".subtext5").style.display="block";
+		          document.querySelector(".board1").style.display="none";
+		          // document.querySelector(".board2").style.display="none";
+		          document.querySelector(".dwaves").style.display="block";
+
+		        }
+
+		        if( timer >= 182) {
+
+		          document.querySelector(".ebeam").style.display="none";
+		          document.querySelector(".dwaves").style.display="none";
+		          document.querySelector(".board1").style.display="block";
+		          document.querySelector(".cam").style.display="block";	
+		          document.querySelector(".board2").style.background="black";
+
+		        }
+
+		        if( timer >= 192) {
+
+		         	
+		          document.querySelector(".board2").style.backgroundImage="url(./img/particle.jpg)";
+
+		        }
+
+
+		        if( timer >= 202) {
+
+		          document.querySelector(".cam").style.display="none";	
+		         document.querySelector(".board2").style.backgroundImage="url(./img/diffraction.png)";
+		         document.querySelector(".subtext5").style.display="block";
+
+		        }
+
+
+		        if( timer >= 212) {
+
+		          document.querySelector(".subtext5").style.display="block";
+		          document.querySelector(".board2").style.backgroundImage="url(./img/diffraction.png)";
+
+		        }
+
+		        if( timer >= 222) {
+
+		          document.querySelector(".cam").style.display="block";		
+		          document.querySelector(".subtext52").style.display="block";
+		          document.querySelector(".subtext5").style.display="none";
+		          document.querySelector(".board2").style.backgroundImage="url(./img/particle.jpg)";
+
+		        }		
+
+
+			 	},1000);
+
+			 };
 
 	 $( window ).load(function() {
            var backgroundInterval = setInterval(function(){
@@ -365,15 +484,16 @@ data-in-standard-class="chapter2" >
           $(".switch").toggleClass("blink");
          },1000)
       
-      $(".blinky").mouseover(function(){
+      // $(".blinky").mouseover(function(){
 
-        $(".work").css( "width", "35%");
+      //   $(".work").css( "width", "35%");
 
-      });
+      // });
 	
 	</script>
 
 	<script src="js/orbit.js"></script>
+	<script src="js/five.js"></script>
 	<script src="js/bodies.js"></script>
 	<script src="js/newfun.js" type="text/javascript"></script>
 

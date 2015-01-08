@@ -1,15 +1,44 @@
 .five {
 	display: none;
+	line-height: 16px;
+	background: black;
+	text-align: left;
+	color: lightcyan;
+	height: 100%;
+	border: 1px dashed yellow;
 }
 
-.blackboard {
+.five span{
+	background: yellow;
+	font-size: 14px;
+	color: black;
+	font-style: italic;
+}
+
+
+/*.blockOut {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	height: 85%;
+	width: 92%;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	z-index: 15;
+	display: none;
+	background: white;
+	background-size: 100% auto;
+
+}*/
+
+/*.blackboard {
 	height: 1000px;
 	width: 100%;
-}
+}*/
 
 .title5 {
 	width: 800px;
-	left: 2%;
 	position: absolute;
 	height: 100px;
 	top: 20px;
@@ -18,31 +47,34 @@
 	/*color: red;*/
 }
 
-.container {
-	left: 15%;
+.container5 {
+	left: 8%;
 	position: absolute;
-	height: 600px;
-	top: 200px;
+	height: 300px;
+	top: 180px;
 	/*border-left: 1px dashed cornflowerblue;*/
 	font-family: "andale mono";
 }
 
 .text5 {
+	font-size: 12px;
 	margin-left: 50px;
-	width: 600px;
+	width: 350px;
 	margin-bottom: 40px;
 }
 
 .subtext5,
 .subtext52 {
-	display: none;
-	width: 480px;
-	margin-left: 65px;
-	height: 600px;
+	font-size: 12px;
+	/*display: none;*/
+	width: 400px;
+	margin-left: 50px;
+	height: 300px;
 	margin-bottom: 20px;
 }
 
 .chapter5 {
+	font-size: 12px;
 	left: 0px;
 	width: 20px;
 	height: 20px;
@@ -50,12 +82,12 @@
 }
 
 .board1 {
-	height: 227px;
-	width: 400px;
+	height: 170px;
+	width: 300px;
 	position: absolute;
 	right: 18%;
-	top: 45%;
-	background-size: 400px 227px!important;
+	top: 38%;
+	background-size: 300px 170px !important;
 	background-repeat: no-repeat;
 	background: url(../img/board1.png);
 	z-index: 1;
@@ -64,12 +96,12 @@
 }
 
 .board2 {
-	height: 227px;
-	width: 400px;
+	height: 170px;
+	width: 300px;
 	position: absolute;
 	right: 10%;
-	top: 38%;
-	background: #347d6b;
+	top: 32%;
+	background: black;
 /*	background: url(../img/diffraction.png);*/
 -webkit-transform: skew(0deg,12deg)
 }
@@ -85,14 +117,15 @@
 }
 
 .egun {
-	margin-top: 160px;
-	height: 114px;
-	width: 300px;
-	background-size: 300px 114px!important;
+	margin-top: 80px;
+	height: 74px;
+	width: 200px;
+	background-size: 200px 74px!important;
 	background: url(../img/egun2.png);
 -webkit-transform: rotate(-30deg);
 	z-index: 3;
 	position: absolute;
+	margin-left: 240px;
 
 }
 
@@ -125,11 +158,11 @@
 
 .dwaves{
 	display: none;
-	height: 263px;
-	width:300px;
+	height: 131px;
+	width:150px;
 	opacity:1;
-	margin-top: -130px;
-	margin-left: 270px;
+	margin-top: -100px;
+	margin-left: 420px;
 	/*border-top: 1.5px dashed cyan;*/
 	z-index: 3;
 	position: absolute;

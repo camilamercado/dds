@@ -5,7 +5,7 @@ var bodies = [
 			{
 	 			'number' : "1)", 
 	 			'timer' : 5,
-	 			'img' : "url(./img/apolloST.jpg)",
+	 			'img' : "url(./img/apollost.jpg)",
 	 			'btext' : "1) Acting in duality as the Sun god Helios, each day Apollo drives a chariot that pulls the sun around the earth."
 	 			 
 	 		}, 
@@ -13,7 +13,7 @@ var bodies = [
 			{ 
 				'number' : "2)",
 				'timer' : 20,  
-				'img' : "url(./img/OceanusL.jpg)",
+				'img' : "url(./img/db.jpg)",
 	 			'btext' : "2) Oceanus - (grandfather of Daphne) Diety of a fresh water stream that circles the earth along the equator. The sun, moon and stars are all claimed to rise and fall in his waters."
 			}, 
 
