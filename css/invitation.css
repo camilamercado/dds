@@ -1,0 +1,67 @@
+.invitation {
+	position: absolute;
+	height:100%;
+	width: 100%;
+	/*background: lavender;*/
+	background-image: url(../img/sky.jpg);
+	color: black;
+	overflow: hidden;
+	cursor: url(../img/telstarB2.png), auto ;
+	/*cursor: url(img/curs.png), auto;*/
+}
+
+.iRight {
+	width: 35%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+}
+
+.imgDaph {
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	position: absolute;
+	background-image: url(../img/crop.jpg); ;
+	background-size: auto 100%;
+	opacity: 0.7;
+}
+
+.imgDaph:hover {
+	background-image: url(../img/crop2.jpg); ;
+	
+}
+
+.titleMain {
+	color: white;
+	font-size: 155px;
+	position: absolute;
+	left: -30px;
+}
+
+.iRight span {
+	color: white;
+	background: transparent;
+	font-size: 29px;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 7px;
+	padding: none;
+	text-align: left;
+}
+
+.iLeft {
+width: 65%;
+height: 100%;
+position: absolute;
+left: 35%;
+background: white;
+}
+
+.iLeft .mainText {
+	font-size: 13px;
+text-align: left;
+margin-left: 20px;
+margin-top: 20px;
+}
