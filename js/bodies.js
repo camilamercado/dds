@@ -100,7 +100,7 @@ var events = [
       { 
         'number' : "10)",
         'timer' : 100,  
-        'text' : "Being so overjoyed at Daphne's newly pacified form, Apollo decides to commemorate his triumph by adopting the Laurel wreath as his personal symbol. He wears the token of Daphne's loss of mobility as an accessory to his power, invites a planets worth of new figures to do the same.",
+        'text' : "Being so overjoyed at Daphne's newly pacified form, Apollo decides to commemorate his triumph by adopting the Laurel wreath as his personal symbol. He wears the token of Daphne's loss of mobility as an accessory to his power, and invites a planets worth of new figures to do the same.",
         'opacity' : 1,     
       }, 
 

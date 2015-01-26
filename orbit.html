@@ -333,6 +333,8 @@ data-in-standard-class="chapter2" >
 				
 			</div>
 
+
+
 			<!-- <div class="five">
 				
 				<div class="blackboard">
@@ -370,6 +372,16 @@ data-in-standard-class="chapter2" >
 
 </div>
 
+<div class="ufo"></div>
+<!-- <div class="ufoT">
+	<div class="boxT">
+		<div class="frontT"></div>
+		<img src="img/telcrop.png"/>
+		<div class="backT"></div>
+		<div class="bottomT"></div>
+	</div>
+</div> -->
+
 	<script type="text/javascript"> 
 
 	 
@@ -388,7 +400,7 @@ data-in-standard-class="chapter2" >
 		document.querySelector('.chapter3').style.opacity = "0.6";
 
 		var count = 11; 
-		var timer = 100; 
+		var timer = 0; 
 
 		setInterval(function(){
 
@@ -430,26 +442,19 @@ data-in-standard-class="chapter2" >
 	    		
 	    		}
 
-		    } if (timer >= 100 ) {
+		    } if (timer >= 110 ) {
 	    		document.querySelector('.bodies').style.display= "none";
 	    		document.querySelector('.events').style.display= "none";
-	    		document.querySelector('.five').style.display= "block";
-	    		document.querySelector(".five").style.backgroundImage="url(./img/dss.gif)";
-
-	    		 for(var i = 0; i < chapter5.length; i++) {
-        
-			        if(chapter5[i].timer === timer ) {
-			          document.querySelector(".five").style.backgroundImage="url(./img/dss.gif)";
-			          document.querySelector(".chapter5").innerHTML=chapter5[i].number;
-			          document.querySelector(".text5").innerHTML=chapter5[i].text;
-			          document.querySelector(".subtext5").innerHTML=chapter5[i].subtext;
-			          document.querySelector(".subtext52").innerHTML=chapter5[i].subtext2;
-			          
-			        }
+	    		document.querySelector('.invitation').style.display= "block";
 	    		
 	    		}
 
-				 }
+	    	   if (timer >= 140 ) {    		
+	    		document.querySelector('.ufo').style.display= "block";
+	    		
+	    		}
+
+				
 
 		        // if( timer >= 152) {
 
