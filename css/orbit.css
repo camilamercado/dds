@@ -8,21 +8,7 @@ body {
 	font-family: "andale mono";	
 }
 
-/*.title {
-	width: 23.7%;
-	height: 330px;
-	position: absolute;
-	top: 10px;
-	padding: 30px;
-	margin-left: 10px;
-	left: 70%;
-	font-size: 36px;
-	z-index: 0;
-	background:black;
-	color: pink;
-	font-style: italic;
 
-}*/
 
  .title {
 	position: absolute;
