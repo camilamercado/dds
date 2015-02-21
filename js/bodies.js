@@ -5,7 +5,7 @@ var bodies = [
 			{
 	 			'number' : "1)", 
 	 			'timer' : 5,
-	 			'img' : "url(./img/apollost.jpg)",
+	 			'img' : "url(./img/apolloST.jpg)",
 	 			'btext' : "1) Acting in duality as the Sun god Helios, each day Apollo drives a chariot that pulls the sun around the earth."
 	 			 
 	 		}, 
