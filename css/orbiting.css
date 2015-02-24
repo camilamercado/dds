@@ -1,0 +1,14 @@
+.space {
+
+	width: 100%;
+	position: fixed;
+	z-index: 6;
+	height: 100px !important;
+	background: tomato;
+	overflow: hidden;
+}
+
+.space iframe {
+	width: 100% !important;
+	height: 1000px !important;
+}
