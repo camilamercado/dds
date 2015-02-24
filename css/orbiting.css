@@ -15,7 +15,7 @@
 }
 
 .stage {
-	width: 100%;
+	width: 1280px;
 	height: 800px;
 	position: absolute;
 	top: 0px;
@@ -23,6 +23,9 @@
 	z-index: 1;
 	/*background: cyan;*/
 	opacity: 0.8;
+	 -moz-transform: scale(0.3, 0.3); /* Moz-browsers */
+    zoom: 0.3; /* Other non-webkit browsers */
+    zoom: 60%; /* Webkit browsers */
 }
 
 .stretch {
@@ -35,9 +38,9 @@
 
 .stretch2 {
 	width: 100%;
-	height: 300px;
+	height: 160px;
 	position: absolute;
-	top: 300px;
+	top: 500px;
 	background: black;
 	font-family: "andale mono";
 	color: yellow;
@@ -57,7 +60,7 @@
 	width: 50%;
 	height: 70%;
 	background: black;
-	border: 1px solid black;
+	border: 1px solid lightgrey;
 	right: 0px;
 	-webkit-transform: skew(0deg,20deg);
 	top: 105px;
@@ -67,9 +70,9 @@
 	position: absolute;
 	width: 49.7%;
 	height: 70%;
-	border: 1px solid black;
+	border: 1px solid lightgrey;
 	background: black;
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 	left: 0px;
 	
 }
@@ -78,7 +81,7 @@
 	position: absolute;
 	width: 99.8%;
 	height: 69.65%;
-	border: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
 	left: 0px;
 	top: 30.2%;
 	
@@ -137,22 +140,25 @@
 	position: absolute;
 	width: 99.8%;
 	height: 63.65%;
-	border: 1px solid lightgrey;
-	background: white;
+	border-top: 1px solid white;
+	/*background: white;*/
 	left: 0px;
 	top: 36.2%;	
-	opacity: 0.6;
+	/*opacity: 0.2;*/
+	z-index: 5;
 }
 
 .cube1 .textBeam {
 	width: 112%;
-	top: 60%;
+	top: 57%;
 	height: 100px;
 	position: absolute;
 	background:black;
 	color: yellow;
 	font-style: italic;
 	z-index: 2;
+	font-size: 20px;
+	
 }
 
 .cube1 .textBeam2 {
@@ -164,6 +170,7 @@
 	color: yellow;
 	font-style: italic;
 	z-index: 4;
+	font-size: 20px;
 }
 
 .cube1 .slicer {
@@ -177,6 +184,9 @@
 	-webkit-transform: skew(0deg,20deg);
 }
 
+span {
+	color: yellow;
+}
 
 
 
