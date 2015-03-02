@@ -22,7 +22,7 @@
 	left: 0px;
 	z-index: 1;
 	/*background: cyan;*/
-	opacity: 0.8;
+	opacity: 0.9;
 	 -moz-transform: scale(0.3, 0.3); /* Moz-browsers */
     zoom: 0.3; /* Other non-webkit browsers */
     zoom: 60%; /* Webkit browsers */
@@ -30,20 +30,25 @@
 
 .stretch {
 	width: 100%;
-	height: 200px;
+	height: 175px;
 	position: absolute;
-	top: 60px;
-	background: url(../img/moonblack.png);
+	top: 0px;
+	/*background: url(../img/sky.jpg);*/
+	font-family: "andale mono";
+	background: white;
+	color: yellow;
+	opacity: 0.9;
 }
 
 .stretch2 {
 	width: 100%;
-	height: 160px;
+	height: 300px;
 	position: absolute;
-	top: 500px;
-	background: black;
+	top: 470px;
+	background: white;
 	font-family: "andale mono";
 	color: yellow;
+	opacity: 0.9;
 }
 
 .cube2 {
@@ -59,8 +64,7 @@
 	position: absolute;
 	width: 50%;
 	height: 70%;
-	background: black;
-	border: 1px solid lightgrey;
+	background: url(../img/sky.jpg);
 	right: 0px;
 	-webkit-transform: skew(0deg,20deg);
 	top: 105px;
@@ -70,8 +74,7 @@
 	position: absolute;
 	width: 49.7%;
 	height: 70%;
-	border: 1px solid lightgrey;
-	background: black;
+	background: url(../img/sky.jpg);
 	/*opacity: 0.6;*/
 	left: 0px;
 	
@@ -81,9 +84,22 @@
 	position: absolute;
 	width: 99.8%;
 	height: 69.65%;
-	border-top: 1px solid lightgrey;
+	/*border-top: 1px solid lightgrey;*/
 	left: 0px;
 	top: 30.2%;
+
+	
+}
+
+.cube2 .uFace {
+	position: absolute;
+	width: 101.8%;
+	height: 31.65%;
+	background: white;
+	left: -324px;
+	top: 68.2%;
+	opacity: 1;
+	-webkit-transform: skew(70deg,0deg);
 	
 }
 
@@ -140,7 +156,7 @@
 	position: absolute;
 	width: 99.8%;
 	height: 63.65%;
-	border-top: 1px solid white;
+	/*border-top: 1px solid white;*/
 	/*background: white;*/
 	left: 0px;
 	top: 36.2%;	
@@ -154,11 +170,27 @@
 	height: 100px;
 	position: absolute;
 	background:black;
-	color: yellow;
 	font-style: italic;
 	z-index: 2;
 	font-size: 20px;
 	
+}
+
+.cube1 .textBeam p {
+	/*padding: 0px;
+	margin: 0px;*/
+	font-size: 34px;
+	left: 0px;
+	position: absolute;
+	-webkit-transition: left 4s;
+	color: yellow;
+	width: 100%;
+	height: auto;
+}
+
+.textBeam p:hover {
+	left: 200px;
+	color: pink;
 }
 
 .cube1 .textBeam2 {
