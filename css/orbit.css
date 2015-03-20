@@ -1,5 +1,6 @@
 @font-face {
-	font-family: "andale mono";
+font-family: Andale Mono;
+src: url("Andale-Mono.ttf") format("opentype");
 }
 
 body {
