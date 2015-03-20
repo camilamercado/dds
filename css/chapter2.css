@@ -328,7 +328,7 @@
 .chapter2M .p2 {
 	
 	width: 240px;
-
+	overflow: hidden !important;
 	left:50px;
 	top: 400px;
 	padding-left: 20px;
